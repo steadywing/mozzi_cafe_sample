@@ -1,0 +1,4507 @@
+{
+  "941e61e4-9674-492d-a4ae-b5803867d72e": [
+    {
+      "steps": [
+        {
+          "step": "input",
+          "state": {
+            "session_id": "941e61e4-9674-492d-a4ae-b5803867d72e",
+            "customer_id": "cust_001",
+            "input": {
+              "text": "태양계에서 가장 큰 행성은 무엇인가요?",
+              "has_image": false
+            },
+            "intent": null,
+            "history": [],
+            "search": null,
+            "recommendation": null,
+            "coupon": null,
+            "order": null,
+            "answer": null
+          }
+        },
+        {
+          "step": "classify_intent",
+          "state": {
+            "session_id": "941e61e4-9674-492d-a4ae-b5803867d72e",
+            "customer_id": "cust_001",
+            "input": {
+              "text": "태양계에서 가장 큰 행성은 무엇인가요?",
+              "has_image": false
+            },
+            "intent": null,
+            "history": [],
+            "search": null,
+            "recommendation": null,
+            "coupon": null,
+            "order": null,
+            "answer": null
+          }
+        },
+        {
+          "step": "generate_unknown_response",
+          "state": {
+            "session_id": "941e61e4-9674-492d-a4ae-b5803867d72e",
+            "customer_id": "cust_001",
+            "input": {
+              "text": "태양계에서 가장 큰 행성은 무엇인가요?",
+              "has_image": false
+            },
+            "intent": null,
+            "history": [],
+            "search": null,
+            "recommendation": null,
+            "coupon": null,
+            "order": null,
+            "answer": {
+              "answer": "이 질문은 카페 관련 정보가 아니라 도와드리기 어렵습니다. 카페 관련 작업을 아래에서 선택해 주세요:\n- 메뉴 검색\n- 이벤트 참여\n- 메뉴 추천\n- 카페 상담\n- 상품 주문",
+              "model": "gpt-5-nano-2025-08-07"
+            }
+          }
+        }
+      ],
+      "elapsed_ms": 11571.44
+    }
+  ],
+  "8510819f-37bb-459c-8889-cfc207d6dbb2": [
+    {
+      "steps": [
+        {
+          "step": "input",
+          "state": {
+            "session_id": "8510819f-37bb-459c-8889-cfc207d6dbb2",
+            "customer_id": "cust_001",
+            "input": {
+              "text": "주말에는 몇 시까지 운영하나요? 주차도 가능한가요?",
+              "has_image": false
+            },
+            "intent": null,
+            "history": [],
+            "search": null,
+            "recommendation": null,
+            "coupon": null,
+            "order": null,
+            "answer": null
+          }
+        },
+        {
+          "step": "classify_intent",
+          "state": {
+            "session_id": "8510819f-37bb-459c-8889-cfc207d6dbb2",
+            "customer_id": "cust_001",
+            "input": {
+              "text": "주말에는 몇 시까지 운영하나요? 주차도 가능한가요?",
+              "has_image": false
+            },
+            "intent": {
+              "intent": "product_consultation",
+              "confidence": 1.0
+            },
+            "history": [],
+            "search": null,
+            "recommendation": null,
+            "coupon": null,
+            "order": null,
+            "answer": null
+          }
+        }
+      ],
+      "elapsed_ms": 177.3
+    },
+    {
+      "steps": [
+        {
+          "step": "input",
+          "state": {
+            "session_id": "8510819f-37bb-459c-8889-cfc207d6dbb2",
+            "customer_id": "cust_001",
+            "input": {
+              "text": "태양계에서 가장 큰 행성은 무엇인가요?",
+              "has_image": false
+            },
+            "intent": {
+              "intent": "product_consultation",
+              "confidence": 1.0
+            },
+            "history": [
+              {
+                "role": "user",
+                "content": "주말에는 몇 시까지 운영하나요? 주차도 가능한가요?"
+              }
+            ],
+            "search": null,
+            "recommendation": null,
+            "coupon": null,
+            "order": null,
+            "answer": null
+          }
+        },
+        {
+          "step": "classify_intent",
+          "state": {
+            "session_id": "8510819f-37bb-459c-8889-cfc207d6dbb2",
+            "customer_id": "cust_001",
+            "input": {
+              "text": "태양계에서 가장 큰 행성은 무엇인가요?",
+              "has_image": false
+            },
+            "intent": {
+              "intent": "product_consultation",
+              "confidence": 1.0
+            },
+            "history": [
+              {
+                "role": "user",
+                "content": "주말에는 몇 시까지 운영하나요? 주차도 가능한가요?"
+              }
+            ],
+            "search": null,
+            "recommendation": null,
+            "coupon": null,
+            "order": null,
+            "answer": null
+          }
+        },
+        {
+          "step": "generate_unknown_response",
+          "state": {
+            "session_id": "8510819f-37bb-459c-8889-cfc207d6dbb2",
+            "customer_id": "cust_001",
+            "input": {
+              "text": "태양계에서 가장 큰 행성은 무엇인가요?",
+              "has_image": false
+            },
+            "intent": {
+              "intent": "product_consultation",
+              "confidence": 1.0
+            },
+            "history": [
+              {
+                "role": "user",
+                "content": "주말에는 몇 시까지 운영하나요? 주차도 가능한가요?"
+              }
+            ],
+            "search": null,
+            "recommendation": null,
+            "coupon": null,
+            "order": null,
+            "answer": {
+              "answer": "지금 말씀하신 내용에는 답변해 드리기 어렵습니다. 이전에 진행하던 상품 상담을 계속할까요?",
+              "model": "gpt-5-nano-2025-08-07"
+            }
+          }
+        }
+      ],
+      "elapsed_ms": 13974.63
+    }
+  ],
+  "234c4235-6e51-4f91-9d9a-46875fdeb26e": [
+    {
+      "steps": [
+        {
+          "step": "input",
+          "state": {
+            "session_id": "234c4235-6e51-4f91-9d9a-46875fdeb26e",
+            "customer_id": "cust_001",
+            "input": {
+              "text": "아메리카노 두 잔과 카페라떼 한 잔 주문할게요.",
+              "has_image": false
+            },
+            "intent": null,
+            "history": [],
+            "search": null,
+            "recommendation": null,
+            "coupon": null,
+            "order": null,
+            "answer": null
+          }
+        },
+        {
+          "step": "create_order_draft",
+          "state": {
+            "session_id": "234c4235-6e51-4f91-9d9a-46875fdeb26e",
+            "customer_id": "cust_001",
+            "input": {
+              "text": "아메리카노 두 잔과 카페라떼 한 잔 주문할게요.",
+              "has_image": false
+            },
+            "intent": {
+              "intent": "product_order",
+              "confidence": null
+            },
+            "history": [],
+            "search": null,
+            "recommendation": null,
+            "coupon": null,
+            "order": {
+              "items": [
+                {
+                  "product_id": null,
+                  "product_name": "아메리카노",
+                  "quantity": 2.0,
+                  "temperature": null,
+                  "options": null,
+                  "price": null
+                },
+                {
+                  "product_id": null,
+                  "product_name": "카페라떼",
+                  "quantity": 1.0,
+                  "temperature": null,
+                  "options": null,
+                  "price": null
+                }
+              ],
+              "order_type": null,
+              "payment_method": null,
+              "total_price": null,
+              "order_id": null,
+              "confirmation_status": "pending",
+              "needs_clarification": true,
+              "question": "아메리카노 두 잔과 카페라떼 한 잔으로 주문하려고 하는데, 각각의 온도(HOT/ICE)와 매장 이용 여부(매장/포장), 결제 방식 중 원하시는 것을 하나의 문장으로 알려주실 수 있을까요?"
+            },
+            "answer": null
+          }
+        },
+        {
+          "step": "match_menu_and_fill_prices",
+          "state": {
+            "session_id": "234c4235-6e51-4f91-9d9a-46875fdeb26e",
+            "customer_id": "cust_001",
+            "input": {
+              "text": "아메리카노 두 잔과 카페라떼 한 잔 주문할게요.",
+              "has_image": false
+            },
+            "intent": {
+              "intent": "product_order",
+              "confidence": null
+            },
+            "history": [],
+            "search": null,
+            "recommendation": null,
+            "coupon": null,
+            "order": {
+              "items": [
+                {
+                  "product_id": "drink_americano",
+                  "product_name": "아메리카노",
+                  "quantity": 2.0,
+                  "temperature": null,
+                  "options": null,
+                  "price": 4500
+                },
+                {
+                  "product_id": "drink_cafe_latte",
+                  "product_name": "카페라떼",
+                  "quantity": 1.0,
+                  "temperature": null,
+                  "options": null,
+                  "price": 5000
+                }
+              ],
+              "order_type": null,
+              "payment_method": null,
+              "total_price": null,
+              "order_id": null,
+              "confirmation_status": "pending",
+              "needs_clarification": true,
+              "question": "아메리카노 두 잔과 카페라떼 한 잔으로 주문하려고 하는데, 각각의 온도(HOT/ICE)와 매장 이용 여부(매장/포장), 결제 방식 중 원하시는 것을 하나의 문장으로 알려주실 수 있을까요?"
+            },
+            "answer": null
+          }
+        },
+        {
+          "step": "check_order",
+          "state": {
+            "session_id": "234c4235-6e51-4f91-9d9a-46875fdeb26e",
+            "customer_id": "cust_001",
+            "input": {
+              "text": "아메리카노 두 잔과 카페라떼 한 잔 주문할게요.",
+              "has_image": false
+            },
+            "intent": {
+              "intent": "product_order",
+              "confidence": null
+            },
+            "history": [],
+            "search": null,
+            "recommendation": null,
+            "coupon": null,
+            "order": {
+              "items": [
+                {
+                  "product_id": "drink_americano",
+                  "product_name": "아메리카노",
+                  "quantity": 2.0,
+                  "temperature": null,
+                  "options": null,
+                  "price": 4500
+                },
+                {
+                  "product_id": "drink_cafe_latte",
+                  "product_name": "카페라떼",
+                  "quantity": 1.0,
+                  "temperature": null,
+                  "options": null,
+                  "price": 5000
+                }
+              ],
+              "order_type": null,
+              "payment_method": null,
+              "total_price": null,
+              "order_id": null,
+              "confirmation_status": "pending",
+              "needs_clarification": true,
+              "question": "아메리카노 두 잔과 카페라떼 한 잔으로 주문하려고 하는데, 각각의 온도(HOT/ICE)와 매장 이용 여부(매장/포장), 결제 방식 중 원하시는 것을 하나의 문장으로 알려주실 수 있을까요?"
+            },
+            "answer": {
+              "answer": "주문을 위해 아메리카노 온도(HOT, ICE), 아메리카노 옵션 추가 여부(없으면 없음), 카페라떼 온도(HOT, ICE), 카페라떼 옵션 추가 여부(없으면 없음), 매장 이용 또는 포장, 결제 방식(카드, 현금, 간편결제)을 알려주세요."
+            }
+          }
+        },
+        {
+          "step": "response",
+          "state": {
+            "session_id": "234c4235-6e51-4f91-9d9a-46875fdeb26e",
+            "customer_id": "cust_001",
+            "input": {
+              "text": "아메리카노 두 잔과 카페라떼 한 잔 주문할게요.",
+              "has_image": false
+            },
+            "intent": {
+              "intent": "product_order",
+              "confidence": null
+            },
+            "history": [],
+            "search": null,
+            "recommendation": null,
+            "coupon": null,
+            "order": {
+              "items": [
+                {
+                  "product_id": "drink_americano",
+                  "product_name": "아메리카노",
+                  "quantity": 2.0,
+                  "temperature": null,
+                  "options": null,
+                  "price": 4500
+                },
+                {
+                  "product_id": "drink_cafe_latte",
+                  "product_name": "카페라떼",
+                  "quantity": 1.0,
+                  "temperature": null,
+                  "options": null,
+                  "price": 5000
+                }
+              ],
+              "order_type": null,
+              "payment_method": null,
+              "total_price": null,
+              "order_id": null,
+              "confirmation_status": "pending",
+              "needs_clarification": true,
+              "question": "아메리카노 두 잔과 카페라떼 한 잔으로 주문하려고 하는데, 각각의 온도(HOT/ICE)와 매장 이용 여부(매장/포장), 결제 방식 중 원하시는 것을 하나의 문장으로 알려주실 수 있을까요?"
+            },
+            "answer": {
+              "answer": "주문을 위해 아메리카노 온도(HOT, ICE), 아메리카노 옵션 추가 여부(없으면 없음), 카페라떼 온도(HOT, ICE), 카페라떼 옵션 추가 여부(없으면 없음), 매장 이용 또는 포장, 결제 방식(카드, 현금, 간편결제)을 알려주세요."
+            }
+          }
+        }
+      ],
+      "elapsed_ms": 26046.74
+    },
+    {
+      "steps": [
+        {
+          "step": "input",
+          "state": {
+            "session_id": "234c4235-6e51-4f91-9d9a-46875fdeb26e",
+            "customer_id": "cust_001",
+            "input": {
+              "text": "둘 다 아이스로 주세요. 포장하고 카드로 결제할게요. 옵션은 둘 다 없어요.",
+              "has_image": false
+            },
+            "intent": {
+              "intent": "product_order",
+              "confidence": null
+            },
+            "history": [
+              {
+                "role": "user",
+                "content": "아메리카노 두 잔과 카페라떼 한 잔 주문할게요."
+              },
+              {
+                "role": "assistant",
+                "content": "주문을 위해 아메리카노 온도(HOT, ICE), 아메리카노 옵션 추가 여부(없으면 없음), 카페라떼 온도(HOT, ICE), 카페라떼 옵션 추가 여부(없으면 없음), 매장 이용 또는 포장, 결제 방식(카드, 현금, 간편결제)을 알려주세요."
+              }
+            ],
+            "search": null,
+            "recommendation": null,
+            "coupon": null,
+            "order": {
+              "items": [
+                {
+                  "product_id": "drink_americano",
+                  "product_name": "아메리카노",
+                  "quantity": 2,
+                  "temperature": null,
+                  "options": null,
+                  "price": 4500
+                },
+                {
+                  "product_id": "drink_cafe_latte",
+                  "product_name": "카페라떼",
+                  "quantity": 1,
+                  "temperature": null,
+                  "options": null,
+                  "price": 5000
+                }
+              ],
+              "order_type": null,
+              "payment_method": null,
+              "total_price": null,
+              "order_id": null,
+              "confirmation_status": "pending",
+              "needs_clarification": true,
+              "question": "아메리카노 두 잔과 카페라떼 한 잔으로 주문하려고 하는데, 각각의 온도(HOT/ICE)와 매장 이용 여부(매장/포장), 결제 방식 중 원하시는 것을 하나의 문장으로 알려주실 수 있을까요?"
+            },
+            "answer": {
+              "answer": "주문을 위해 아메리카노 온도(HOT, ICE), 아메리카노 옵션 추가 여부(없으면 없음), 카페라떼 온도(HOT, ICE), 카페라떼 옵션 추가 여부(없으면 없음), 매장 이용 또는 포장, 결제 방식(카드, 현금, 간편결제)을 알려주세요."
+            }
+          }
+        },
+        {
+          "step": "create_order_draft",
+          "state": {
+            "session_id": "234c4235-6e51-4f91-9d9a-46875fdeb26e",
+            "customer_id": "cust_001",
+            "input": {
+              "text": "둘 다 아이스로 주세요. 포장하고 카드로 결제할게요. 옵션은 둘 다 없어요.",
+              "has_image": false
+            },
+            "intent": {
+              "intent": "product_order",
+              "confidence": null
+            },
+            "history": [
+              {
+                "role": "user",
+                "content": "아메리카노 두 잔과 카페라떼 한 잔 주문할게요."
+              },
+              {
+                "role": "assistant",
+                "content": "주문을 위해 아메리카노 온도(HOT, ICE), 아메리카노 옵션 추가 여부(없으면 없음), 카페라떼 온도(HOT, ICE), 카페라떼 옵션 추가 여부(없으면 없음), 매장 이용 또는 포장, 결제 방식(카드, 현금, 간편결제)을 알려주세요."
+              }
+            ],
+            "search": null,
+            "recommendation": null,
+            "coupon": null,
+            "order": {
+              "items": [
+                {
+                  "product_id": null,
+                  "product_name": "아메리카노",
+                  "quantity": 2.0,
+                  "temperature": "ICE",
+                  "options": [],
+                  "price": null
+                },
+                {
+                  "product_id": null,
+                  "product_name": "카페라떼",
+                  "quantity": 1.0,
+                  "temperature": "ICE",
+                  "options": [],
+                  "price": null
+                }
+              ],
+              "order_type": "포장",
+              "payment_method": "카드",
+              "total_price": null,
+              "order_id": null,
+              "confirmation_status": "pending",
+              "needs_clarification": false,
+              "question": null
+            },
+            "answer": null
+          }
+        },
+        {
+          "step": "match_menu_and_fill_prices",
+          "state": {
+            "session_id": "234c4235-6e51-4f91-9d9a-46875fdeb26e",
+            "customer_id": "cust_001",
+            "input": {
+              "text": "둘 다 아이스로 주세요. 포장하고 카드로 결제할게요. 옵션은 둘 다 없어요.",
+              "has_image": false
+            },
+            "intent": {
+              "intent": "product_order",
+              "confidence": null
+            },
+            "history": [
+              {
+                "role": "user",
+                "content": "아메리카노 두 잔과 카페라떼 한 잔 주문할게요."
+              },
+              {
+                "role": "assistant",
+                "content": "주문을 위해 아메리카노 온도(HOT, ICE), 아메리카노 옵션 추가 여부(없으면 없음), 카페라떼 온도(HOT, ICE), 카페라떼 옵션 추가 여부(없으면 없음), 매장 이용 또는 포장, 결제 방식(카드, 현금, 간편결제)을 알려주세요."
+              }
+            ],
+            "search": null,
+            "recommendation": null,
+            "coupon": null,
+            "order": {
+              "items": [
+                {
+                  "product_id": "drink_americano",
+                  "product_name": "아메리카노",
+                  "quantity": 2.0,
+                  "temperature": "ICE",
+                  "options": [],
+                  "price": 4500
+                },
+                {
+                  "product_id": "drink_cafe_latte",
+                  "product_name": "카페라떼",
+                  "quantity": 1.0,
+                  "temperature": "ICE",
+                  "options": [],
+                  "price": 5000
+                }
+              ],
+              "order_type": "포장",
+              "payment_method": "카드",
+              "total_price": null,
+              "order_id": null,
+              "confirmation_status": "pending",
+              "needs_clarification": false,
+              "question": null
+            },
+            "answer": null
+          }
+        },
+        {
+          "step": "check_order",
+          "state": {
+            "session_id": "234c4235-6e51-4f91-9d9a-46875fdeb26e",
+            "customer_id": "cust_001",
+            "input": {
+              "text": "둘 다 아이스로 주세요. 포장하고 카드로 결제할게요. 옵션은 둘 다 없어요.",
+              "has_image": false
+            },
+            "intent": {
+              "intent": "product_order",
+              "confidence": null
+            },
+            "history": [
+              {
+                "role": "user",
+                "content": "아메리카노 두 잔과 카페라떼 한 잔 주문할게요."
+              },
+              {
+                "role": "assistant",
+                "content": "주문을 위해 아메리카노 온도(HOT, ICE), 아메리카노 옵션 추가 여부(없으면 없음), 카페라떼 온도(HOT, ICE), 카페라떼 옵션 추가 여부(없으면 없음), 매장 이용 또는 포장, 결제 방식(카드, 현금, 간편결제)을 알려주세요."
+              }
+            ],
+            "search": null,
+            "recommendation": null,
+            "coupon": null,
+            "order": {
+              "items": [
+                {
+                  "product_id": "drink_americano",
+                  "product_name": "아메리카노",
+                  "quantity": 2.0,
+                  "temperature": "ICE",
+                  "options": [],
+                  "price": 4500
+                },
+                {
+                  "product_id": "drink_cafe_latte",
+                  "product_name": "카페라떼",
+                  "quantity": 1.0,
+                  "temperature": "ICE",
+                  "options": [],
+                  "price": 5000
+                }
+              ],
+              "order_type": "포장",
+              "payment_method": "카드",
+              "total_price": null,
+              "order_id": null,
+              "confirmation_status": "pending",
+              "needs_clarification": false,
+              "question": null
+            },
+            "answer": {
+              "answer": "아이스 아메리카노 2개 / 옵션: 없음\n아이스 카페라떼 1개 / 옵션: 없음\n이용: 포장 / 결제: 카드\n추가·수정할 내용이 없으면 이대로 주문할까요? yes / no로 답해 주세요."
+            }
+          }
+        },
+        {
+          "step": "response",
+          "state": {
+            "session_id": "234c4235-6e51-4f91-9d9a-46875fdeb26e",
+            "customer_id": "cust_001",
+            "input": {
+              "text": "둘 다 아이스로 주세요. 포장하고 카드로 결제할게요. 옵션은 둘 다 없어요.",
+              "has_image": false
+            },
+            "intent": {
+              "intent": "product_order",
+              "confidence": null
+            },
+            "history": [
+              {
+                "role": "user",
+                "content": "아메리카노 두 잔과 카페라떼 한 잔 주문할게요."
+              },
+              {
+                "role": "assistant",
+                "content": "주문을 위해 아메리카노 온도(HOT, ICE), 아메리카노 옵션 추가 여부(없으면 없음), 카페라떼 온도(HOT, ICE), 카페라떼 옵션 추가 여부(없으면 없음), 매장 이용 또는 포장, 결제 방식(카드, 현금, 간편결제)을 알려주세요."
+              }
+            ],
+            "search": null,
+            "recommendation": null,
+            "coupon": null,
+            "order": {
+              "items": [
+                {
+                  "product_id": "drink_americano",
+                  "product_name": "아메리카노",
+                  "quantity": 2.0,
+                  "temperature": "ICE",
+                  "options": [],
+                  "price": 4500
+                },
+                {
+                  "product_id": "drink_cafe_latte",
+                  "product_name": "카페라떼",
+                  "quantity": 1.0,
+                  "temperature": "ICE",
+                  "options": [],
+                  "price": 5000
+                }
+              ],
+              "order_type": "포장",
+              "payment_method": "카드",
+              "total_price": null,
+              "order_id": null,
+              "confirmation_status": "pending",
+              "needs_clarification": false,
+              "question": null
+            },
+            "answer": {
+              "answer": "아이스 아메리카노 2개 / 옵션: 없음\n아이스 카페라떼 1개 / 옵션: 없음\n이용: 포장 / 결제: 카드\n추가·수정할 내용이 없으면 이대로 주문할까요? yes / no로 답해 주세요."
+            }
+          }
+        }
+      ],
+      "elapsed_ms": 12118.18
+    },
+    {
+      "steps": [
+        {
+          "step": "input",
+          "state": {
+            "session_id": "234c4235-6e51-4f91-9d9a-46875fdeb26e",
+            "customer_id": "cust_001",
+            "input": {
+              "text": "망고 치즈버거 한 개 주문할게요.",
+              "has_image": false
+            },
+            "intent": {
+              "intent": "product_order",
+              "confidence": null
+            },
+            "history": [
+              {
+                "role": "user",
+                "content": "아메리카노 두 잔과 카페라떼 한 잔 주문할게요."
+              },
+              {
+                "role": "assistant",
+                "content": "주문을 위해 아메리카노 온도(HOT, ICE), 아메리카노 옵션 추가 여부(없으면 없음), 카페라떼 온도(HOT, ICE), 카페라떼 옵션 추가 여부(없으면 없음), 매장 이용 또는 포장, 결제 방식(카드, 현금, 간편결제)을 알려주세요."
+              },
+              {
+                "role": "user",
+                "content": "둘 다 아이스로 주세요. 포장하고 카드로 결제할게요. 옵션은 둘 다 없어요."
+              },
+              {
+                "role": "assistant",
+                "content": "아이스 아메리카노 2개 / 옵션: 없음\n아이스 카페라떼 1개 / 옵션: 없음\n이용: 포장 / 결제: 카드\n추가·수정할 내용이 없으면 이대로 주문할까요? yes / no로 답해 주세요."
+              }
+            ],
+            "search": null,
+            "recommendation": null,
+            "coupon": null,
+            "order": {
+              "items": [
+                {
+                  "product_id": "drink_americano",
+                  "product_name": "아메리카노",
+                  "quantity": 2,
+                  "temperature": "ICE",
+                  "options": [],
+                  "price": 4500
+                },
+                {
+                  "product_id": "drink_cafe_latte",
+                  "product_name": "카페라떼",
+                  "quantity": 1,
+                  "temperature": "ICE",
+                  "options": [],
+                  "price": 5000
+                }
+              ],
+              "order_type": "포장",
+              "payment_method": "카드",
+              "total_price": null,
+              "order_id": null,
+              "confirmation_status": "pending",
+              "needs_clarification": false,
+              "question": null
+            },
+            "answer": {
+              "answer": "아이스 아메리카노 2개 / 옵션: 없음\n아이스 카페라떼 1개 / 옵션: 없음\n이용: 포장 / 결제: 카드\n추가·수정할 내용이 없으면 이대로 주문할까요? yes / no로 답해 주세요."
+            }
+          }
+        },
+        {
+          "step": "create_order_draft",
+          "state": {
+            "session_id": "234c4235-6e51-4f91-9d9a-46875fdeb26e",
+            "customer_id": "cust_001",
+            "input": {
+              "text": "망고 치즈버거 한 개 주문할게요.",
+              "has_image": false
+            },
+            "intent": {
+              "intent": "product_order",
+              "confidence": null
+            },
+            "history": [
+              {
+                "role": "user",
+                "content": "아메리카노 두 잔과 카페라떼 한 잔 주문할게요."
+              },
+              {
+                "role": "assistant",
+                "content": "주문을 위해 아메리카노 온도(HOT, ICE), 아메리카노 옵션 추가 여부(없으면 없음), 카페라떼 온도(HOT, ICE), 카페라떼 옵션 추가 여부(없으면 없음), 매장 이용 또는 포장, 결제 방식(카드, 현금, 간편결제)을 알려주세요."
+              },
+              {
+                "role": "user",
+                "content": "둘 다 아이스로 주세요. 포장하고 카드로 결제할게요. 옵션은 둘 다 없어요."
+              },
+              {
+                "role": "assistant",
+                "content": "아이스 아메리카노 2개 / 옵션: 없음\n아이스 카페라떼 1개 / 옵션: 없음\n이용: 포장 / 결제: 카드\n추가·수정할 내용이 없으면 이대로 주문할까요? yes / no로 답해 주세요."
+              }
+            ],
+            "search": null,
+            "recommendation": null,
+            "coupon": null,
+            "order": {
+              "items": [
+                {
+                  "product_id": null,
+                  "product_name": "아메리카노",
+                  "quantity": 2.0,
+                  "temperature": "ICE",
+                  "options": [],
+                  "price": null
+                },
+                {
+                  "product_id": null,
+                  "product_name": "카페라떼",
+                  "quantity": 1.0,
+                  "temperature": "ICE",
+                  "options": [],
+                  "price": null
+                },
+                {
+                  "product_id": null,
+                  "product_name": null,
+                  "quantity": 1.0,
+                  "temperature": null,
+                  "options": null,
+                  "price": null
+                }
+              ],
+              "order_type": "포장",
+              "payment_method": "카드",
+              "total_price": null,
+              "order_id": null,
+              "confirmation_status": "pending",
+              "needs_clarification": true,
+              "question": "망고 치즈버거는 메뉴에 없어요. 대체할 품목으로 주문해 드릴까요?"
+            },
+            "answer": null
+          }
+        },
+        {
+          "step": "match_menu_and_fill_prices",
+          "state": {
+            "session_id": "234c4235-6e51-4f91-9d9a-46875fdeb26e",
+            "customer_id": "cust_001",
+            "input": {
+              "text": "망고 치즈버거 한 개 주문할게요.",
+              "has_image": false
+            },
+            "intent": {
+              "intent": "product_order",
+              "confidence": null
+            },
+            "history": [
+              {
+                "role": "user",
+                "content": "아메리카노 두 잔과 카페라떼 한 잔 주문할게요."
+              },
+              {
+                "role": "assistant",
+                "content": "주문을 위해 아메리카노 온도(HOT, ICE), 아메리카노 옵션 추가 여부(없으면 없음), 카페라떼 온도(HOT, ICE), 카페라떼 옵션 추가 여부(없으면 없음), 매장 이용 또는 포장, 결제 방식(카드, 현금, 간편결제)을 알려주세요."
+              },
+              {
+                "role": "user",
+                "content": "둘 다 아이스로 주세요. 포장하고 카드로 결제할게요. 옵션은 둘 다 없어요."
+              },
+              {
+                "role": "assistant",
+                "content": "아이스 아메리카노 2개 / 옵션: 없음\n아이스 카페라떼 1개 / 옵션: 없음\n이용: 포장 / 결제: 카드\n추가·수정할 내용이 없으면 이대로 주문할까요? yes / no로 답해 주세요."
+              }
+            ],
+            "search": null,
+            "recommendation": null,
+            "coupon": null,
+            "order": {
+              "items": [
+                {
+                  "product_id": "drink_americano",
+                  "product_name": "아메리카노",
+                  "quantity": 2.0,
+                  "temperature": "ICE",
+                  "options": [],
+                  "price": 4500
+                },
+                {
+                  "product_id": "drink_cafe_latte",
+                  "product_name": "카페라떼",
+                  "quantity": 1.0,
+                  "temperature": "ICE",
+                  "options": [],
+                  "price": 5000
+                },
+                {
+                  "product_id": null,
+                  "product_name": null,
+                  "quantity": 1.0,
+                  "temperature": null,
+                  "options": null,
+                  "price": null
+                }
+              ],
+              "order_type": "포장",
+              "payment_method": "카드",
+              "total_price": null,
+              "order_id": null,
+              "confirmation_status": "pending",
+              "needs_clarification": true,
+              "question": "요청하신 상품은 메뉴에서 찾을 수 없습니다. 주문할 메뉴를 다시 알려주세요."
+            },
+            "answer": null
+          }
+        },
+        {
+          "step": "check_order",
+          "state": {
+            "session_id": "234c4235-6e51-4f91-9d9a-46875fdeb26e",
+            "customer_id": "cust_001",
+            "input": {
+              "text": "망고 치즈버거 한 개 주문할게요.",
+              "has_image": false
+            },
+            "intent": {
+              "intent": "product_order",
+              "confidence": null
+            },
+            "history": [
+              {
+                "role": "user",
+                "content": "아메리카노 두 잔과 카페라떼 한 잔 주문할게요."
+              },
+              {
+                "role": "assistant",
+                "content": "주문을 위해 아메리카노 온도(HOT, ICE), 아메리카노 옵션 추가 여부(없으면 없음), 카페라떼 온도(HOT, ICE), 카페라떼 옵션 추가 여부(없으면 없음), 매장 이용 또는 포장, 결제 방식(카드, 현금, 간편결제)을 알려주세요."
+              },
+              {
+                "role": "user",
+                "content": "둘 다 아이스로 주세요. 포장하고 카드로 결제할게요. 옵션은 둘 다 없어요."
+              },
+              {
+                "role": "assistant",
+                "content": "아이스 아메리카노 2개 / 옵션: 없음\n아이스 카페라떼 1개 / 옵션: 없음\n이용: 포장 / 결제: 카드\n추가·수정할 내용이 없으면 이대로 주문할까요? yes / no로 답해 주세요."
+              }
+            ],
+            "search": null,
+            "recommendation": null,
+            "coupon": null,
+            "order": {
+              "items": [
+                {
+                  "product_id": "drink_americano",
+                  "product_name": "아메리카노",
+                  "quantity": 2.0,
+                  "temperature": "ICE",
+                  "options": [],
+                  "price": 4500
+                },
+                {
+                  "product_id": "drink_cafe_latte",
+                  "product_name": "카페라떼",
+                  "quantity": 1.0,
+                  "temperature": "ICE",
+                  "options": [],
+                  "price": 5000
+                },
+                {
+                  "product_id": null,
+                  "product_name": null,
+                  "quantity": 1.0,
+                  "temperature": null,
+                  "options": null,
+                  "price": null
+                }
+              ],
+              "order_type": "포장",
+              "payment_method": "카드",
+              "total_price": null,
+              "order_id": null,
+              "confirmation_status": "pending",
+              "needs_clarification": true,
+              "question": "요청하신 상품은 메뉴에서 찾을 수 없습니다. 주문할 메뉴를 다시 알려주세요."
+            },
+            "answer": {
+              "answer": "요청하신 상품은 메뉴에서 찾을 수 없습니다. 주문할 메뉴를 다시 알려주세요."
+            }
+          }
+        },
+        {
+          "step": "response",
+          "state": {
+            "session_id": "234c4235-6e51-4f91-9d9a-46875fdeb26e",
+            "customer_id": "cust_001",
+            "input": {
+              "text": "망고 치즈버거 한 개 주문할게요.",
+              "has_image": false
+            },
+            "intent": {
+              "intent": "product_order",
+              "confidence": null
+            },
+            "history": [
+              {
+                "role": "user",
+                "content": "아메리카노 두 잔과 카페라떼 한 잔 주문할게요."
+              },
+              {
+                "role": "assistant",
+                "content": "주문을 위해 아메리카노 온도(HOT, ICE), 아메리카노 옵션 추가 여부(없으면 없음), 카페라떼 온도(HOT, ICE), 카페라떼 옵션 추가 여부(없으면 없음), 매장 이용 또는 포장, 결제 방식(카드, 현금, 간편결제)을 알려주세요."
+              },
+              {
+                "role": "user",
+                "content": "둘 다 아이스로 주세요. 포장하고 카드로 결제할게요. 옵션은 둘 다 없어요."
+              },
+              {
+                "role": "assistant",
+                "content": "아이스 아메리카노 2개 / 옵션: 없음\n아이스 카페라떼 1개 / 옵션: 없음\n이용: 포장 / 결제: 카드\n추가·수정할 내용이 없으면 이대로 주문할까요? yes / no로 답해 주세요."
+              }
+            ],
+            "search": null,
+            "recommendation": null,
+            "coupon": null,
+            "order": {
+              "items": [
+                {
+                  "product_id": "drink_americano",
+                  "product_name": "아메리카노",
+                  "quantity": 2.0,
+                  "temperature": "ICE",
+                  "options": [],
+                  "price": 4500
+                },
+                {
+                  "product_id": "drink_cafe_latte",
+                  "product_name": "카페라떼",
+                  "quantity": 1.0,
+                  "temperature": "ICE",
+                  "options": [],
+                  "price": 5000
+                },
+                {
+                  "product_id": null,
+                  "product_name": null,
+                  "quantity": 1.0,
+                  "temperature": null,
+                  "options": null,
+                  "price": null
+                }
+              ],
+              "order_type": "포장",
+              "payment_method": "카드",
+              "total_price": null,
+              "order_id": null,
+              "confirmation_status": "pending",
+              "needs_clarification": true,
+              "question": "요청하신 상품은 메뉴에서 찾을 수 없습니다. 주문할 메뉴를 다시 알려주세요."
+            },
+            "answer": {
+              "answer": "요청하신 상품은 메뉴에서 찾을 수 없습니다. 주문할 메뉴를 다시 알려주세요."
+            }
+          }
+        }
+      ],
+      "elapsed_ms": 22128.19
+    },
+    {
+      "steps": [
+        {
+          "step": "input",
+          "state": {
+            "session_id": "234c4235-6e51-4f91-9d9a-46875fdeb26e",
+            "customer_id": "cust_001",
+            "input": {
+              "text": "아이스 아메리카노 한 잔과 아이스 카페라떼 한 잔, 포장할게요. 카드로 결제하고 옵션은 둘 다 없어요.",
+              "has_image": false
+            },
+            "intent": {
+              "intent": "product_order",
+              "confidence": null
+            },
+            "history": [
+              {
+                "role": "user",
+                "content": "아메리카노 두 잔과 카페라떼 한 잔 주문할게요."
+              },
+              {
+                "role": "assistant",
+                "content": "주문을 위해 아메리카노 온도(HOT, ICE), 아메리카노 옵션 추가 여부(없으면 없음), 카페라떼 온도(HOT, ICE), 카페라떼 옵션 추가 여부(없으면 없음), 매장 이용 또는 포장, 결제 방식(카드, 현금, 간편결제)을 알려주세요."
+              },
+              {
+                "role": "user",
+                "content": "둘 다 아이스로 주세요. 포장하고 카드로 결제할게요. 옵션은 둘 다 없어요."
+              },
+              {
+                "role": "assistant",
+                "content": "아이스 아메리카노 2개 / 옵션: 없음\n아이스 카페라떼 1개 / 옵션: 없음\n이용: 포장 / 결제: 카드\n추가·수정할 내용이 없으면 이대로 주문할까요? yes / no로 답해 주세요."
+              },
+              {
+                "role": "user",
+                "content": "망고 치즈버거 한 개 주문할게요."
+              },
+              {
+                "role": "assistant",
+                "content": "요청하신 상품은 메뉴에서 찾을 수 없습니다. 주문할 메뉴를 다시 알려주세요."
+              }
+            ],
+            "search": null,
+            "recommendation": null,
+            "coupon": null,
+            "order": {
+              "items": [
+                {
+                  "product_id": "drink_americano",
+                  "product_name": "아메리카노",
+                  "quantity": 2,
+                  "temperature": "ICE",
+                  "options": [],
+                  "price": 4500
+                },
+                {
+                  "product_id": "drink_cafe_latte",
+                  "product_name": "카페라떼",
+                  "quantity": 1,
+                  "temperature": "ICE",
+                  "options": [],
+                  "price": 5000
+                },
+                {
+                  "product_id": null,
+                  "product_name": null,
+                  "quantity": 1,
+                  "temperature": null,
+                  "options": null,
+                  "price": null
+                }
+              ],
+              "order_type": "포장",
+              "payment_method": "카드",
+              "total_price": null,
+              "order_id": null,
+              "confirmation_status": "pending",
+              "needs_clarification": true,
+              "question": "요청하신 상품은 메뉴에서 찾을 수 없습니다. 주문할 메뉴를 다시 알려주세요."
+            },
+            "answer": {
+              "answer": "요청하신 상품은 메뉴에서 찾을 수 없습니다. 주문할 메뉴를 다시 알려주세요."
+            }
+          }
+        },
+        {
+          "step": "create_order_draft",
+          "state": {
+            "session_id": "234c4235-6e51-4f91-9d9a-46875fdeb26e",
+            "customer_id": "cust_001",
+            "input": {
+              "text": "아이스 아메리카노 한 잔과 아이스 카페라떼 한 잔, 포장할게요. 카드로 결제하고 옵션은 둘 다 없어요.",
+              "has_image": false
+            },
+            "intent": {
+              "intent": "product_order",
+              "confidence": null
+            },
+            "history": [
+              {
+                "role": "user",
+                "content": "아메리카노 두 잔과 카페라떼 한 잔 주문할게요."
+              },
+              {
+                "role": "assistant",
+                "content": "주문을 위해 아메리카노 온도(HOT, ICE), 아메리카노 옵션 추가 여부(없으면 없음), 카페라떼 온도(HOT, ICE), 카페라떼 옵션 추가 여부(없으면 없음), 매장 이용 또는 포장, 결제 방식(카드, 현금, 간편결제)을 알려주세요."
+              },
+              {
+                "role": "user",
+                "content": "둘 다 아이스로 주세요. 포장하고 카드로 결제할게요. 옵션은 둘 다 없어요."
+              },
+              {
+                "role": "assistant",
+                "content": "아이스 아메리카노 2개 / 옵션: 없음\n아이스 카페라떼 1개 / 옵션: 없음\n이용: 포장 / 결제: 카드\n추가·수정할 내용이 없으면 이대로 주문할까요? yes / no로 답해 주세요."
+              },
+              {
+                "role": "user",
+                "content": "망고 치즈버거 한 개 주문할게요."
+              },
+              {
+                "role": "assistant",
+                "content": "요청하신 상품은 메뉴에서 찾을 수 없습니다. 주문할 메뉴를 다시 알려주세요."
+              }
+            ],
+            "search": null,
+            "recommendation": null,
+            "coupon": null,
+            "order": {
+              "items": [
+                {
+                  "product_id": null,
+                  "product_name": "아메리카노",
+                  "quantity": 2.0,
+                  "temperature": "ICE",
+                  "options": [],
+                  "price": null
+                },
+                {
+                  "product_id": null,
+                  "product_name": "카페라떼",
+                  "quantity": 1.0,
+                  "temperature": "ICE",
+                  "options": [],
+                  "price": null
+                },
+                {
+                  "product_id": null,
+                  "product_name": null,
+                  "quantity": 1.0,
+                  "temperature": null,
+                  "options": null,
+                  "price": null
+                }
+              ],
+              "order_type": "포장",
+              "payment_method": "카드",
+              "total_price": null,
+              "order_id": null,
+              "confirmation_status": "pending",
+              "needs_clarification": true,
+              "question": "메뉴에 망고 치즈버거가 없습니다. 주문 가능한 메뉴를 다시 알려주실 수 있을까요?"
+            },
+            "answer": null
+          }
+        },
+        {
+          "step": "match_menu_and_fill_prices",
+          "state": {
+            "session_id": "234c4235-6e51-4f91-9d9a-46875fdeb26e",
+            "customer_id": "cust_001",
+            "input": {
+              "text": "아이스 아메리카노 한 잔과 아이스 카페라떼 한 잔, 포장할게요. 카드로 결제하고 옵션은 둘 다 없어요.",
+              "has_image": false
+            },
+            "intent": {
+              "intent": "product_order",
+              "confidence": null
+            },
+            "history": [
+              {
+                "role": "user",
+                "content": "아메리카노 두 잔과 카페라떼 한 잔 주문할게요."
+              },
+              {
+                "role": "assistant",
+                "content": "주문을 위해 아메리카노 온도(HOT, ICE), 아메리카노 옵션 추가 여부(없으면 없음), 카페라떼 온도(HOT, ICE), 카페라떼 옵션 추가 여부(없으면 없음), 매장 이용 또는 포장, 결제 방식(카드, 현금, 간편결제)을 알려주세요."
+              },
+              {
+                "role": "user",
+                "content": "둘 다 아이스로 주세요. 포장하고 카드로 결제할게요. 옵션은 둘 다 없어요."
+              },
+              {
+                "role": "assistant",
+                "content": "아이스 아메리카노 2개 / 옵션: 없음\n아이스 카페라떼 1개 / 옵션: 없음\n이용: 포장 / 결제: 카드\n추가·수정할 내용이 없으면 이대로 주문할까요? yes / no로 답해 주세요."
+              },
+              {
+                "role": "user",
+                "content": "망고 치즈버거 한 개 주문할게요."
+              },
+              {
+                "role": "assistant",
+                "content": "요청하신 상품은 메뉴에서 찾을 수 없습니다. 주문할 메뉴를 다시 알려주세요."
+              }
+            ],
+            "search": null,
+            "recommendation": null,
+            "coupon": null,
+            "order": {
+              "items": [
+                {
+                  "product_id": "drink_americano",
+                  "product_name": "아메리카노",
+                  "quantity": 2.0,
+                  "temperature": "ICE",
+                  "options": [],
+                  "price": 4500
+                },
+                {
+                  "product_id": "drink_cafe_latte",
+                  "product_name": "카페라떼",
+                  "quantity": 1.0,
+                  "temperature": "ICE",
+                  "options": [],
+                  "price": 5000
+                },
+                {
+                  "product_id": null,
+                  "product_name": null,
+                  "quantity": 1.0,
+                  "temperature": null,
+                  "options": null,
+                  "price": null
+                }
+              ],
+              "order_type": "포장",
+              "payment_method": "카드",
+              "total_price": null,
+              "order_id": null,
+              "confirmation_status": "pending",
+              "needs_clarification": true,
+              "question": "요청하신 상품은 메뉴에서 찾을 수 없습니다. 주문할 메뉴를 다시 알려주세요."
+            },
+            "answer": null
+          }
+        },
+        {
+          "step": "check_order",
+          "state": {
+            "session_id": "234c4235-6e51-4f91-9d9a-46875fdeb26e",
+            "customer_id": "cust_001",
+            "input": {
+              "text": "아이스 아메리카노 한 잔과 아이스 카페라떼 한 잔, 포장할게요. 카드로 결제하고 옵션은 둘 다 없어요.",
+              "has_image": false
+            },
+            "intent": {
+              "intent": "product_order",
+              "confidence": null
+            },
+            "history": [
+              {
+                "role": "user",
+                "content": "아메리카노 두 잔과 카페라떼 한 잔 주문할게요."
+              },
+              {
+                "role": "assistant",
+                "content": "주문을 위해 아메리카노 온도(HOT, ICE), 아메리카노 옵션 추가 여부(없으면 없음), 카페라떼 온도(HOT, ICE), 카페라떼 옵션 추가 여부(없으면 없음), 매장 이용 또는 포장, 결제 방식(카드, 현금, 간편결제)을 알려주세요."
+              },
+              {
+                "role": "user",
+                "content": "둘 다 아이스로 주세요. 포장하고 카드로 결제할게요. 옵션은 둘 다 없어요."
+              },
+              {
+                "role": "assistant",
+                "content": "아이스 아메리카노 2개 / 옵션: 없음\n아이스 카페라떼 1개 / 옵션: 없음\n이용: 포장 / 결제: 카드\n추가·수정할 내용이 없으면 이대로 주문할까요? yes / no로 답해 주세요."
+              },
+              {
+                "role": "user",
+                "content": "망고 치즈버거 한 개 주문할게요."
+              },
+              {
+                "role": "assistant",
+                "content": "요청하신 상품은 메뉴에서 찾을 수 없습니다. 주문할 메뉴를 다시 알려주세요."
+              }
+            ],
+            "search": null,
+            "recommendation": null,
+            "coupon": null,
+            "order": {
+              "items": [
+                {
+                  "product_id": "drink_americano",
+                  "product_name": "아메리카노",
+                  "quantity": 2.0,
+                  "temperature": "ICE",
+                  "options": [],
+                  "price": 4500
+                },
+                {
+                  "product_id": "drink_cafe_latte",
+                  "product_name": "카페라떼",
+                  "quantity": 1.0,
+                  "temperature": "ICE",
+                  "options": [],
+                  "price": 5000
+                },
+                {
+                  "product_id": null,
+                  "product_name": null,
+                  "quantity": 1.0,
+                  "temperature": null,
+                  "options": null,
+                  "price": null
+                }
+              ],
+              "order_type": "포장",
+              "payment_method": "카드",
+              "total_price": null,
+              "order_id": null,
+              "confirmation_status": "pending",
+              "needs_clarification": true,
+              "question": "요청하신 상품은 메뉴에서 찾을 수 없습니다. 주문할 메뉴를 다시 알려주세요."
+            },
+            "answer": {
+              "answer": "요청하신 상품은 메뉴에서 찾을 수 없습니다. 주문할 메뉴를 다시 알려주세요."
+            }
+          }
+        },
+        {
+          "step": "response",
+          "state": {
+            "session_id": "234c4235-6e51-4f91-9d9a-46875fdeb26e",
+            "customer_id": "cust_001",
+            "input": {
+              "text": "아이스 아메리카노 한 잔과 아이스 카페라떼 한 잔, 포장할게요. 카드로 결제하고 옵션은 둘 다 없어요.",
+              "has_image": false
+            },
+            "intent": {
+              "intent": "product_order",
+              "confidence": null
+            },
+            "history": [
+              {
+                "role": "user",
+                "content": "아메리카노 두 잔과 카페라떼 한 잔 주문할게요."
+              },
+              {
+                "role": "assistant",
+                "content": "주문을 위해 아메리카노 온도(HOT, ICE), 아메리카노 옵션 추가 여부(없으면 없음), 카페라떼 온도(HOT, ICE), 카페라떼 옵션 추가 여부(없으면 없음), 매장 이용 또는 포장, 결제 방식(카드, 현금, 간편결제)을 알려주세요."
+              },
+              {
+                "role": "user",
+                "content": "둘 다 아이스로 주세요. 포장하고 카드로 결제할게요. 옵션은 둘 다 없어요."
+              },
+              {
+                "role": "assistant",
+                "content": "아이스 아메리카노 2개 / 옵션: 없음\n아이스 카페라떼 1개 / 옵션: 없음\n이용: 포장 / 결제: 카드\n추가·수정할 내용이 없으면 이대로 주문할까요? yes / no로 답해 주세요."
+              },
+              {
+                "role": "user",
+                "content": "망고 치즈버거 한 개 주문할게요."
+              },
+              {
+                "role": "assistant",
+                "content": "요청하신 상품은 메뉴에서 찾을 수 없습니다. 주문할 메뉴를 다시 알려주세요."
+              }
+            ],
+            "search": null,
+            "recommendation": null,
+            "coupon": null,
+            "order": {
+              "items": [
+                {
+                  "product_id": "drink_americano",
+                  "product_name": "아메리카노",
+                  "quantity": 2.0,
+                  "temperature": "ICE",
+                  "options": [],
+                  "price": 4500
+                },
+                {
+                  "product_id": "drink_cafe_latte",
+                  "product_name": "카페라떼",
+                  "quantity": 1.0,
+                  "temperature": "ICE",
+                  "options": [],
+                  "price": 5000
+                },
+                {
+                  "product_id": null,
+                  "product_name": null,
+                  "quantity": 1.0,
+                  "temperature": null,
+                  "options": null,
+                  "price": null
+                }
+              ],
+              "order_type": "포장",
+              "payment_method": "카드",
+              "total_price": null,
+              "order_id": null,
+              "confirmation_status": "pending",
+              "needs_clarification": true,
+              "question": "요청하신 상품은 메뉴에서 찾을 수 없습니다. 주문할 메뉴를 다시 알려주세요."
+            },
+            "answer": {
+              "answer": "요청하신 상품은 메뉴에서 찾을 수 없습니다. 주문할 메뉴를 다시 알려주세요."
+            }
+          }
+        }
+      ],
+      "elapsed_ms": 27241.5
+    },
+    {
+      "steps": [
+        {
+          "step": "input",
+          "state": {
+            "session_id": "234c4235-6e51-4f91-9d9a-46875fdeb26e",
+            "customer_id": "cust_001",
+            "input": {
+              "text": "아이스 아메리카노 한 잔과 아이스 카페라떼 한 잔, 포장할게요. 카드로 결제하고 옵션은 둘 다 없어요.",
+              "has_image": false
+            },
+            "intent": {
+              "intent": "product_order",
+              "confidence": null
+            },
+            "history": [
+              {
+                "role": "user",
+                "content": "아메리카노 두 잔과 카페라떼 한 잔 주문할게요."
+              },
+              {
+                "role": "assistant",
+                "content": "주문을 위해 아메리카노 온도(HOT, ICE), 아메리카노 옵션 추가 여부(없으면 없음), 카페라떼 온도(HOT, ICE), 카페라떼 옵션 추가 여부(없으면 없음), 매장 이용 또는 포장, 결제 방식(카드, 현금, 간편결제)을 알려주세요."
+              },
+              {
+                "role": "user",
+                "content": "둘 다 아이스로 주세요. 포장하고 카드로 결제할게요. 옵션은 둘 다 없어요."
+              },
+              {
+                "role": "assistant",
+                "content": "아이스 아메리카노 2개 / 옵션: 없음\n아이스 카페라떼 1개 / 옵션: 없음\n이용: 포장 / 결제: 카드\n추가·수정할 내용이 없으면 이대로 주문할까요? yes / no로 답해 주세요."
+              },
+              {
+                "role": "user",
+                "content": "망고 치즈버거 한 개 주문할게요."
+              },
+              {
+                "role": "assistant",
+                "content": "요청하신 상품은 메뉴에서 찾을 수 없습니다. 주문할 메뉴를 다시 알려주세요."
+              },
+              {
+                "role": "user",
+                "content": "아이스 아메리카노 한 잔과 아이스 카페라떼 한 잔, 포장할게요. 카드로 결제하고 옵션은 둘 다 없어요."
+              },
+              {
+                "role": "assistant",
+                "content": "요청하신 상품은 메뉴에서 찾을 수 없습니다. 주문할 메뉴를 다시 알려주세요."
+              }
+            ],
+            "search": null,
+            "recommendation": null,
+            "coupon": null,
+            "order": {
+              "items": [
+                {
+                  "product_id": "drink_americano",
+                  "product_name": "아메리카노",
+                  "quantity": 2,
+                  "temperature": "ICE",
+                  "options": [],
+                  "price": 4500
+                },
+                {
+                  "product_id": "drink_cafe_latte",
+                  "product_name": "카페라떼",
+                  "quantity": 1,
+                  "temperature": "ICE",
+                  "options": [],
+                  "price": 5000
+                },
+                {
+                  "product_id": null,
+                  "product_name": null,
+                  "quantity": 1,
+                  "temperature": null,
+                  "options": null,
+                  "price": null
+                }
+              ],
+              "order_type": "포장",
+              "payment_method": "카드",
+              "total_price": null,
+              "order_id": null,
+              "confirmation_status": "pending",
+              "needs_clarification": true,
+              "question": "요청하신 상품은 메뉴에서 찾을 수 없습니다. 주문할 메뉴를 다시 알려주세요."
+            },
+            "answer": {
+              "answer": "요청하신 상품은 메뉴에서 찾을 수 없습니다. 주문할 메뉴를 다시 알려주세요."
+            }
+          }
+        },
+        {
+          "step": "create_order_draft",
+          "state": {
+            "session_id": "234c4235-6e51-4f91-9d9a-46875fdeb26e",
+            "customer_id": "cust_001",
+            "input": {
+              "text": "아이스 아메리카노 한 잔과 아이스 카페라떼 한 잔, 포장할게요. 카드로 결제하고 옵션은 둘 다 없어요.",
+              "has_image": false
+            },
+            "intent": {
+              "intent": "product_order",
+              "confidence": null
+            },
+            "history": [
+              {
+                "role": "user",
+                "content": "아메리카노 두 잔과 카페라떼 한 잔 주문할게요."
+              },
+              {
+                "role": "assistant",
+                "content": "주문을 위해 아메리카노 온도(HOT, ICE), 아메리카노 옵션 추가 여부(없으면 없음), 카페라떼 온도(HOT, ICE), 카페라떼 옵션 추가 여부(없으면 없음), 매장 이용 또는 포장, 결제 방식(카드, 현금, 간편결제)을 알려주세요."
+              },
+              {
+                "role": "user",
+                "content": "둘 다 아이스로 주세요. 포장하고 카드로 결제할게요. 옵션은 둘 다 없어요."
+              },
+              {
+                "role": "assistant",
+                "content": "아이스 아메리카노 2개 / 옵션: 없음\n아이스 카페라떼 1개 / 옵션: 없음\n이용: 포장 / 결제: 카드\n추가·수정할 내용이 없으면 이대로 주문할까요? yes / no로 답해 주세요."
+              },
+              {
+                "role": "user",
+                "content": "망고 치즈버거 한 개 주문할게요."
+              },
+              {
+                "role": "assistant",
+                "content": "요청하신 상품은 메뉴에서 찾을 수 없습니다. 주문할 메뉴를 다시 알려주세요."
+              },
+              {
+                "role": "user",
+                "content": "아이스 아메리카노 한 잔과 아이스 카페라떼 한 잔, 포장할게요. 카드로 결제하고 옵션은 둘 다 없어요."
+              },
+              {
+                "role": "assistant",
+                "content": "요청하신 상품은 메뉴에서 찾을 수 없습니다. 주문할 메뉴를 다시 알려주세요."
+              }
+            ],
+            "search": null,
+            "recommendation": null,
+            "coupon": null,
+            "order": {
+              "items": [
+                {
+                  "product_id": null,
+                  "product_name": "아메리카노",
+                  "quantity": 2.0,
+                  "temperature": "ICE",
+                  "options": [],
+                  "price": null
+                },
+                {
+                  "product_id": null,
+                  "product_name": "카페라떼",
+                  "quantity": 1.0,
+                  "temperature": "ICE",
+                  "options": [],
+                  "price": null
+                },
+                {
+                  "product_id": null,
+                  "product_name": null,
+                  "quantity": 1.0,
+                  "temperature": null,
+                  "options": null,
+                  "price": null
+                }
+              ],
+              "order_type": "포장",
+              "payment_method": "카드",
+              "total_price": null,
+              "order_id": null,
+              "confirmation_status": "pending",
+              "needs_clarification": true,
+              "question": "메뉴에 없는 항목이 포함되어 있습니다. 제거하시거나 대체 메뉴를 알려주시겠어요?"
+            },
+            "answer": null
+          }
+        },
+        {
+          "step": "match_menu_and_fill_prices",
+          "state": {
+            "session_id": "234c4235-6e51-4f91-9d9a-46875fdeb26e",
+            "customer_id": "cust_001",
+            "input": {
+              "text": "아이스 아메리카노 한 잔과 아이스 카페라떼 한 잔, 포장할게요. 카드로 결제하고 옵션은 둘 다 없어요.",
+              "has_image": false
+            },
+            "intent": {
+              "intent": "product_order",
+              "confidence": null
+            },
+            "history": [
+              {
+                "role": "user",
+                "content": "아메리카노 두 잔과 카페라떼 한 잔 주문할게요."
+              },
+              {
+                "role": "assistant",
+                "content": "주문을 위해 아메리카노 온도(HOT, ICE), 아메리카노 옵션 추가 여부(없으면 없음), 카페라떼 온도(HOT, ICE), 카페라떼 옵션 추가 여부(없으면 없음), 매장 이용 또는 포장, 결제 방식(카드, 현금, 간편결제)을 알려주세요."
+              },
+              {
+                "role": "user",
+                "content": "둘 다 아이스로 주세요. 포장하고 카드로 결제할게요. 옵션은 둘 다 없어요."
+              },
+              {
+                "role": "assistant",
+                "content": "아이스 아메리카노 2개 / 옵션: 없음\n아이스 카페라떼 1개 / 옵션: 없음\n이용: 포장 / 결제: 카드\n추가·수정할 내용이 없으면 이대로 주문할까요? yes / no로 답해 주세요."
+              },
+              {
+                "role": "user",
+                "content": "망고 치즈버거 한 개 주문할게요."
+              },
+              {
+                "role": "assistant",
+                "content": "요청하신 상품은 메뉴에서 찾을 수 없습니다. 주문할 메뉴를 다시 알려주세요."
+              },
+              {
+                "role": "user",
+                "content": "아이스 아메리카노 한 잔과 아이스 카페라떼 한 잔, 포장할게요. 카드로 결제하고 옵션은 둘 다 없어요."
+              },
+              {
+                "role": "assistant",
+                "content": "요청하신 상품은 메뉴에서 찾을 수 없습니다. 주문할 메뉴를 다시 알려주세요."
+              }
+            ],
+            "search": null,
+            "recommendation": null,
+            "coupon": null,
+            "order": {
+              "items": [
+                {
+                  "product_id": "drink_americano",
+                  "product_name": "아메리카노",
+                  "quantity": 2.0,
+                  "temperature": "ICE",
+                  "options": [],
+                  "price": 4500
+                },
+                {
+                  "product_id": "drink_cafe_latte",
+                  "product_name": "카페라떼",
+                  "quantity": 1.0,
+                  "temperature": "ICE",
+                  "options": [],
+                  "price": 5000
+                },
+                {
+                  "product_id": null,
+                  "product_name": null,
+                  "quantity": 1.0,
+                  "temperature": null,
+                  "options": null,
+                  "price": null
+                }
+              ],
+              "order_type": "포장",
+              "payment_method": "카드",
+              "total_price": null,
+              "order_id": null,
+              "confirmation_status": "pending",
+              "needs_clarification": true,
+              "question": "요청하신 상품은 메뉴에서 찾을 수 없습니다. 주문할 메뉴를 다시 알려주세요."
+            },
+            "answer": null
+          }
+        },
+        {
+          "step": "check_order",
+          "state": {
+            "session_id": "234c4235-6e51-4f91-9d9a-46875fdeb26e",
+            "customer_id": "cust_001",
+            "input": {
+              "text": "아이스 아메리카노 한 잔과 아이스 카페라떼 한 잔, 포장할게요. 카드로 결제하고 옵션은 둘 다 없어요.",
+              "has_image": false
+            },
+            "intent": {
+              "intent": "product_order",
+              "confidence": null
+            },
+            "history": [
+              {
+                "role": "user",
+                "content": "아메리카노 두 잔과 카페라떼 한 잔 주문할게요."
+              },
+              {
+                "role": "assistant",
+                "content": "주문을 위해 아메리카노 온도(HOT, ICE), 아메리카노 옵션 추가 여부(없으면 없음), 카페라떼 온도(HOT, ICE), 카페라떼 옵션 추가 여부(없으면 없음), 매장 이용 또는 포장, 결제 방식(카드, 현금, 간편결제)을 알려주세요."
+              },
+              {
+                "role": "user",
+                "content": "둘 다 아이스로 주세요. 포장하고 카드로 결제할게요. 옵션은 둘 다 없어요."
+              },
+              {
+                "role": "assistant",
+                "content": "아이스 아메리카노 2개 / 옵션: 없음\n아이스 카페라떼 1개 / 옵션: 없음\n이용: 포장 / 결제: 카드\n추가·수정할 내용이 없으면 이대로 주문할까요? yes / no로 답해 주세요."
+              },
+              {
+                "role": "user",
+                "content": "망고 치즈버거 한 개 주문할게요."
+              },
+              {
+                "role": "assistant",
+                "content": "요청하신 상품은 메뉴에서 찾을 수 없습니다. 주문할 메뉴를 다시 알려주세요."
+              },
+              {
+                "role": "user",
+                "content": "아이스 아메리카노 한 잔과 아이스 카페라떼 한 잔, 포장할게요. 카드로 결제하고 옵션은 둘 다 없어요."
+              },
+              {
+                "role": "assistant",
+                "content": "요청하신 상품은 메뉴에서 찾을 수 없습니다. 주문할 메뉴를 다시 알려주세요."
+              }
+            ],
+            "search": null,
+            "recommendation": null,
+            "coupon": null,
+            "order": {
+              "items": [
+                {
+                  "product_id": "drink_americano",
+                  "product_name": "아메리카노",
+                  "quantity": 2.0,
+                  "temperature": "ICE",
+                  "options": [],
+                  "price": 4500
+                },
+                {
+                  "product_id": "drink_cafe_latte",
+                  "product_name": "카페라떼",
+                  "quantity": 1.0,
+                  "temperature": "ICE",
+                  "options": [],
+                  "price": 5000
+                },
+                {
+                  "product_id": null,
+                  "product_name": null,
+                  "quantity": 1.0,
+                  "temperature": null,
+                  "options": null,
+                  "price": null
+                }
+              ],
+              "order_type": "포장",
+              "payment_method": "카드",
+              "total_price": null,
+              "order_id": null,
+              "confirmation_status": "pending",
+              "needs_clarification": true,
+              "question": "요청하신 상품은 메뉴에서 찾을 수 없습니다. 주문할 메뉴를 다시 알려주세요."
+            },
+            "answer": {
+              "answer": "요청하신 상품은 메뉴에서 찾을 수 없습니다. 주문할 메뉴를 다시 알려주세요."
+            }
+          }
+        },
+        {
+          "step": "response",
+          "state": {
+            "session_id": "234c4235-6e51-4f91-9d9a-46875fdeb26e",
+            "customer_id": "cust_001",
+            "input": {
+              "text": "아이스 아메리카노 한 잔과 아이스 카페라떼 한 잔, 포장할게요. 카드로 결제하고 옵션은 둘 다 없어요.",
+              "has_image": false
+            },
+            "intent": {
+              "intent": "product_order",
+              "confidence": null
+            },
+            "history": [
+              {
+                "role": "user",
+                "content": "아메리카노 두 잔과 카페라떼 한 잔 주문할게요."
+              },
+              {
+                "role": "assistant",
+                "content": "주문을 위해 아메리카노 온도(HOT, ICE), 아메리카노 옵션 추가 여부(없으면 없음), 카페라떼 온도(HOT, ICE), 카페라떼 옵션 추가 여부(없으면 없음), 매장 이용 또는 포장, 결제 방식(카드, 현금, 간편결제)을 알려주세요."
+              },
+              {
+                "role": "user",
+                "content": "둘 다 아이스로 주세요. 포장하고 카드로 결제할게요. 옵션은 둘 다 없어요."
+              },
+              {
+                "role": "assistant",
+                "content": "아이스 아메리카노 2개 / 옵션: 없음\n아이스 카페라떼 1개 / 옵션: 없음\n이용: 포장 / 결제: 카드\n추가·수정할 내용이 없으면 이대로 주문할까요? yes / no로 답해 주세요."
+              },
+              {
+                "role": "user",
+                "content": "망고 치즈버거 한 개 주문할게요."
+              },
+              {
+                "role": "assistant",
+                "content": "요청하신 상품은 메뉴에서 찾을 수 없습니다. 주문할 메뉴를 다시 알려주세요."
+              },
+              {
+                "role": "user",
+                "content": "아이스 아메리카노 한 잔과 아이스 카페라떼 한 잔, 포장할게요. 카드로 결제하고 옵션은 둘 다 없어요."
+              },
+              {
+                "role": "assistant",
+                "content": "요청하신 상품은 메뉴에서 찾을 수 없습니다. 주문할 메뉴를 다시 알려주세요."
+              }
+            ],
+            "search": null,
+            "recommendation": null,
+            "coupon": null,
+            "order": {
+              "items": [
+                {
+                  "product_id": "drink_americano",
+                  "product_name": "아메리카노",
+                  "quantity": 2.0,
+                  "temperature": "ICE",
+                  "options": [],
+                  "price": 4500
+                },
+                {
+                  "product_id": "drink_cafe_latte",
+                  "product_name": "카페라떼",
+                  "quantity": 1.0,
+                  "temperature": "ICE",
+                  "options": [],
+                  "price": 5000
+                },
+                {
+                  "product_id": null,
+                  "product_name": null,
+                  "quantity": 1.0,
+                  "temperature": null,
+                  "options": null,
+                  "price": null
+                }
+              ],
+              "order_type": "포장",
+              "payment_method": "카드",
+              "total_price": null,
+              "order_id": null,
+              "confirmation_status": "pending",
+              "needs_clarification": true,
+              "question": "요청하신 상품은 메뉴에서 찾을 수 없습니다. 주문할 메뉴를 다시 알려주세요."
+            },
+            "answer": {
+              "answer": "요청하신 상품은 메뉴에서 찾을 수 없습니다. 주문할 메뉴를 다시 알려주세요."
+            }
+          }
+        }
+      ],
+      "elapsed_ms": 19851.91
+    }
+  ],
+  "order-verification-20261028": [
+    {
+      "steps": [
+        {
+          "step": "input",
+          "state": {
+            "session_id": "order-verification-20261028",
+            "customer_id": "cust_001",
+            "input": {
+              "text": "아이스 아메리카노 한 잔과 아이스 카페라떼 한 잔 주문할게요. 포장하고 카드로 결제하겠습니다. 아메리카노는 샷 추가, 카페라떼는 옵션 없이 주세요.",
+              "has_image": false
+            },
+            "intent": null,
+            "history": [],
+            "search": null,
+            "recommendation": null,
+            "coupon": null,
+            "order": null,
+            "answer": null
+          }
+        },
+        {
+          "step": "create_order_draft",
+          "state": {
+            "session_id": "order-verification-20261028",
+            "customer_id": "cust_001",
+            "input": {
+              "text": "아이스 아메리카노 한 잔과 아이스 카페라떼 한 잔 주문할게요. 포장하고 카드로 결제하겠습니다. 아메리카노는 샷 추가, 카페라떼는 옵션 없이 주세요.",
+              "has_image": false
+            },
+            "intent": {
+              "intent": "product_order",
+              "confidence": null
+            },
+            "history": [],
+            "search": null,
+            "recommendation": null,
+            "coupon": null,
+            "order": {
+              "items": [
+                {
+                  "product_id": null,
+                  "product_name": "아메리카노",
+                  "quantity": 1.0,
+                  "temperature": "ICE",
+                  "options": [
+                    "샷 추가"
+                  ],
+                  "price": null
+                },
+                {
+                  "product_id": null,
+                  "product_name": "카페라떼",
+                  "quantity": 1.0,
+                  "temperature": "ICE",
+                  "options": [],
+                  "price": null
+                }
+              ],
+              "order_type": "포장",
+              "payment_method": "카드",
+              "total_price": null,
+              "order_id": null,
+              "confirmation_status": "pending",
+              "needs_clarification": false,
+              "question": null
+            },
+            "answer": null
+          }
+        },
+        {
+          "step": "match_menu_and_fill_prices",
+          "state": {
+            "session_id": "order-verification-20261028",
+            "customer_id": "cust_001",
+            "input": {
+              "text": "아이스 아메리카노 한 잔과 아이스 카페라떼 한 잔 주문할게요. 포장하고 카드로 결제하겠습니다. 아메리카노는 샷 추가, 카페라떼는 옵션 없이 주세요.",
+              "has_image": false
+            },
+            "intent": {
+              "intent": "product_order",
+              "confidence": null
+            },
+            "history": [],
+            "search": null,
+            "recommendation": null,
+            "coupon": null,
+            "order": {
+              "items": [
+                {
+                  "product_id": "drink_americano",
+                  "product_name": "아메리카노",
+                  "quantity": 1.0,
+                  "temperature": "ICE",
+                  "options": [
+                    "샷 추가"
+                  ],
+                  "price": 4500
+                },
+                {
+                  "product_id": "drink_cafe_latte",
+                  "product_name": "카페라떼",
+                  "quantity": 1.0,
+                  "temperature": "ICE",
+                  "options": [],
+                  "price": 5000
+                }
+              ],
+              "order_type": "포장",
+              "payment_method": "카드",
+              "total_price": null,
+              "order_id": null,
+              "confirmation_status": "pending",
+              "needs_clarification": false,
+              "question": null
+            },
+            "answer": null
+          }
+        },
+        {
+          "step": "check_order",
+          "state": {
+            "session_id": "order-verification-20261028",
+            "customer_id": "cust_001",
+            "input": {
+              "text": "아이스 아메리카노 한 잔과 아이스 카페라떼 한 잔 주문할게요. 포장하고 카드로 결제하겠습니다. 아메리카노는 샷 추가, 카페라떼는 옵션 없이 주세요.",
+              "has_image": false
+            },
+            "intent": {
+              "intent": "product_order",
+              "confidence": null
+            },
+            "history": [],
+            "search": null,
+            "recommendation": null,
+            "coupon": null,
+            "order": {
+              "items": [
+                {
+                  "product_id": "drink_americano",
+                  "product_name": "아메리카노",
+                  "quantity": 1.0,
+                  "temperature": "ICE",
+                  "options": [
+                    "샷 추가"
+                  ],
+                  "price": 4500
+                },
+                {
+                  "product_id": "drink_cafe_latte",
+                  "product_name": "카페라떼",
+                  "quantity": 1.0,
+                  "temperature": "ICE",
+                  "options": [],
+                  "price": 5000
+                }
+              ],
+              "order_type": "포장",
+              "payment_method": "카드",
+              "total_price": null,
+              "order_id": null,
+              "confirmation_status": "pending",
+              "needs_clarification": false,
+              "question": null
+            },
+            "answer": {
+              "answer": "아이스 아메리카노 1개 / 옵션: 샷 추가\n아이스 카페라떼 1개 / 옵션: 없음\n이용: 포장 / 결제: 카드\n추가·수정할 내용이 없으면 이대로 주문할까요? yes / no로 답해 주세요."
+            }
+          }
+        },
+        {
+          "step": "response",
+          "state": {
+            "session_id": "order-verification-20261028",
+            "customer_id": "cust_001",
+            "input": {
+              "text": "아이스 아메리카노 한 잔과 아이스 카페라떼 한 잔 주문할게요. 포장하고 카드로 결제하겠습니다. 아메리카노는 샷 추가, 카페라떼는 옵션 없이 주세요.",
+              "has_image": false
+            },
+            "intent": {
+              "intent": "product_order",
+              "confidence": null
+            },
+            "history": [],
+            "search": null,
+            "recommendation": null,
+            "coupon": null,
+            "order": {
+              "items": [
+                {
+                  "product_id": "drink_americano",
+                  "product_name": "아메리카노",
+                  "quantity": 1.0,
+                  "temperature": "ICE",
+                  "options": [
+                    "샷 추가"
+                  ],
+                  "price": 4500
+                },
+                {
+                  "product_id": "drink_cafe_latte",
+                  "product_name": "카페라떼",
+                  "quantity": 1.0,
+                  "temperature": "ICE",
+                  "options": [],
+                  "price": 5000
+                }
+              ],
+              "order_type": "포장",
+              "payment_method": "카드",
+              "total_price": null,
+              "order_id": null,
+              "confirmation_status": "pending",
+              "needs_clarification": false,
+              "question": null
+            },
+            "answer": {
+              "answer": "아이스 아메리카노 1개 / 옵션: 샷 추가\n아이스 카페라떼 1개 / 옵션: 없음\n이용: 포장 / 결제: 카드\n추가·수정할 내용이 없으면 이대로 주문할까요? yes / no로 답해 주세요."
+            }
+          }
+        }
+      ],
+      "elapsed_ms": 15605.73
+    },
+    {
+      "steps": [
+        {
+          "step": "input",
+          "state": {
+            "session_id": "order-verification-20261028",
+            "customer_id": "cust_001",
+            "input": {
+              "text": "yes",
+              "has_image": false
+            },
+            "intent": {
+              "intent": "product_order",
+              "confidence": null
+            },
+            "history": [],
+            "search": null,
+            "recommendation": null,
+            "coupon": null,
+            "order": {
+              "items": [
+                {
+                  "product_id": "drink_americano",
+                  "product_name": "아메리카노",
+                  "quantity": 1.0,
+                  "temperature": "ICE",
+                  "options": [
+                    "샷 추가"
+                  ],
+                  "price": 4500
+                },
+                {
+                  "product_id": "drink_cafe_latte",
+                  "product_name": "카페라떼",
+                  "quantity": 1.0,
+                  "temperature": "ICE",
+                  "options": [],
+                  "price": 5000
+                }
+              ],
+              "order_type": "포장",
+              "payment_method": "카드",
+              "total_price": null,
+              "order_id": null,
+              "confirmation_status": "pending",
+              "needs_clarification": false,
+              "question": null
+            },
+            "answer": {
+              "answer": "아이스 아메리카노 1개 / 옵션: 샷 추가\n아이스 카페라떼 1개 / 옵션: 없음\n이용: 포장 / 결제: 카드\n추가·수정할 내용이 없으면 이대로 주문할까요? yes / no로 답해 주세요."
+            }
+          }
+        },
+        {
+          "step": "match_menu_and_fill_prices",
+          "state": {
+            "session_id": "order-verification-20261028",
+            "customer_id": "cust_001",
+            "input": {
+              "text": "yes",
+              "has_image": false
+            },
+            "intent": {
+              "intent": "product_order",
+              "confidence": null
+            },
+            "history": [],
+            "search": null,
+            "recommendation": null,
+            "coupon": null,
+            "order": {
+              "items": [
+                {
+                  "product_id": "drink_americano",
+                  "product_name": "아메리카노",
+                  "quantity": 1.0,
+                  "temperature": "ICE",
+                  "options": [
+                    "샷 추가"
+                  ],
+                  "price": 4500
+                },
+                {
+                  "product_id": "drink_cafe_latte",
+                  "product_name": "카페라떼",
+                  "quantity": 1.0,
+                  "temperature": "ICE",
+                  "options": [],
+                  "price": 5000
+                }
+              ],
+              "order_type": "포장",
+              "payment_method": "카드",
+              "total_price": null,
+              "order_id": null,
+              "confirmation_status": "pending",
+              "needs_clarification": false,
+              "question": null
+            },
+            "answer": null
+          }
+        },
+        {
+          "step": "place_order",
+          "state": {
+            "session_id": "order-verification-20261028",
+            "customer_id": "cust_001",
+            "input": {
+              "text": "yes",
+              "has_image": false
+            },
+            "intent": {
+              "intent": "product_order",
+              "confidence": null
+            },
+            "history": [],
+            "search": null,
+            "recommendation": null,
+            "coupon": null,
+            "order": {
+              "items": [
+                {
+                  "product_id": "drink_americano",
+                  "product_name": "아메리카노",
+                  "quantity": 1.0,
+                  "temperature": "ICE",
+                  "options": [
+                    "샷 추가"
+                  ],
+                  "price": 4500
+                },
+                {
+                  "product_id": "drink_cafe_latte",
+                  "product_name": "카페라떼",
+                  "quantity": 1.0,
+                  "temperature": "ICE",
+                  "options": [],
+                  "price": 5000
+                }
+              ],
+              "order_type": "포장",
+              "payment_method": "카드",
+              "total_price": 10000,
+              "order_id": "test-8f645197e0a1",
+              "confirmation_status": "confirmed",
+              "needs_clarification": false,
+              "question": null
+            },
+            "answer": {
+              "answer": "테스트 주문번호 test-8f645197e0a1, 결제금액 10,000원입니다."
+            }
+          }
+        },
+        {
+          "step": "response",
+          "state": {
+            "session_id": "order-verification-20261028",
+            "customer_id": "cust_001",
+            "input": {
+              "text": "yes",
+              "has_image": false
+            },
+            "intent": {
+              "intent": "product_order",
+              "confidence": null
+            },
+            "history": [],
+            "search": null,
+            "recommendation": null,
+            "coupon": null,
+            "order": {
+              "items": [
+                {
+                  "product_id": "drink_americano",
+                  "product_name": "아메리카노",
+                  "quantity": 1.0,
+                  "temperature": "ICE",
+                  "options": [
+                    "샷 추가"
+                  ],
+                  "price": 4500
+                },
+                {
+                  "product_id": "drink_cafe_latte",
+                  "product_name": "카페라떼",
+                  "quantity": 1.0,
+                  "temperature": "ICE",
+                  "options": [],
+                  "price": 5000
+                }
+              ],
+              "order_type": "포장",
+              "payment_method": "카드",
+              "total_price": 10000,
+              "order_id": "test-8f645197e0a1",
+              "confirmation_status": "confirmed",
+              "needs_clarification": false,
+              "question": null
+            },
+            "answer": {
+              "answer": "테스트 주문번호 test-8f645197e0a1, 결제금액 10,000원입니다."
+            }
+          }
+        }
+      ],
+      "elapsed_ms": 2.65
+    }
+  ],
+  "4082fa87-c821-4983-bfa3-7b91909044fd": [
+    {
+      "steps": [
+        {
+          "step": "input",
+          "state": {
+            "session_id": "4082fa87-c821-4983-bfa3-7b91909044fd",
+            "customer_id": "cust_001",
+            "customer": {
+              "customer_id": "cust_001",
+              "name": "김민지",
+              "birth_year": 1999,
+              "membership_level": "우수",
+              "allergies": null,
+              "preferences": null
+            },
+            "input": {
+              "text": "아이스 아메리카노 한 잔과 아이스 카페라떼 한 잔, 포장할게요. 카드로 결제하고 옵션은 둘 다 없어요.",
+              "has_image": false
+            },
+            "intent": null,
+            "history": [],
+            "search": null,
+            "recommendation": {
+              "allergies": null,
+              "preferences": null,
+              "candidate_menu_ids": null
+            },
+            "coupon": null,
+            "order": null,
+            "answer": null
+          }
+        },
+        {
+          "step": "create_order_draft",
+          "state": {
+            "session_id": "4082fa87-c821-4983-bfa3-7b91909044fd",
+            "customer_id": "cust_001",
+            "customer": {
+              "customer_id": "cust_001",
+              "name": "김민지",
+              "birth_year": 1999,
+              "membership_level": "우수",
+              "allergies": null,
+              "preferences": null
+            },
+            "input": {
+              "text": "아이스 아메리카노 한 잔과 아이스 카페라떼 한 잔, 포장할게요. 카드로 결제하고 옵션은 둘 다 없어요.",
+              "has_image": false
+            },
+            "intent": {
+              "intent": "product_order",
+              "confidence": null
+            },
+            "history": [],
+            "search": null,
+            "recommendation": {
+              "allergies": null,
+              "preferences": null,
+              "candidate_menu_ids": null
+            },
+            "coupon": null,
+            "order": {
+              "items": [
+                {
+                  "product_id": null,
+                  "product_name": "아메리카노",
+                  "quantity": 1.0,
+                  "temperature": "ICE",
+                  "options": [],
+                  "price": null
+                },
+                {
+                  "product_id": null,
+                  "product_name": "카페라떼",
+                  "quantity": 1.0,
+                  "temperature": "ICE",
+                  "options": [],
+                  "price": null
+                }
+              ],
+              "order_type": "포장",
+              "payment_method": "카드",
+              "total_price": null,
+              "order_id": null,
+              "confirmation_status": "pending",
+              "needs_clarification": false,
+              "question": null
+            },
+            "answer": null
+          }
+        },
+        {
+          "step": "match_menu_and_fill_prices",
+          "state": {
+            "session_id": "4082fa87-c821-4983-bfa3-7b91909044fd",
+            "customer_id": "cust_001",
+            "customer": {
+              "customer_id": "cust_001",
+              "name": "김민지",
+              "birth_year": 1999,
+              "membership_level": "우수",
+              "allergies": null,
+              "preferences": null
+            },
+            "input": {
+              "text": "아이스 아메리카노 한 잔과 아이스 카페라떼 한 잔, 포장할게요. 카드로 결제하고 옵션은 둘 다 없어요.",
+              "has_image": false
+            },
+            "intent": {
+              "intent": "product_order",
+              "confidence": null
+            },
+            "history": [],
+            "search": null,
+            "recommendation": {
+              "allergies": null,
+              "preferences": null,
+              "candidate_menu_ids": null
+            },
+            "coupon": null,
+            "order": {
+              "items": [
+                {
+                  "product_id": "drink_americano",
+                  "product_name": "아메리카노",
+                  "quantity": 1.0,
+                  "temperature": "ICE",
+                  "options": [],
+                  "price": 4500
+                },
+                {
+                  "product_id": "drink_cafe_latte",
+                  "product_name": "카페라떼",
+                  "quantity": 1.0,
+                  "temperature": "ICE",
+                  "options": [],
+                  "price": 5000
+                }
+              ],
+              "order_type": "포장",
+              "payment_method": "카드",
+              "total_price": null,
+              "order_id": null,
+              "confirmation_status": "pending",
+              "needs_clarification": false,
+              "question": null
+            },
+            "answer": null
+          }
+        },
+        {
+          "step": "check_order",
+          "state": {
+            "session_id": "4082fa87-c821-4983-bfa3-7b91909044fd",
+            "customer_id": "cust_001",
+            "customer": {
+              "customer_id": "cust_001",
+              "name": "김민지",
+              "birth_year": 1999,
+              "membership_level": "우수",
+              "allergies": null,
+              "preferences": null
+            },
+            "input": {
+              "text": "아이스 아메리카노 한 잔과 아이스 카페라떼 한 잔, 포장할게요. 카드로 결제하고 옵션은 둘 다 없어요.",
+              "has_image": false
+            },
+            "intent": {
+              "intent": "product_order",
+              "confidence": null
+            },
+            "history": [],
+            "search": null,
+            "recommendation": {
+              "allergies": null,
+              "preferences": null,
+              "candidate_menu_ids": null
+            },
+            "coupon": null,
+            "order": {
+              "items": [
+                {
+                  "product_id": "drink_americano",
+                  "product_name": "아메리카노",
+                  "quantity": 1.0,
+                  "temperature": "ICE",
+                  "options": [],
+                  "price": 4500
+                },
+                {
+                  "product_id": "drink_cafe_latte",
+                  "product_name": "카페라떼",
+                  "quantity": 1.0,
+                  "temperature": "ICE",
+                  "options": [],
+                  "price": 5000
+                }
+              ],
+              "order_type": "포장",
+              "payment_method": "카드",
+              "total_price": null,
+              "order_id": null,
+              "confirmation_status": "pending",
+              "needs_clarification": false,
+              "question": null
+            },
+            "answer": {
+              "answer": "아이스 아메리카노 1개 / 옵션: 없음\n아이스 카페라떼 1개 / 옵션: 없음\n이용: 포장 / 결제: 카드\n추가·수정할 내용이 없으면 이대로 주문할까요? yes / no로 답해 주세요."
+            }
+          }
+        },
+        {
+          "step": "response",
+          "state": {
+            "session_id": "4082fa87-c821-4983-bfa3-7b91909044fd",
+            "customer_id": "cust_001",
+            "customer": {
+              "customer_id": "cust_001",
+              "name": "김민지",
+              "birth_year": 1999,
+              "membership_level": "우수",
+              "allergies": null,
+              "preferences": null
+            },
+            "input": {
+              "text": "아이스 아메리카노 한 잔과 아이스 카페라떼 한 잔, 포장할게요. 카드로 결제하고 옵션은 둘 다 없어요.",
+              "has_image": false
+            },
+            "intent": {
+              "intent": "product_order",
+              "confidence": null
+            },
+            "history": [],
+            "search": null,
+            "recommendation": {
+              "allergies": null,
+              "preferences": null,
+              "candidate_menu_ids": null
+            },
+            "coupon": null,
+            "order": {
+              "items": [
+                {
+                  "product_id": "drink_americano",
+                  "product_name": "아메리카노",
+                  "quantity": 1.0,
+                  "temperature": "ICE",
+                  "options": [],
+                  "price": 4500
+                },
+                {
+                  "product_id": "drink_cafe_latte",
+                  "product_name": "카페라떼",
+                  "quantity": 1.0,
+                  "temperature": "ICE",
+                  "options": [],
+                  "price": 5000
+                }
+              ],
+              "order_type": "포장",
+              "payment_method": "카드",
+              "total_price": null,
+              "order_id": null,
+              "confirmation_status": "pending",
+              "needs_clarification": false,
+              "question": null
+            },
+            "answer": {
+              "answer": "아이스 아메리카노 1개 / 옵션: 없음\n아이스 카페라떼 1개 / 옵션: 없음\n이용: 포장 / 결제: 카드\n추가·수정할 내용이 없으면 이대로 주문할까요? yes / no로 답해 주세요."
+            }
+          }
+        }
+      ],
+      "elapsed_ms": 8434.84
+    },
+    {
+      "steps": [
+        {
+          "step": "input",
+          "state": {
+            "session_id": "4082fa87-c821-4983-bfa3-7b91909044fd",
+            "customer_id": "cust_001",
+            "customer": {
+              "customer_id": "cust_001",
+              "name": "김민지",
+              "birth_year": 1999,
+              "membership_level": "우수",
+              "allergies": null,
+              "preferences": null
+            },
+            "input": {
+              "text": "망고 치즈버거 한 개 주문할게요.",
+              "has_image": false
+            },
+            "intent": {
+              "intent": "product_order",
+              "confidence": null
+            },
+            "history": [
+              {
+                "role": "user",
+                "content": "아이스 아메리카노 한 잔과 아이스 카페라떼 한 잔, 포장할게요. 카드로 결제하고 옵션은 둘 다 없어요."
+              },
+              {
+                "role": "assistant",
+                "content": "아이스 아메리카노 1개 / 옵션: 없음\n아이스 카페라떼 1개 / 옵션: 없음\n이용: 포장 / 결제: 카드\n추가·수정할 내용이 없으면 이대로 주문할까요? yes / no로 답해 주세요."
+              }
+            ],
+            "search": null,
+            "recommendation": {
+              "allergies": null,
+              "preferences": null,
+              "candidate_menu_ids": null
+            },
+            "coupon": null,
+            "order": {
+              "items": [
+                {
+                  "product_id": "drink_americano",
+                  "product_name": "아메리카노",
+                  "quantity": 1,
+                  "temperature": "ICE",
+                  "options": [],
+                  "price": 4500
+                },
+                {
+                  "product_id": "drink_cafe_latte",
+                  "product_name": "카페라떼",
+                  "quantity": 1,
+                  "temperature": "ICE",
+                  "options": [],
+                  "price": 5000
+                }
+              ],
+              "order_type": "포장",
+              "payment_method": "카드",
+              "total_price": null,
+              "order_id": null,
+              "confirmation_status": "pending",
+              "needs_clarification": false,
+              "question": null
+            },
+            "answer": {
+              "answer": "아이스 아메리카노 1개 / 옵션: 없음\n아이스 카페라떼 1개 / 옵션: 없음\n이용: 포장 / 결제: 카드\n추가·수정할 내용이 없으면 이대로 주문할까요? yes / no로 답해 주세요."
+            }
+          }
+        },
+        {
+          "step": "create_order_draft",
+          "state": {
+            "session_id": "4082fa87-c821-4983-bfa3-7b91909044fd",
+            "customer_id": "cust_001",
+            "customer": {
+              "customer_id": "cust_001",
+              "name": "김민지",
+              "birth_year": 1999,
+              "membership_level": "우수",
+              "allergies": null,
+              "preferences": null
+            },
+            "input": {
+              "text": "망고 치즈버거 한 개 주문할게요.",
+              "has_image": false
+            },
+            "intent": {
+              "intent": "product_order",
+              "confidence": null
+            },
+            "history": [
+              {
+                "role": "user",
+                "content": "아이스 아메리카노 한 잔과 아이스 카페라떼 한 잔, 포장할게요. 카드로 결제하고 옵션은 둘 다 없어요."
+              },
+              {
+                "role": "assistant",
+                "content": "아이스 아메리카노 1개 / 옵션: 없음\n아이스 카페라떼 1개 / 옵션: 없음\n이용: 포장 / 결제: 카드\n추가·수정할 내용이 없으면 이대로 주문할까요? yes / no로 답해 주세요."
+              }
+            ],
+            "search": null,
+            "recommendation": {
+              "allergies": null,
+              "preferences": null,
+              "candidate_menu_ids": null
+            },
+            "coupon": null,
+            "order": {
+              "items": [
+                {
+                  "product_id": null,
+                  "product_name": "아메리카노",
+                  "quantity": 1.0,
+                  "temperature": "ICE",
+                  "options": [],
+                  "price": null
+                },
+                {
+                  "product_id": null,
+                  "product_name": "카페라떼",
+                  "quantity": 1.0,
+                  "temperature": "ICE",
+                  "options": [],
+                  "price": null
+                }
+              ],
+              "order_type": "포장",
+              "payment_method": "카드",
+              "total_price": null,
+              "order_id": null,
+              "confirmation_status": "pending",
+              "needs_clarification": true,
+              "question": "망고 치즈버거는 메뉴에 없는 품목이라 주문에 포함시켜도 될까요?"
+            },
+            "answer": null
+          }
+        },
+        {
+          "step": "match_menu_and_fill_prices",
+          "state": {
+            "session_id": "4082fa87-c821-4983-bfa3-7b91909044fd",
+            "customer_id": "cust_001",
+            "customer": {
+              "customer_id": "cust_001",
+              "name": "김민지",
+              "birth_year": 1999,
+              "membership_level": "우수",
+              "allergies": null,
+              "preferences": null
+            },
+            "input": {
+              "text": "망고 치즈버거 한 개 주문할게요.",
+              "has_image": false
+            },
+            "intent": {
+              "intent": "product_order",
+              "confidence": null
+            },
+            "history": [
+              {
+                "role": "user",
+                "content": "아이스 아메리카노 한 잔과 아이스 카페라떼 한 잔, 포장할게요. 카드로 결제하고 옵션은 둘 다 없어요."
+              },
+              {
+                "role": "assistant",
+                "content": "아이스 아메리카노 1개 / 옵션: 없음\n아이스 카페라떼 1개 / 옵션: 없음\n이용: 포장 / 결제: 카드\n추가·수정할 내용이 없으면 이대로 주문할까요? yes / no로 답해 주세요."
+              }
+            ],
+            "search": null,
+            "recommendation": {
+              "allergies": null,
+              "preferences": null,
+              "candidate_menu_ids": null
+            },
+            "coupon": null,
+            "order": {
+              "items": [
+                {
+                  "product_id": "drink_americano",
+                  "product_name": "아메리카노",
+                  "quantity": 1.0,
+                  "temperature": "ICE",
+                  "options": [],
+                  "price": 4500
+                },
+                {
+                  "product_id": "drink_cafe_latte",
+                  "product_name": "카페라떼",
+                  "quantity": 1.0,
+                  "temperature": "ICE",
+                  "options": [],
+                  "price": 5000
+                }
+              ],
+              "order_type": "포장",
+              "payment_method": "카드",
+              "total_price": null,
+              "order_id": null,
+              "confirmation_status": "pending",
+              "needs_clarification": true,
+              "question": "망고 치즈버거는 메뉴에 없는 품목이라 주문에 포함시켜도 될까요?"
+            },
+            "answer": null
+          }
+        },
+        {
+          "step": "check_order",
+          "state": {
+            "session_id": "4082fa87-c821-4983-bfa3-7b91909044fd",
+            "customer_id": "cust_001",
+            "customer": {
+              "customer_id": "cust_001",
+              "name": "김민지",
+              "birth_year": 1999,
+              "membership_level": "우수",
+              "allergies": null,
+              "preferences": null
+            },
+            "input": {
+              "text": "망고 치즈버거 한 개 주문할게요.",
+              "has_image": false
+            },
+            "intent": {
+              "intent": "product_order",
+              "confidence": null
+            },
+            "history": [
+              {
+                "role": "user",
+                "content": "아이스 아메리카노 한 잔과 아이스 카페라떼 한 잔, 포장할게요. 카드로 결제하고 옵션은 둘 다 없어요."
+              },
+              {
+                "role": "assistant",
+                "content": "아이스 아메리카노 1개 / 옵션: 없음\n아이스 카페라떼 1개 / 옵션: 없음\n이용: 포장 / 결제: 카드\n추가·수정할 내용이 없으면 이대로 주문할까요? yes / no로 답해 주세요."
+              }
+            ],
+            "search": null,
+            "recommendation": {
+              "allergies": null,
+              "preferences": null,
+              "candidate_menu_ids": null
+            },
+            "coupon": null,
+            "order": {
+              "items": [
+                {
+                  "product_id": "drink_americano",
+                  "product_name": "아메리카노",
+                  "quantity": 1.0,
+                  "temperature": "ICE",
+                  "options": [],
+                  "price": 4500
+                },
+                {
+                  "product_id": "drink_cafe_latte",
+                  "product_name": "카페라떼",
+                  "quantity": 1.0,
+                  "temperature": "ICE",
+                  "options": [],
+                  "price": 5000
+                }
+              ],
+              "order_type": "포장",
+              "payment_method": "카드",
+              "total_price": null,
+              "order_id": null,
+              "confirmation_status": "pending",
+              "needs_clarification": true,
+              "question": "망고 치즈버거는 메뉴에 없는 품목이라 주문에 포함시켜도 될까요?"
+            },
+            "answer": {
+              "answer": "망고 치즈버거는 메뉴에 없는 품목이라 주문에 포함시켜도 될까요?"
+            }
+          }
+        },
+        {
+          "step": "response",
+          "state": {
+            "session_id": "4082fa87-c821-4983-bfa3-7b91909044fd",
+            "customer_id": "cust_001",
+            "customer": {
+              "customer_id": "cust_001",
+              "name": "김민지",
+              "birth_year": 1999,
+              "membership_level": "우수",
+              "allergies": null,
+              "preferences": null
+            },
+            "input": {
+              "text": "망고 치즈버거 한 개 주문할게요.",
+              "has_image": false
+            },
+            "intent": {
+              "intent": "product_order",
+              "confidence": null
+            },
+            "history": [
+              {
+                "role": "user",
+                "content": "아이스 아메리카노 한 잔과 아이스 카페라떼 한 잔, 포장할게요. 카드로 결제하고 옵션은 둘 다 없어요."
+              },
+              {
+                "role": "assistant",
+                "content": "아이스 아메리카노 1개 / 옵션: 없음\n아이스 카페라떼 1개 / 옵션: 없음\n이용: 포장 / 결제: 카드\n추가·수정할 내용이 없으면 이대로 주문할까요? yes / no로 답해 주세요."
+              }
+            ],
+            "search": null,
+            "recommendation": {
+              "allergies": null,
+              "preferences": null,
+              "candidate_menu_ids": null
+            },
+            "coupon": null,
+            "order": {
+              "items": [
+                {
+                  "product_id": "drink_americano",
+                  "product_name": "아메리카노",
+                  "quantity": 1.0,
+                  "temperature": "ICE",
+                  "options": [],
+                  "price": 4500
+                },
+                {
+                  "product_id": "drink_cafe_latte",
+                  "product_name": "카페라떼",
+                  "quantity": 1.0,
+                  "temperature": "ICE",
+                  "options": [],
+                  "price": 5000
+                }
+              ],
+              "order_type": "포장",
+              "payment_method": "카드",
+              "total_price": null,
+              "order_id": null,
+              "confirmation_status": "pending",
+              "needs_clarification": true,
+              "question": "망고 치즈버거는 메뉴에 없는 품목이라 주문에 포함시켜도 될까요?"
+            },
+            "answer": {
+              "answer": "망고 치즈버거는 메뉴에 없는 품목이라 주문에 포함시켜도 될까요?"
+            }
+          }
+        }
+      ],
+      "elapsed_ms": 26035.74
+    }
+  ],
+  "unavailable-menu-verification-20261028": [
+    {
+      "steps": [
+        {
+          "step": "input",
+          "state": {
+            "session_id": "unavailable-menu-verification-20261028",
+            "customer_id": "cust_001",
+            "customer": {
+              "customer_id": "cust_001",
+              "name": "김민지",
+              "birth_year": 1999,
+              "membership_level": "우수",
+              "allergies": null,
+              "preferences": null
+            },
+            "input": {
+              "text": "망고 치즈버거 한 개 주문할게요.",
+              "has_image": false
+            },
+            "intent": null,
+            "history": [],
+            "search": null,
+            "recommendation": {
+              "allergies": null,
+              "preferences": null,
+              "candidate_menu_ids": null
+            },
+            "coupon": null,
+            "order": null,
+            "answer": null
+          }
+        },
+        {
+          "step": "create_order_draft",
+          "state": {
+            "session_id": "unavailable-menu-verification-20261028",
+            "customer_id": "cust_001",
+            "customer": {
+              "customer_id": "cust_001",
+              "name": "김민지",
+              "birth_year": 1999,
+              "membership_level": "우수",
+              "allergies": null,
+              "preferences": null
+            },
+            "input": {
+              "text": "망고 치즈버거 한 개 주문할게요.",
+              "has_image": false
+            },
+            "intent": {
+              "intent": "product_order",
+              "confidence": null
+            },
+            "history": [],
+            "search": null,
+            "recommendation": {
+              "allergies": null,
+              "preferences": null,
+              "candidate_menu_ids": null
+            },
+            "coupon": null,
+            "order": {
+              "items": [],
+              "order_type": null,
+              "payment_method": null,
+              "total_price": null,
+              "order_id": null,
+              "confirmation_status": "pending",
+              "needs_clarification": true,
+              "question": "망고 치즈버거는 메뉴에 없어요. 대체로 어떤 메뉴로 바꿔 주문할까요?"
+            },
+            "answer": null
+          }
+        },
+        {
+          "step": "match_menu_and_fill_prices",
+          "state": {
+            "session_id": "unavailable-menu-verification-20261028",
+            "customer_id": "cust_001",
+            "customer": {
+              "customer_id": "cust_001",
+              "name": "김민지",
+              "birth_year": 1999,
+              "membership_level": "우수",
+              "allergies": null,
+              "preferences": null
+            },
+            "input": {
+              "text": "망고 치즈버거 한 개 주문할게요.",
+              "has_image": false
+            },
+            "intent": {
+              "intent": "product_order",
+              "confidence": null
+            },
+            "history": [],
+            "search": null,
+            "recommendation": {
+              "allergies": null,
+              "preferences": null,
+              "candidate_menu_ids": null
+            },
+            "coupon": null,
+            "order": {
+              "items": [],
+              "order_type": null,
+              "payment_method": null,
+              "total_price": null,
+              "order_id": null,
+              "confirmation_status": "pending",
+              "needs_clarification": true,
+              "question": "망고 치즈버거는 메뉴에 없어요. 대체로 어떤 메뉴로 바꿔 주문할까요?"
+            },
+            "answer": null
+          }
+        },
+        {
+          "step": "check_order",
+          "state": {
+            "session_id": "unavailable-menu-verification-20261028",
+            "customer_id": "cust_001",
+            "customer": {
+              "customer_id": "cust_001",
+              "name": "김민지",
+              "birth_year": 1999,
+              "membership_level": "우수",
+              "allergies": null,
+              "preferences": null
+            },
+            "input": {
+              "text": "망고 치즈버거 한 개 주문할게요.",
+              "has_image": false
+            },
+            "intent": {
+              "intent": "product_order",
+              "confidence": null
+            },
+            "history": [],
+            "search": null,
+            "recommendation": {
+              "allergies": null,
+              "preferences": null,
+              "candidate_menu_ids": null
+            },
+            "coupon": null,
+            "order": {
+              "items": [],
+              "order_type": null,
+              "payment_method": null,
+              "total_price": null,
+              "order_id": null,
+              "confirmation_status": "pending",
+              "needs_clarification": true,
+              "question": "망고 치즈버거는 메뉴에 없어요. 대체로 어떤 메뉴로 바꿔 주문할까요?"
+            },
+            "answer": {
+              "answer": "망고 치즈버거는 메뉴에 없어요. 대체로 어떤 메뉴로 바꿔 주문할까요?"
+            }
+          }
+        },
+        {
+          "step": "response",
+          "state": {
+            "session_id": "unavailable-menu-verification-20261028",
+            "customer_id": "cust_001",
+            "customer": {
+              "customer_id": "cust_001",
+              "name": "김민지",
+              "birth_year": 1999,
+              "membership_level": "우수",
+              "allergies": null,
+              "preferences": null
+            },
+            "input": {
+              "text": "망고 치즈버거 한 개 주문할게요.",
+              "has_image": false
+            },
+            "intent": {
+              "intent": "product_order",
+              "confidence": null
+            },
+            "history": [],
+            "search": null,
+            "recommendation": {
+              "allergies": null,
+              "preferences": null,
+              "candidate_menu_ids": null
+            },
+            "coupon": null,
+            "order": {
+              "items": [],
+              "order_type": null,
+              "payment_method": null,
+              "total_price": null,
+              "order_id": null,
+              "confirmation_status": "pending",
+              "needs_clarification": true,
+              "question": "망고 치즈버거는 메뉴에 없어요. 대체로 어떤 메뉴로 바꿔 주문할까요?"
+            },
+            "answer": {
+              "answer": "망고 치즈버거는 메뉴에 없어요. 대체로 어떤 메뉴로 바꿔 주문할까요?"
+            }
+          }
+        }
+      ],
+      "elapsed_ms": 11503.3
+    }
+  ],
+  "19ae665b-d810-41b2-abd2-ad45c4d34c7b": [
+    {
+      "steps": [
+        {
+          "step": "input",
+          "state": {
+            "session_id": "19ae665b-d810-41b2-abd2-ad45c4d34c7b",
+            "customer_id": "cust_001",
+            "customer": {
+              "customer_id": "cust_001",
+              "name": "김민지",
+              "birth_year": 1999,
+              "membership_level": "우수",
+              "allergies": null,
+              "preferences": null
+            },
+            "input": {
+              "text": "이 사진과 비슷한 메뉴를 찾아주세요.",
+              "has_image": true
+            },
+            "intent": null,
+            "history": [],
+            "search": null,
+            "recommendation": {
+              "allergies": null,
+              "preferences": null,
+              "candidate_menu_ids": null
+            },
+            "coupon": null,
+            "order": null,
+            "answer": null
+          }
+        },
+        {
+          "step": "classify_intent",
+          "state": {
+            "session_id": "19ae665b-d810-41b2-abd2-ad45c4d34c7b",
+            "customer_id": "cust_001",
+            "customer": {
+              "customer_id": "cust_001",
+              "name": "김민지",
+              "birth_year": 1999,
+              "membership_level": "우수",
+              "allergies": null,
+              "preferences": null
+            },
+            "input": {
+              "text": "이 사진과 비슷한 메뉴를 찾아주세요.",
+              "has_image": true
+            },
+            "intent": {
+              "intent": "product_search",
+              "confidence": 0.84
+            },
+            "history": [],
+            "search": null,
+            "recommendation": {
+              "allergies": null,
+              "preferences": null,
+              "candidate_menu_ids": null
+            },
+            "coupon": null,
+            "order": null,
+            "answer": null
+          }
+        }
+      ],
+      "elapsed_ms": 305.89
+    }
+  ],
+  "b7a749be-1e20-433d-8906-0f18080d1466": [
+    {
+      "steps": [
+        {
+          "step": "input",
+          "state": {
+            "session_id": "b7a749be-1e20-433d-8906-0f18080d1466",
+            "customer_id": "cust_001",
+            "customer": {
+              "customer_id": "cust_001",
+              "name": "김민지",
+              "birth_year": 1999,
+              "membership_level": "우수",
+              "allergies": null,
+              "points": 0,
+              "stamps": null,
+              "preferences": {
+                "order_count": 4,
+                "total_spent": 32600,
+                "menu_quantities": {
+                  "drink_cafe_latte": 3,
+                  "dessert_strawberry_mochi": 2,
+                  "dessert_matcha_cream_mochi": 1,
+                  "drink_injeolmi_latte": 1
+                },
+                "category_quantities": {
+                  "커피": 3,
+                  "모찌": 3,
+                  "논커피": 1
+                },
+                "temperature_quantities": {
+                  "ICE": 4
+                }
+              }
+            },
+            "input": {
+              "text": "아메리카노 두 잔과 카페라떼 한 잔 주문할게요.",
+              "has_image": false
+            },
+            "intent": null,
+            "previous_intent": null,
+            "history": [],
+            "search": null,
+            "recommendation": {
+              "allergies": null,
+              "preferences": null,
+              "candidate_menu_ids": null
+            },
+            "coupon": null,
+            "order": null,
+            "receipt": null,
+            "answer": null
+          }
+        },
+        {
+          "step": "create_order_draft",
+          "state": {
+            "session_id": "b7a749be-1e20-433d-8906-0f18080d1466",
+            "customer_id": "cust_001",
+            "customer": {
+              "customer_id": "cust_001",
+              "name": "김민지",
+              "birth_year": 1999,
+              "membership_level": "우수",
+              "allergies": null,
+              "points": 0,
+              "stamps": null,
+              "preferences": {
+                "order_count": 4,
+                "total_spent": 32600,
+                "menu_quantities": {
+                  "drink_cafe_latte": 3,
+                  "dessert_strawberry_mochi": 2,
+                  "dessert_matcha_cream_mochi": 1,
+                  "drink_injeolmi_latte": 1
+                },
+                "category_quantities": {
+                  "커피": 3,
+                  "모찌": 3,
+                  "논커피": 1
+                },
+                "temperature_quantities": {
+                  "ICE": 4
+                }
+              }
+            },
+            "input": {
+              "text": "아메리카노 두 잔과 카페라떼 한 잔 주문할게요.",
+              "has_image": false
+            },
+            "intent": {
+              "intent": "product_order",
+              "confidence": null
+            },
+            "previous_intent": null,
+            "history": [],
+            "search": null,
+            "recommendation": {
+              "allergies": null,
+              "preferences": null,
+              "candidate_menu_ids": null
+            },
+            "coupon": null,
+            "order": {
+              "items": [
+                {
+                  "product_id": null,
+                  "product_name": "아메리카노",
+                  "quantity": 2.0,
+                  "temperature": null,
+                  "options": null,
+                  "price": null
+                },
+                {
+                  "product_id": null,
+                  "product_name": "카페라떼",
+                  "quantity": 1.0,
+                  "temperature": null,
+                  "options": null,
+                  "price": null
+                }
+              ],
+              "order_type": null,
+              "payment_method": null,
+              "total_price": null,
+              "order_id": null,
+              "confirmation_status": "pending",
+              "needs_clarification": false,
+              "question": null
+            },
+            "receipt": null,
+            "answer": null
+          }
+        },
+        {
+          "step": "match_menu_and_fill_prices",
+          "state": {
+            "session_id": "b7a749be-1e20-433d-8906-0f18080d1466",
+            "customer_id": "cust_001",
+            "customer": {
+              "customer_id": "cust_001",
+              "name": "김민지",
+              "birth_year": 1999,
+              "membership_level": "우수",
+              "allergies": null,
+              "points": 0,
+              "stamps": null,
+              "preferences": {
+                "order_count": 4,
+                "total_spent": 32600,
+                "menu_quantities": {
+                  "drink_cafe_latte": 3,
+                  "dessert_strawberry_mochi": 2,
+                  "dessert_matcha_cream_mochi": 1,
+                  "drink_injeolmi_latte": 1
+                },
+                "category_quantities": {
+                  "커피": 3,
+                  "모찌": 3,
+                  "논커피": 1
+                },
+                "temperature_quantities": {
+                  "ICE": 4
+                }
+              }
+            },
+            "input": {
+              "text": "아메리카노 두 잔과 카페라떼 한 잔 주문할게요.",
+              "has_image": false
+            },
+            "intent": {
+              "intent": "product_order",
+              "confidence": null
+            },
+            "previous_intent": null,
+            "history": [],
+            "search": null,
+            "recommendation": {
+              "allergies": null,
+              "preferences": null,
+              "candidate_menu_ids": null
+            },
+            "coupon": null,
+            "order": {
+              "items": [
+                {
+                  "product_id": "drink_americano",
+                  "product_name": "아메리카노",
+                  "quantity": 2.0,
+                  "temperature": null,
+                  "options": null,
+                  "price": 4500
+                },
+                {
+                  "product_id": "drink_cafe_latte",
+                  "product_name": "카페라떼",
+                  "quantity": 1.0,
+                  "temperature": null,
+                  "options": null,
+                  "price": 5000
+                }
+              ],
+              "order_type": null,
+              "payment_method": null,
+              "total_price": null,
+              "order_id": null,
+              "confirmation_status": "pending",
+              "needs_clarification": false,
+              "question": null
+            },
+            "receipt": null,
+            "answer": null
+          }
+        },
+        {
+          "step": "check_order",
+          "state": {
+            "session_id": "b7a749be-1e20-433d-8906-0f18080d1466",
+            "customer_id": "cust_001",
+            "customer": {
+              "customer_id": "cust_001",
+              "name": "김민지",
+              "birth_year": 1999,
+              "membership_level": "우수",
+              "allergies": null,
+              "points": 0,
+              "stamps": null,
+              "preferences": {
+                "order_count": 4,
+                "total_spent": 32600,
+                "menu_quantities": {
+                  "drink_cafe_latte": 3,
+                  "dessert_strawberry_mochi": 2,
+                  "dessert_matcha_cream_mochi": 1,
+                  "drink_injeolmi_latte": 1
+                },
+                "category_quantities": {
+                  "커피": 3,
+                  "모찌": 3,
+                  "논커피": 1
+                },
+                "temperature_quantities": {
+                  "ICE": 4
+                }
+              }
+            },
+            "input": {
+              "text": "아메리카노 두 잔과 카페라떼 한 잔 주문할게요.",
+              "has_image": false
+            },
+            "intent": {
+              "intent": "product_order",
+              "confidence": null
+            },
+            "previous_intent": null,
+            "history": [],
+            "search": null,
+            "recommendation": {
+              "allergies": null,
+              "preferences": null,
+              "candidate_menu_ids": null
+            },
+            "coupon": null,
+            "order": {
+              "items": [
+                {
+                  "product_id": "drink_americano",
+                  "product_name": "아메리카노",
+                  "quantity": 2.0,
+                  "temperature": null,
+                  "options": null,
+                  "price": 4500
+                },
+                {
+                  "product_id": "drink_cafe_latte",
+                  "product_name": "카페라떼",
+                  "quantity": 1.0,
+                  "temperature": null,
+                  "options": null,
+                  "price": 5000
+                }
+              ],
+              "order_type": null,
+              "payment_method": null,
+              "total_price": null,
+              "order_id": null,
+              "confirmation_status": "pending",
+              "needs_clarification": false,
+              "question": null
+            },
+            "receipt": null,
+            "answer": {
+              "answer": "주문을 위해 아메리카노 온도(HOT, ICE), 아메리카노 옵션 추가 여부(없으면 없음), 카페라떼 온도(HOT, ICE), 카페라떼 옵션 추가 여부(없으면 없음), 매장 이용 또는 포장, 결제 방식(카드, 현금, 간편결제)을 알려주세요."
+            }
+          }
+        },
+        {
+          "step": "response",
+          "state": {
+            "session_id": "b7a749be-1e20-433d-8906-0f18080d1466",
+            "customer_id": "cust_001",
+            "customer": {
+              "customer_id": "cust_001",
+              "name": "김민지",
+              "birth_year": 1999,
+              "membership_level": "우수",
+              "allergies": null,
+              "points": 0,
+              "stamps": null,
+              "preferences": {
+                "order_count": 4,
+                "total_spent": 32600,
+                "menu_quantities": {
+                  "drink_cafe_latte": 3,
+                  "dessert_strawberry_mochi": 2,
+                  "dessert_matcha_cream_mochi": 1,
+                  "drink_injeolmi_latte": 1
+                },
+                "category_quantities": {
+                  "커피": 3,
+                  "모찌": 3,
+                  "논커피": 1
+                },
+                "temperature_quantities": {
+                  "ICE": 4
+                }
+              }
+            },
+            "input": {
+              "text": "아메리카노 두 잔과 카페라떼 한 잔 주문할게요.",
+              "has_image": false
+            },
+            "intent": {
+              "intent": "product_order",
+              "confidence": null
+            },
+            "previous_intent": null,
+            "history": [],
+            "search": null,
+            "recommendation": {
+              "allergies": null,
+              "preferences": null,
+              "candidate_menu_ids": null
+            },
+            "coupon": null,
+            "order": {
+              "items": [
+                {
+                  "product_id": "drink_americano",
+                  "product_name": "아메리카노",
+                  "quantity": 2.0,
+                  "temperature": null,
+                  "options": null,
+                  "price": 4500
+                },
+                {
+                  "product_id": "drink_cafe_latte",
+                  "product_name": "카페라떼",
+                  "quantity": 1.0,
+                  "temperature": null,
+                  "options": null,
+                  "price": 5000
+                }
+              ],
+              "order_type": null,
+              "payment_method": null,
+              "total_price": null,
+              "order_id": null,
+              "confirmation_status": "pending",
+              "needs_clarification": false,
+              "question": null
+            },
+            "receipt": null,
+            "answer": {
+              "answer": "주문을 위해 아메리카노 온도(HOT, ICE), 아메리카노 옵션 추가 여부(없으면 없음), 카페라떼 온도(HOT, ICE), 카페라떼 옵션 추가 여부(없으면 없음), 매장 이용 또는 포장, 결제 방식(카드, 현금, 간편결제)을 알려주세요."
+            }
+          }
+        }
+      ],
+      "elapsed_ms": 26744.77
+    },
+    {
+      "steps": [
+        {
+          "step": "input",
+          "state": {
+            "session_id": "b7a749be-1e20-433d-8906-0f18080d1466",
+            "customer_id": "cust_001",
+            "customer": {
+              "customer_id": "cust_001",
+              "name": "김민지",
+              "birth_year": 1999,
+              "membership_level": "우수",
+              "allergies": null,
+              "points": 0,
+              "stamps": null,
+              "preferences": {
+                "order_count": 4,
+                "total_spent": 32600,
+                "menu_quantities": {
+                  "drink_cafe_latte": 3,
+                  "dessert_strawberry_mochi": 2,
+                  "dessert_matcha_cream_mochi": 1,
+                  "drink_injeolmi_latte": 1
+                },
+                "category_quantities": {
+                  "커피": 3,
+                  "모찌": 3,
+                  "논커피": 1
+                },
+                "temperature_quantities": {
+                  "ICE": 4
+                }
+              }
+            },
+            "input": {
+              "text": "아이스 아메리카노 한 잔과 아이스 카페라떼 한 잔, 포장할게요. 카드로 결제하고 옵션은 둘 다 없어요.",
+              "has_image": false
+            },
+            "intent": {
+              "intent": "product_order",
+              "confidence": null
+            },
+            "previous_intent": null,
+            "history": [
+              {
+                "role": "user",
+                "content": "아메리카노 두 잔과 카페라떼 한 잔 주문할게요."
+              },
+              {
+                "role": "assistant",
+                "content": "주문을 위해 아메리카노 온도(HOT, ICE), 아메리카노 옵션 추가 여부(없으면 없음), 카페라떼 온도(HOT, ICE), 카페라떼 옵션 추가 여부(없으면 없음), 매장 이용 또는 포장, 결제 방식(카드, 현금, 간편결제)을 알려주세요."
+              }
+            ],
+            "search": null,
+            "recommendation": {
+              "allergies": null,
+              "preferences": null,
+              "candidate_menu_ids": null
+            },
+            "coupon": null,
+            "order": {
+              "items": [
+                {
+                  "product_id": "drink_americano",
+                  "product_name": "아메리카노",
+                  "quantity": 2,
+                  "temperature": null,
+                  "options": null,
+                  "price": 4500
+                },
+                {
+                  "product_id": "drink_cafe_latte",
+                  "product_name": "카페라떼",
+                  "quantity": 1,
+                  "temperature": null,
+                  "options": null,
+                  "price": 5000
+                }
+              ],
+              "order_type": null,
+              "payment_method": null,
+              "total_price": null,
+              "order_id": null,
+              "confirmation_status": "pending",
+              "needs_clarification": false,
+              "question": null
+            },
+            "receipt": null,
+            "answer": {
+              "answer": "주문을 위해 아메리카노 온도(HOT, ICE), 아메리카노 옵션 추가 여부(없으면 없음), 카페라떼 온도(HOT, ICE), 카페라떼 옵션 추가 여부(없으면 없음), 매장 이용 또는 포장, 결제 방식(카드, 현금, 간편결제)을 알려주세요."
+            }
+          }
+        },
+        {
+          "step": "create_order_draft",
+          "state": {
+            "session_id": "b7a749be-1e20-433d-8906-0f18080d1466",
+            "customer_id": "cust_001",
+            "customer": {
+              "customer_id": "cust_001",
+              "name": "김민지",
+              "birth_year": 1999,
+              "membership_level": "우수",
+              "allergies": null,
+              "points": 0,
+              "stamps": null,
+              "preferences": {
+                "order_count": 4,
+                "total_spent": 32600,
+                "menu_quantities": {
+                  "drink_cafe_latte": 3,
+                  "dessert_strawberry_mochi": 2,
+                  "dessert_matcha_cream_mochi": 1,
+                  "drink_injeolmi_latte": 1
+                },
+                "category_quantities": {
+                  "커피": 3,
+                  "모찌": 3,
+                  "논커피": 1
+                },
+                "temperature_quantities": {
+                  "ICE": 4
+                }
+              }
+            },
+            "input": {
+              "text": "아이스 아메리카노 한 잔과 아이스 카페라떼 한 잔, 포장할게요. 카드로 결제하고 옵션은 둘 다 없어요.",
+              "has_image": false
+            },
+            "intent": {
+              "intent": "product_order",
+              "confidence": null
+            },
+            "previous_intent": null,
+            "history": [
+              {
+                "role": "user",
+                "content": "아메리카노 두 잔과 카페라떼 한 잔 주문할게요."
+              },
+              {
+                "role": "assistant",
+                "content": "주문을 위해 아메리카노 온도(HOT, ICE), 아메리카노 옵션 추가 여부(없으면 없음), 카페라떼 온도(HOT, ICE), 카페라떼 옵션 추가 여부(없으면 없음), 매장 이용 또는 포장, 결제 방식(카드, 현금, 간편결제)을 알려주세요."
+              }
+            ],
+            "search": null,
+            "recommendation": {
+              "allergies": null,
+              "preferences": null,
+              "candidate_menu_ids": null
+            },
+            "coupon": null,
+            "order": {
+              "items": [
+                {
+                  "product_id": null,
+                  "product_name": "아메리카노",
+                  "quantity": 1.0,
+                  "temperature": "ICE",
+                  "options": [],
+                  "price": null
+                },
+                {
+                  "product_id": null,
+                  "product_name": "카페라떼",
+                  "quantity": 1.0,
+                  "temperature": "ICE",
+                  "options": [],
+                  "price": null
+                }
+              ],
+              "order_type": "포장",
+              "payment_method": "카드",
+              "total_price": null,
+              "order_id": null,
+              "confirmation_status": "pending",
+              "needs_clarification": false,
+              "question": null
+            },
+            "receipt": null,
+            "answer": null
+          }
+        },
+        {
+          "step": "match_menu_and_fill_prices",
+          "state": {
+            "session_id": "b7a749be-1e20-433d-8906-0f18080d1466",
+            "customer_id": "cust_001",
+            "customer": {
+              "customer_id": "cust_001",
+              "name": "김민지",
+              "birth_year": 1999,
+              "membership_level": "우수",
+              "allergies": null,
+              "points": 0,
+              "stamps": null,
+              "preferences": {
+                "order_count": 4,
+                "total_spent": 32600,
+                "menu_quantities": {
+                  "drink_cafe_latte": 3,
+                  "dessert_strawberry_mochi": 2,
+                  "dessert_matcha_cream_mochi": 1,
+                  "drink_injeolmi_latte": 1
+                },
+                "category_quantities": {
+                  "커피": 3,
+                  "모찌": 3,
+                  "논커피": 1
+                },
+                "temperature_quantities": {
+                  "ICE": 4
+                }
+              }
+            },
+            "input": {
+              "text": "아이스 아메리카노 한 잔과 아이스 카페라떼 한 잔, 포장할게요. 카드로 결제하고 옵션은 둘 다 없어요.",
+              "has_image": false
+            },
+            "intent": {
+              "intent": "product_order",
+              "confidence": null
+            },
+            "previous_intent": null,
+            "history": [
+              {
+                "role": "user",
+                "content": "아메리카노 두 잔과 카페라떼 한 잔 주문할게요."
+              },
+              {
+                "role": "assistant",
+                "content": "주문을 위해 아메리카노 온도(HOT, ICE), 아메리카노 옵션 추가 여부(없으면 없음), 카페라떼 온도(HOT, ICE), 카페라떼 옵션 추가 여부(없으면 없음), 매장 이용 또는 포장, 결제 방식(카드, 현금, 간편결제)을 알려주세요."
+              }
+            ],
+            "search": null,
+            "recommendation": {
+              "allergies": null,
+              "preferences": null,
+              "candidate_menu_ids": null
+            },
+            "coupon": null,
+            "order": {
+              "items": [
+                {
+                  "product_id": "drink_americano",
+                  "product_name": "아메리카노",
+                  "quantity": 1.0,
+                  "temperature": "ICE",
+                  "options": [],
+                  "price": 4500
+                },
+                {
+                  "product_id": "drink_cafe_latte",
+                  "product_name": "카페라떼",
+                  "quantity": 1.0,
+                  "temperature": "ICE",
+                  "options": [],
+                  "price": 5000
+                }
+              ],
+              "order_type": "포장",
+              "payment_method": "카드",
+              "total_price": null,
+              "order_id": null,
+              "confirmation_status": "pending",
+              "needs_clarification": false,
+              "question": null
+            },
+            "receipt": null,
+            "answer": null
+          }
+        },
+        {
+          "step": "check_order",
+          "state": {
+            "session_id": "b7a749be-1e20-433d-8906-0f18080d1466",
+            "customer_id": "cust_001",
+            "customer": {
+              "customer_id": "cust_001",
+              "name": "김민지",
+              "birth_year": 1999,
+              "membership_level": "우수",
+              "allergies": null,
+              "points": 0,
+              "stamps": null,
+              "preferences": {
+                "order_count": 4,
+                "total_spent": 32600,
+                "menu_quantities": {
+                  "drink_cafe_latte": 3,
+                  "dessert_strawberry_mochi": 2,
+                  "dessert_matcha_cream_mochi": 1,
+                  "drink_injeolmi_latte": 1
+                },
+                "category_quantities": {
+                  "커피": 3,
+                  "모찌": 3,
+                  "논커피": 1
+                },
+                "temperature_quantities": {
+                  "ICE": 4
+                }
+              }
+            },
+            "input": {
+              "text": "아이스 아메리카노 한 잔과 아이스 카페라떼 한 잔, 포장할게요. 카드로 결제하고 옵션은 둘 다 없어요.",
+              "has_image": false
+            },
+            "intent": {
+              "intent": "product_order",
+              "confidence": null
+            },
+            "previous_intent": null,
+            "history": [
+              {
+                "role": "user",
+                "content": "아메리카노 두 잔과 카페라떼 한 잔 주문할게요."
+              },
+              {
+                "role": "assistant",
+                "content": "주문을 위해 아메리카노 온도(HOT, ICE), 아메리카노 옵션 추가 여부(없으면 없음), 카페라떼 온도(HOT, ICE), 카페라떼 옵션 추가 여부(없으면 없음), 매장 이용 또는 포장, 결제 방식(카드, 현금, 간편결제)을 알려주세요."
+              }
+            ],
+            "search": null,
+            "recommendation": {
+              "allergies": null,
+              "preferences": null,
+              "candidate_menu_ids": null
+            },
+            "coupon": null,
+            "order": {
+              "items": [
+                {
+                  "product_id": "drink_americano",
+                  "product_name": "아메리카노",
+                  "quantity": 1.0,
+                  "temperature": "ICE",
+                  "options": [],
+                  "price": 4500
+                },
+                {
+                  "product_id": "drink_cafe_latte",
+                  "product_name": "카페라떼",
+                  "quantity": 1.0,
+                  "temperature": "ICE",
+                  "options": [],
+                  "price": 5000
+                }
+              ],
+              "order_type": "포장",
+              "payment_method": "카드",
+              "total_price": null,
+              "order_id": null,
+              "confirmation_status": "pending",
+              "needs_clarification": false,
+              "question": null
+            },
+            "receipt": null,
+            "answer": {
+              "answer": "아이스 아메리카노 1개 / 옵션: 없음\n아이스 카페라떼 1개 / 옵션: 없음\n이용: 포장 / 결제: 카드\n추가·수정할 내용이 없으면 이대로 주문할까요? yes / no로 답해 주세요."
+            }
+          }
+        },
+        {
+          "step": "response",
+          "state": {
+            "session_id": "b7a749be-1e20-433d-8906-0f18080d1466",
+            "customer_id": "cust_001",
+            "customer": {
+              "customer_id": "cust_001",
+              "name": "김민지",
+              "birth_year": 1999,
+              "membership_level": "우수",
+              "allergies": null,
+              "points": 0,
+              "stamps": null,
+              "preferences": {
+                "order_count": 4,
+                "total_spent": 32600,
+                "menu_quantities": {
+                  "drink_cafe_latte": 3,
+                  "dessert_strawberry_mochi": 2,
+                  "dessert_matcha_cream_mochi": 1,
+                  "drink_injeolmi_latte": 1
+                },
+                "category_quantities": {
+                  "커피": 3,
+                  "모찌": 3,
+                  "논커피": 1
+                },
+                "temperature_quantities": {
+                  "ICE": 4
+                }
+              }
+            },
+            "input": {
+              "text": "아이스 아메리카노 한 잔과 아이스 카페라떼 한 잔, 포장할게요. 카드로 결제하고 옵션은 둘 다 없어요.",
+              "has_image": false
+            },
+            "intent": {
+              "intent": "product_order",
+              "confidence": null
+            },
+            "previous_intent": null,
+            "history": [
+              {
+                "role": "user",
+                "content": "아메리카노 두 잔과 카페라떼 한 잔 주문할게요."
+              },
+              {
+                "role": "assistant",
+                "content": "주문을 위해 아메리카노 온도(HOT, ICE), 아메리카노 옵션 추가 여부(없으면 없음), 카페라떼 온도(HOT, ICE), 카페라떼 옵션 추가 여부(없으면 없음), 매장 이용 또는 포장, 결제 방식(카드, 현금, 간편결제)을 알려주세요."
+              }
+            ],
+            "search": null,
+            "recommendation": {
+              "allergies": null,
+              "preferences": null,
+              "candidate_menu_ids": null
+            },
+            "coupon": null,
+            "order": {
+              "items": [
+                {
+                  "product_id": "drink_americano",
+                  "product_name": "아메리카노",
+                  "quantity": 1.0,
+                  "temperature": "ICE",
+                  "options": [],
+                  "price": 4500
+                },
+                {
+                  "product_id": "drink_cafe_latte",
+                  "product_name": "카페라떼",
+                  "quantity": 1.0,
+                  "temperature": "ICE",
+                  "options": [],
+                  "price": 5000
+                }
+              ],
+              "order_type": "포장",
+              "payment_method": "카드",
+              "total_price": null,
+              "order_id": null,
+              "confirmation_status": "pending",
+              "needs_clarification": false,
+              "question": null
+            },
+            "receipt": null,
+            "answer": {
+              "answer": "아이스 아메리카노 1개 / 옵션: 없음\n아이스 카페라떼 1개 / 옵션: 없음\n이용: 포장 / 결제: 카드\n추가·수정할 내용이 없으면 이대로 주문할까요? yes / no로 답해 주세요."
+            }
+          }
+        }
+      ],
+      "elapsed_ms": 11514.46
+    },
+    {
+      "steps": [
+        {
+          "step": "input",
+          "state": {
+            "session_id": "b7a749be-1e20-433d-8906-0f18080d1466",
+            "customer_id": "cust_001",
+            "customer": {
+              "customer_id": "cust_001",
+              "name": "김민지",
+              "birth_year": 1999,
+              "membership_level": "우수",
+              "allergies": null,
+              "points": 0,
+              "stamps": null,
+              "preferences": {
+                "order_count": 4,
+                "total_spent": 32600,
+                "menu_quantities": {
+                  "drink_cafe_latte": 3,
+                  "dessert_strawberry_mochi": 2,
+                  "dessert_matcha_cream_mochi": 1,
+                  "drink_injeolmi_latte": 1
+                },
+                "category_quantities": {
+                  "커피": 3,
+                  "모찌": 3,
+                  "논커피": 1
+                },
+                "temperature_quantities": {
+                  "ICE": 4
+                }
+              }
+            },
+            "input": {
+              "text": "yes",
+              "has_image": false
+            },
+            "intent": {
+              "intent": "product_order",
+              "confidence": null
+            },
+            "previous_intent": null,
+            "history": [
+              {
+                "role": "user",
+                "content": "아메리카노 두 잔과 카페라떼 한 잔 주문할게요."
+              },
+              {
+                "role": "assistant",
+                "content": "주문을 위해 아메리카노 온도(HOT, ICE), 아메리카노 옵션 추가 여부(없으면 없음), 카페라떼 온도(HOT, ICE), 카페라떼 옵션 추가 여부(없으면 없음), 매장 이용 또는 포장, 결제 방식(카드, 현금, 간편결제)을 알려주세요."
+              },
+              {
+                "role": "user",
+                "content": "아이스 아메리카노 한 잔과 아이스 카페라떼 한 잔, 포장할게요. 카드로 결제하고 옵션은 둘 다 없어요."
+              },
+              {
+                "role": "assistant",
+                "content": "아이스 아메리카노 1개 / 옵션: 없음\n아이스 카페라떼 1개 / 옵션: 없음\n이용: 포장 / 결제: 카드\n추가·수정할 내용이 없으면 이대로 주문할까요? yes / no로 답해 주세요."
+              }
+            ],
+            "search": null,
+            "recommendation": {
+              "allergies": null,
+              "preferences": null,
+              "candidate_menu_ids": null
+            },
+            "coupon": null,
+            "order": {
+              "items": [
+                {
+                  "product_id": "drink_americano",
+                  "product_name": "아메리카노",
+                  "quantity": 1,
+                  "temperature": "ICE",
+                  "options": [],
+                  "price": 4500
+                },
+                {
+                  "product_id": "drink_cafe_latte",
+                  "product_name": "카페라떼",
+                  "quantity": 1,
+                  "temperature": "ICE",
+                  "options": [],
+                  "price": 5000
+                }
+              ],
+              "order_type": "포장",
+              "payment_method": "카드",
+              "total_price": null,
+              "order_id": null,
+              "confirmation_status": "pending",
+              "needs_clarification": false,
+              "question": null
+            },
+            "receipt": null,
+            "answer": {
+              "answer": "아이스 아메리카노 1개 / 옵션: 없음\n아이스 카페라떼 1개 / 옵션: 없음\n이용: 포장 / 결제: 카드\n추가·수정할 내용이 없으면 이대로 주문할까요? yes / no로 답해 주세요."
+            }
+          }
+        },
+        {
+          "step": "match_menu_and_fill_prices",
+          "state": {
+            "session_id": "b7a749be-1e20-433d-8906-0f18080d1466",
+            "customer_id": "cust_001",
+            "customer": {
+              "customer_id": "cust_001",
+              "name": "김민지",
+              "birth_year": 1999,
+              "membership_level": "우수",
+              "allergies": null,
+              "points": 0,
+              "stamps": null,
+              "preferences": {
+                "order_count": 4,
+                "total_spent": 32600,
+                "menu_quantities": {
+                  "drink_cafe_latte": 3,
+                  "dessert_strawberry_mochi": 2,
+                  "dessert_matcha_cream_mochi": 1,
+                  "drink_injeolmi_latte": 1
+                },
+                "category_quantities": {
+                  "커피": 3,
+                  "모찌": 3,
+                  "논커피": 1
+                },
+                "temperature_quantities": {
+                  "ICE": 4
+                }
+              }
+            },
+            "input": {
+              "text": "yes",
+              "has_image": false
+            },
+            "intent": {
+              "intent": "product_order",
+              "confidence": null
+            },
+            "previous_intent": null,
+            "history": [
+              {
+                "role": "user",
+                "content": "아메리카노 두 잔과 카페라떼 한 잔 주문할게요."
+              },
+              {
+                "role": "assistant",
+                "content": "주문을 위해 아메리카노 온도(HOT, ICE), 아메리카노 옵션 추가 여부(없으면 없음), 카페라떼 온도(HOT, ICE), 카페라떼 옵션 추가 여부(없으면 없음), 매장 이용 또는 포장, 결제 방식(카드, 현금, 간편결제)을 알려주세요."
+              },
+              {
+                "role": "user",
+                "content": "아이스 아메리카노 한 잔과 아이스 카페라떼 한 잔, 포장할게요. 카드로 결제하고 옵션은 둘 다 없어요."
+              },
+              {
+                "role": "assistant",
+                "content": "아이스 아메리카노 1개 / 옵션: 없음\n아이스 카페라떼 1개 / 옵션: 없음\n이용: 포장 / 결제: 카드\n추가·수정할 내용이 없으면 이대로 주문할까요? yes / no로 답해 주세요."
+              }
+            ],
+            "search": null,
+            "recommendation": {
+              "allergies": null,
+              "preferences": null,
+              "candidate_menu_ids": null
+            },
+            "coupon": null,
+            "order": {
+              "items": [
+                {
+                  "product_id": "drink_americano",
+                  "product_name": "아메리카노",
+                  "quantity": 1,
+                  "temperature": "ICE",
+                  "options": [],
+                  "price": 4500
+                },
+                {
+                  "product_id": "drink_cafe_latte",
+                  "product_name": "카페라떼",
+                  "quantity": 1,
+                  "temperature": "ICE",
+                  "options": [],
+                  "price": 5000
+                }
+              ],
+              "order_type": "포장",
+              "payment_method": "카드",
+              "total_price": null,
+              "order_id": null,
+              "confirmation_status": "pending",
+              "needs_clarification": false,
+              "question": null
+            },
+            "receipt": null,
+            "answer": null
+          }
+        },
+        {
+          "step": "place_order",
+          "state": {
+            "session_id": "b7a749be-1e20-433d-8906-0f18080d1466",
+            "customer_id": "cust_001",
+            "customer": {
+              "customer_id": "cust_001",
+              "name": "김민지",
+              "birth_year": 1999,
+              "membership_level": "우수",
+              "allergies": null,
+              "points": 0,
+              "stamps": null,
+              "preferences": {
+                "order_count": 4,
+                "total_spent": 32600,
+                "menu_quantities": {
+                  "drink_cafe_latte": 3,
+                  "dessert_strawberry_mochi": 2,
+                  "dessert_matcha_cream_mochi": 1,
+                  "drink_injeolmi_latte": 1
+                },
+                "category_quantities": {
+                  "커피": 3,
+                  "모찌": 3,
+                  "논커피": 1
+                },
+                "temperature_quantities": {
+                  "ICE": 4
+                }
+              }
+            },
+            "input": {
+              "text": "yes",
+              "has_image": false
+            },
+            "intent": {
+              "intent": "product_order",
+              "confidence": null
+            },
+            "previous_intent": null,
+            "history": [
+              {
+                "role": "user",
+                "content": "아메리카노 두 잔과 카페라떼 한 잔 주문할게요."
+              },
+              {
+                "role": "assistant",
+                "content": "주문을 위해 아메리카노 온도(HOT, ICE), 아메리카노 옵션 추가 여부(없으면 없음), 카페라떼 온도(HOT, ICE), 카페라떼 옵션 추가 여부(없으면 없음), 매장 이용 또는 포장, 결제 방식(카드, 현금, 간편결제)을 알려주세요."
+              },
+              {
+                "role": "user",
+                "content": "아이스 아메리카노 한 잔과 아이스 카페라떼 한 잔, 포장할게요. 카드로 결제하고 옵션은 둘 다 없어요."
+              },
+              {
+                "role": "assistant",
+                "content": "아이스 아메리카노 1개 / 옵션: 없음\n아이스 카페라떼 1개 / 옵션: 없음\n이용: 포장 / 결제: 카드\n추가·수정할 내용이 없으면 이대로 주문할까요? yes / no로 답해 주세요."
+              }
+            ],
+            "search": null,
+            "recommendation": {
+              "allergies": null,
+              "preferences": null,
+              "candidate_menu_ids": null
+            },
+            "coupon": null,
+            "order": {
+              "items": [
+                {
+                  "product_id": "drink_americano",
+                  "product_name": "아메리카노",
+                  "quantity": 1,
+                  "temperature": "ICE",
+                  "options": [],
+                  "price": 4500
+                },
+                {
+                  "product_id": "drink_cafe_latte",
+                  "product_name": "카페라떼",
+                  "quantity": 1,
+                  "temperature": "ICE",
+                  "options": [],
+                  "price": 5000
+                }
+              ],
+              "order_type": "포장",
+              "payment_method": "카드",
+              "total_price": 9500,
+              "order_id": "test-a0f3b068e9db",
+              "confirmation_status": "confirmed",
+              "needs_clarification": false,
+              "question": null
+            },
+            "receipt": null,
+            "answer": {
+              "answer": "테스트 주문번호 test-a0f3b068e9db, 결제금액 9,500원입니다."
+            }
+          }
+        },
+        {
+          "step": "response",
+          "state": {
+            "session_id": "b7a749be-1e20-433d-8906-0f18080d1466",
+            "customer_id": "cust_001",
+            "customer": {
+              "customer_id": "cust_001",
+              "name": "김민지",
+              "birth_year": 1999,
+              "membership_level": "우수",
+              "allergies": null,
+              "points": 0,
+              "stamps": null,
+              "preferences": {
+                "order_count": 4,
+                "total_spent": 32600,
+                "menu_quantities": {
+                  "drink_cafe_latte": 3,
+                  "dessert_strawberry_mochi": 2,
+                  "dessert_matcha_cream_mochi": 1,
+                  "drink_injeolmi_latte": 1
+                },
+                "category_quantities": {
+                  "커피": 3,
+                  "모찌": 3,
+                  "논커피": 1
+                },
+                "temperature_quantities": {
+                  "ICE": 4
+                }
+              }
+            },
+            "input": {
+              "text": "yes",
+              "has_image": false
+            },
+            "intent": {
+              "intent": "product_order",
+              "confidence": null
+            },
+            "previous_intent": null,
+            "history": [
+              {
+                "role": "user",
+                "content": "아메리카노 두 잔과 카페라떼 한 잔 주문할게요."
+              },
+              {
+                "role": "assistant",
+                "content": "주문을 위해 아메리카노 온도(HOT, ICE), 아메리카노 옵션 추가 여부(없으면 없음), 카페라떼 온도(HOT, ICE), 카페라떼 옵션 추가 여부(없으면 없음), 매장 이용 또는 포장, 결제 방식(카드, 현금, 간편결제)을 알려주세요."
+              },
+              {
+                "role": "user",
+                "content": "아이스 아메리카노 한 잔과 아이스 카페라떼 한 잔, 포장할게요. 카드로 결제하고 옵션은 둘 다 없어요."
+              },
+              {
+                "role": "assistant",
+                "content": "아이스 아메리카노 1개 / 옵션: 없음\n아이스 카페라떼 1개 / 옵션: 없음\n이용: 포장 / 결제: 카드\n추가·수정할 내용이 없으면 이대로 주문할까요? yes / no로 답해 주세요."
+              }
+            ],
+            "search": null,
+            "recommendation": {
+              "allergies": null,
+              "preferences": null,
+              "candidate_menu_ids": null
+            },
+            "coupon": null,
+            "order": {
+              "items": [
+                {
+                  "product_id": "drink_americano",
+                  "product_name": "아메리카노",
+                  "quantity": 1,
+                  "temperature": "ICE",
+                  "options": [],
+                  "price": 4500
+                },
+                {
+                  "product_id": "drink_cafe_latte",
+                  "product_name": "카페라떼",
+                  "quantity": 1,
+                  "temperature": "ICE",
+                  "options": [],
+                  "price": 5000
+                }
+              ],
+              "order_type": "포장",
+              "payment_method": "카드",
+              "total_price": 9500,
+              "order_id": "test-a0f3b068e9db",
+              "confirmation_status": "confirmed",
+              "needs_clarification": false,
+              "question": null
+            },
+            "receipt": null,
+            "answer": {
+              "answer": "테스트 주문번호 test-a0f3b068e9db, 결제금액 9,500원입니다."
+            }
+          }
+        }
+      ],
+      "elapsed_ms": 7.45
+    }
+  ]
+}

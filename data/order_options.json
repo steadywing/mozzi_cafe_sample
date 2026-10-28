@@ -1,0 +1,47 @@
+{
+  "샷 추가": {
+    "price": 500,
+    "menu_ids": [
+      "drink_americano",
+      "drink_cafe_latte",
+      "drink_flat_white"
+    ]
+  },
+  "디카페인 원두 변경": {
+    "price": 500,
+    "menu_ids": [
+      "drink_americano",
+      "drink_cafe_latte",
+      "drink_flat_white"
+    ]
+  },
+  "두유로 변경": {
+    "price": 500,
+    "menu_ids": [
+      "drink_cafe_latte",
+      "drink_flat_white",
+      "drink_injeolmi_latte",
+      "drink_matcha_latte",
+      "drink_black_sesame_latte"
+    ]
+  },
+  "오트 음료로 변경": {
+    "price": 500,
+    "menu_ids": [
+      "drink_cafe_latte",
+      "drink_flat_white",
+      "drink_injeolmi_latte",
+      "drink_matcha_latte",
+      "drink_black_sesame_latte"
+    ]
+  },
+  "덜 달게": {
+    "price": 0,
+    "menu_ids": [
+      "drink_injeolmi_latte",
+      "drink_black_sesame_latte",
+      "drink_yuzu_ade",
+      "drink_peach_iced_tea"
+    ]
+  }
+}

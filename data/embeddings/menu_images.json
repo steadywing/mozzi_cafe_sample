@@ -1,0 +1,22 @@
+{
+  "model_id": "google/embeddinggemma-2",
+  "menu_ids": [
+    "drink_americano",
+    "drink_cafe_latte",
+    "drink_flat_white",
+    "drink_injeolmi_latte",
+    "drink_matcha_latte",
+    "drink_black_sesame_latte",
+    "drink_yuzu_ade",
+    "drink_peach_iced_tea",
+    "dessert_strawberry_mochi",
+    "dessert_injeolmi_mochi",
+    "dessert_matcha_cream_mochi",
+    "dessert_peanut_cream_mochi",
+    "dessert_black_sesame_mochi",
+    "dessert_mochi_waffle",
+    "dessert_walnut_mochi_bread",
+    "dessert_weekly_mochi",
+    "dessert_chestnut_mochi"
+  ]
+}

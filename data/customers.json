@@ -1,0 +1,12 @@
+[
+  {"customer_id": "cust_001", "name": "김민지", "phone": "010-****-1234", "birth_year": 1999, "gender": "F", "joined_at": "2026-03-14", "membership_level": "우수", "marketing_consent": true, "last_visit_at": "2026-10-24", "points": 0},
+  {"customer_id": "cust_002", "name": "이준호", "phone": "010-****-5821", "birth_year": 1991, "gender": "M", "joined_at": "2025-11-02", "membership_level": "우수", "marketing_consent": true, "last_visit_at": "2026-10-27", "points": 1200},
+  {"customer_id": "cust_003", "name": "박정순", "phone": "010-****-3307", "birth_year": 1958, "gender": "F", "joined_at": "2026-05-20", "membership_level": "일반", "marketing_consent": false, "last_visit_at": "2026-10-22", "points": 350},
+  {"customer_id": "cust_004", "name": "최성민", "phone": "010-****-9142", "birth_year": 1983, "gender": "M", "joined_at": "2026-01-08", "membership_level": "일반", "marketing_consent": true, "last_visit_at": "2026-10-25", "points": 1800},
+  {"customer_id": "cust_005", "name": "정하은", "phone": "010-****-4476", "birth_year": 2005, "gender": "F", "joined_at": "2026-08-30", "membership_level": "일반", "marketing_consent": true, "last_visit_at": "2026-10-25", "points": 500},
+  {"customer_id": "cust_006", "name": "강도윤", "phone": "010-****-2089", "birth_year": 1996, "gender": "M", "joined_at": "2026-06-11", "membership_level": "일반", "marketing_consent": false, "last_visit_at": "2026-10-27", "points": 2400},
+  {"customer_id": "cust_007", "name": "윤서연", "phone": "010-****-6613", "birth_year": 1988, "gender": "F", "joined_at": "2026-04-03", "membership_level": "일반", "marketing_consent": true, "last_visit_at": "2026-10-23", "points": 750},
+  {"customer_id": "cust_008", "name": "임지훈", "phone": "010-****-7350", "birth_year": 1975, "gender": "M", "joined_at": "2026-02-17", "membership_level": "일반", "marketing_consent": false, "last_visit_at": "2026-10-27", "points": 100},
+  {"customer_id": "cust_009", "name": "한유나", "phone": "010-****-1198", "birth_year": 2010, "gender": "F", "joined_at": "2026-09-06", "membership_level": "일반", "marketing_consent": false, "last_visit_at": "2026-10-27", "points": 600},
+  {"customer_id": "cust_010", "name": "오세진", "phone": "010-****-8024", "birth_year": 1965, "gender": "M", "joined_at": "2026-10-25", "membership_level": "일반", "marketing_consent": false, "last_visit_at": "2026-10-25", "points": 0}
+]

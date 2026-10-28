@@ -6,7 +6,6 @@ __pycache__/
 !.env.example
 .DS_Store
 .pytest_cache/
-data/
 uploads/
 google_vision_api.json
 

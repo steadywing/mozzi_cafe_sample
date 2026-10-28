@@ -1,0 +1,55 @@
+{
+  "events": [
+    {
+      "event_id": "stamp_2026_autumn",
+      "name": "모찌카페 스탬프 적립",
+      "start_date": null,
+      "end_date": null,
+      "stamps_required": 10,
+      "max_stamps_per_coupon": 10,
+      "coupon_id_pattern": "^MOCHI-2026-\\d{4}$",
+      "reward": "4,500원 이하 모찌 1개 무료"
+    }
+  ],
+  "coupons": [
+    {
+      "coupon_id": "MOCHI-2026-0001",
+      "event_id": "stamp_2026_autumn",
+      "issued_date": "2026-10-02"
+    },
+    {
+      "coupon_id": "MOCHI-2026-0002",
+      "event_id": "stamp_2026_autumn",
+      "issued_date": "2026-10-05"
+    },
+    {
+      "coupon_id": "MOCHI-2026-0003",
+      "event_id": "stamp_2026_autumn",
+      "issued_date": "2026-10-06"
+    },
+    {
+      "coupon_id": "MOCHI-2026-0004",
+      "event_id": "stamp_2026_autumn",
+      "issued_date": "2026-10-09"
+    },
+    {
+      "coupon_id": "MOCHI-2026-0005",
+      "event_id": "stamp_2026_autumn",
+      "issued_date": "2026-10-12"
+    },
+    {
+      "coupon_id": "MOCHI-2026-0006",
+      "event_id": "stamp_2026_autumn",
+      "issued_date": "2026-10-15"
+    }
+  ],
+  "participations": [
+    {
+      "coupon_id": "MOCHI-2026-0003",
+      "event_id": "stamp_2026_autumn",
+      "customer_id": "cust_002",
+      "stamps": 10,
+      "participated_at": "2026-10-20T14:10:00+09:00"
+    }
+  ]
+}
