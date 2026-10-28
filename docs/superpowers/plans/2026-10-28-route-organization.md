@@ -45,7 +45,7 @@
 
 ### Task 3: 화면 호출과 경로 설명
 
-**Files:** `templates/*.html`, `static/js/*.js`, `tests/frontend/*.cjs`, `README.md`, `docs/파일-구조와-주석-규칙.md`, `static/diagrams/service-flow.svg`
+**Files:** `templates/*.html`, `static/js/*.js`, `tests/frontend/*.cjs`, `README.md`, `docs/폴더-구조.md`, `static/diagrams/service-flow.svg`
 
 - [x] 내비게이션, `fetch()` 호출, 화면에 표시되는 경로를 새 주소로 바꿉니다.
 - [x] 두 주문 화면을 명확히 구분하고 구조 문서·SVG의 주소를 갱신합니다.

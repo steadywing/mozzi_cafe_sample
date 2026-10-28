@@ -2,16 +2,32 @@
 
 카페 챗봇 수업 확장 예제. 현재는 의도 분류와 기능별 독립 실습 API를 테스트보드에서 확인하며, 고객용 통합 챗봇은 아직 연결하지 않았다.
 
-## 환경
+## 클론 후 로컬 서버 실행
 
-- Python 3.12 (`.venv`)
-- uv / FastAPI
-- 주요 패키지: FastAPI, Uvicorn, TypeSafe SDK, OpenAI SDK, python-dotenv, Jupyter
+Git, Python 3.12, [uv](https://docs.astral.sh/uv/getting-started/installation/)를 준비합니다. 아래 명령은 프로젝트 루트에서 실행합니다. 저장소에 접근 권한이 필요한 경우 GitHub에서 본인이 사용할 수 있는 클론 URL로 바꿉니다.
 
 ```sh
-uv sync
+git clone https://github.com/steadywing/mozzi_cafe_sample.git
+cd mozzi_cafe_sample
+uv sync --locked
+```
+
+`.env.example`을 `.env`로 복사한 뒤 사용할 기능의 API 키를 채웁니다. macOS·Linux에서는 `cp .env.example .env`, Windows PowerShell에서는 `Copy-Item .env.example .env`를 사용합니다. 의도 분류에는 `TYPESAFE_API_KEY`, 주문·추천 등 답변 생성에는 `OPENAI_API_KEY`가 필요합니다. 영수증 포인트 실습을 사용한다면 `.env`에 `GEMINI_API_KEY=발급받은_키`도 추가합니다. `.env`는 Git에 올리지 않습니다.
+
+```sh
 uv run uvicorn main:app --reload
 ```
+
+서버가 켜지면 다음 주소를 확인합니다. 종료할 때는 터미널에서 `Ctrl+C`를 누릅니다.
+
+| 주소 | 확인할 내용 |
+|---|---|
+| http://127.0.0.1:8000/ | 구현 현황 화면 |
+| http://127.0.0.1:8000/test/intent | 의도 분류 테스트 화면 |
+| http://127.0.0.1:8000/health | 서버 응답 (`{"status":"ok"}`) |
+| http://127.0.0.1:8000/docs | API 문서 |
+
+`data/`는 Git 관리에서 제외되어 클론만으로는 내려오지 않습니다. 서버와 기본 화면은 실행할 수 있지만, 메뉴·고객·주문·카페 문서·샘플 사진·FAISS 인덱스를 사용하는 실습에는 프로젝트 관리자가 제공한 `data/` 폴더를 프로젝트 루트에 별도로 놓아야 합니다. 로컬 상품 검색에는 추가로 `uv sync --locked --group embedding`으로 검색 의존성을 설치해야 합니다. 임베딩 모델은 첫 검색 때 인터넷에서 내려받아 캐시에 보관합니다.
 
 ### Windows + NVIDIA GPU에서 Docker 실행
 
@@ -19,21 +35,16 @@ Docker Desktop의 WSL 2 백엔드와 NVIDIA 드라이버를 준비한 뒤, WSL 2
 
 ```sh
 docker build --platform linux/amd64 -t wanted-cafe-chatbot:cuda .
-docker run --rm -v wanted-cafe-hf:/models/hf wanted-cafe-chatbot:cuda \
-  python -c "from huggingface_hub import snapshot_download; snapshot_download('google/embeddinggemma-2')"
 docker run --rm --gpus all -p 8000:8000 --env-file .env \
-  -v "$(pwd)/data:/app/data" -v wanted-cafe-hf:/models/hf \
+  -v wanted-cafe-data:/app/data -v wanted-cafe-hf:/models/hf \
   wanted-cafe-chatbot:cuda
 ```
 
-실행 전 `.env.example`을 참고해 프로젝트 루트에 `.env`와 필요한 API 키를 준비합니다. `data/`는 이미지에 넣지 않고 실행할 때 연결하므로, 메뉴·샘플·FAISS 인덱스가 들어 있는 현재 `data/` 폴더가 필요합니다. 검색 모델은 오프라인으로 불러오므로 위의 모델 캐시 준비 명령을 한 번 실행해야 합니다. `data/`를 연결하면 대화·상태 파일도 컨테이너를 다시 만들어도 유지됩니다. 서버 확인 주소는 `http://localhost:8000/health`입니다.
+실행 전 `.env.example`을 참고해 프로젝트 루트에 `.env`와 필요한 API 키를 준비합니다. `data/`는 빌드 시 이미지에 복사됩니다. 새 `wanted-cafe-data` 볼륨에는 이미지의 데이터가 처음 실행할 때 복사되고, 이후 대화·상태 변경이 볼륨에 남습니다. 이미지에 새 데이터를 넣어 다시 빌드해도 기존 볼륨의 파일은 자동으로 바뀌지 않습니다. 검색 모델은 첫 상품 검색 때 인터넷에서 내려받고 `wanted-cafe-hf` 볼륨에 보관하므로 사전 다운로드는 필요하지 않습니다. 서버 확인 주소는 `http://localhost:8000/health`입니다.
+
+Slack으로 이미지를 전달하려면 빌드한 컴퓨터에서 `docker save wanted-cafe-chatbot:cuda | gzip > wanted-cafe-chatbot-cuda.tar.gz`로 파일을 만들고, 받은 컴퓨터에서 `docker load -i wanted-cafe-chatbot-cuda.tar.gz`를 실행합니다. 받은 사람은 자신의 `.env`를 만든 뒤 위 `docker run` 명령으로 서버를 켭니다. `.env`는 이미지나 전달 파일에 넣지 않습니다. 이미지에는 빌드 시점의 `data/history/`·`data/state/` 기록도 포함되므로 전달 전에 해당 기록을 확인합니다. 압축 파일이 [Slack의 파일당 1GB 제한](https://slack.com/help/articles/201330736-Add-files-to-Slack)을 넘으면 다른 파일 공유 방법을 사용해야 합니다.
 
 현재 상품 검색은 임베딩 생성에 CUDA를 사용하고, 17개 메뉴 벡터의 FAISS 검색은 CPU 인덱스로 수행합니다. `faiss-gpu` 설치만으로 검색이 GPU로 바뀌지 않아 이 이미지에는 `faiss-cpu`를 유지했습니다. GPU 사용 여부는 `docker run --rm --gpus all wanted-cafe-chatbot:cuda python -c "import torch; print(torch.cuda.is_available())"`로 확인할 수 있습니다.
-
-서비스 구현 현황: http://127.0.0.1:8000/
-의도 분류 테스트: http://127.0.0.1:8000/test/intent
-서버 확인: http://127.0.0.1:8000/health
-API 문서: http://127.0.0.1:8000/docs
 
 ## 기능 현황
 
@@ -106,7 +117,6 @@ templates/order.html    # 상품 주문 실행 화면
 templates/notebook_order.html # 단계별 주문 실습 화면
 templates/notebook_*.html # 기능별 실습 화면
 notebooks/              # 기초 사용법과 기능별 실습
-old/                    # 현재 사용하지 않는 API와 관련 테스트 원본
 tests/fixtures/intent_turn_cases.json # 의도 분류 테스트 예제
 static/css/style.css    # 공통·설계 화면 스타일
 static/css/intent-test.css # 의도 분류 화면 스타일
@@ -118,7 +128,7 @@ tests/frontend/intent-session.test.cjs # 프런트 세션 유지 검증
 static/diagrams/service-flow.svg  # 현재 API별 처리 흐름의 노드·연결선
 ```
 
-전체 폴더 구성과 파일별 역할은 [파일 구조와 주석 규칙](docs/파일-구조와-주석-규칙.md)에 정리되어 있다.
+전체 폴더 구성과 파일별 역할은 [폴더 구조](docs/폴더-구조.md)에 정리되어 있다. 작성 기준은 [주석 규칙](docs/주석-규칙.md)과 [노트북 작성 규칙](docs/노트북-작성-규칙.md)을 따른다.
 
 구현 현황 설명은 `templates/index.html`, 화면 스타일은 `static/css/style.css`, 흐름도의 노드와 연결선은 `static/diagrams/service-flow.svg`에서 수정한다. 흐름도는 외부 CDN이나 라이브러리 없이 로컬 SVG로 표시한다.
 HTML 연결은 FastAPI의 [템플릿 공식 문서](https://fastapi.tiangolo.com/advanced/templates/)를 따른다.
