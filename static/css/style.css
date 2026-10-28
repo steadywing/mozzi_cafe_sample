@@ -1,3 +1,6 @@
+/* 화면에서 쓰는 한글 웹폰트를 필요한 글자만 내려받습니다. */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css");
+
 /* 공통 화면에서 사용하는 배경·글자·강조 색을 한곳에 모읍니다. */
 :root {
   --page: oklch(0.985 0.003 285);
@@ -11,7 +14,7 @@
 }
 * { box-sizing: border-box; }
 html { scroll-padding-top: 24px; }
-body { margin: 0; background: var(--page); color: var(--ink); font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif; word-break: keep-all; overflow-wrap: anywhere; }
+body { margin: 0; background: var(--page); color: var(--ink); font: 16px/1.65 "Pretendard", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif; word-break: keep-all; overflow-wrap: anywhere; }
 a { color: inherit; text-decoration: none; }
 a:hover { color: var(--accent); }
 a:focus-visible, summary:focus-visible, [tabindex="0"]:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
