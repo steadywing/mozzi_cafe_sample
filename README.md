@@ -12,11 +12,7 @@ cd mozzi_cafe_sample
 uv sync --locked
 ```
 
-실습용 `data/`는 저장소에 포함되어 함께 내려옵니다. 상품 검색도 사용하려면 추가 의존성을 설치합니다.
-
-```sh
-uv sync --locked --group embedding
-```
+실습용 `data/`는 저장소에 포함되어 함께 내려옵니다. 상품 검색에 필요한 패키지도 함께 설치됩니다.
 
 ### 2. API 키 설정
 
