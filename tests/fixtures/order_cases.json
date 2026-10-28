@@ -1,0 +1,65 @@
+[
+  {
+    "id": "order-items",
+    "title": "상품과 수량만 말하기",
+    "input": {
+      "text": "아메리카노 두 잔과 카페라떼 한 잔 주문할게요.",
+      "has_image": false,
+      "session_state": {}
+    }
+  },
+  {
+    "id": "order-details",
+    "title": "온도·옵션·이용·결제 정보 답하기",
+    "input": {
+      "text": "둘 다 아이스로 주세요. 포장하고 카드로 결제할게요. 옵션은 둘 다 없어요.",
+      "has_image": false,
+      "session_state": {}
+    }
+  },
+  {
+    "id": "order-complete",
+    "title": "주문 정보를 한 번에 말하기",
+    "input": {
+      "text": "아이스 아메리카노 한 잔과 아이스 카페라떼 한 잔, 포장할게요. 카드로 결제하고 옵션은 둘 다 없어요.",
+      "has_image": false,
+      "session_state": {}
+    }
+  },
+  {
+    "id": "order-unknown-menu",
+    "title": "없는 메뉴 요청하기",
+    "input": {
+      "text": "망고 치즈버거 한 개 주문할게요.",
+      "has_image": false,
+      "session_state": {}
+    }
+  },
+  {
+    "id": "order-no",
+    "title": "수정 요청하기: no",
+    "input": {
+      "text": "no",
+      "has_image": false,
+      "session_state": {}
+    }
+  },
+  {
+    "id": "order-revision",
+    "title": "기존 주문 수량 수정하기",
+    "input": {
+      "text": "아메리카노는 한 잔으로 바꿔주세요. 카페라떼와 나머지 정보는 그대로요.",
+      "has_image": false,
+      "session_state": {}
+    }
+  },
+  {
+    "id": "order-yes",
+    "title": "최종 주문 확인하기: yes",
+    "input": {
+      "text": "yes",
+      "has_image": false,
+      "session_state": {}
+    }
+  }
+]

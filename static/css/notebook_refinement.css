@@ -1,0 +1,16 @@
+/* 영수증 판독과 적립 확인에 필요한 입력과 버튼을 배치합니다. */
+.practice-form, .practice-confirm { display: grid; gap: 12px; margin: 16px 0; }
+.practice-fields { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.practice-fields > div, .practice-confirm > div { display: grid; gap: 6px; }
+.practice-form label, .practice-confirm label { color: var(--muted); font-size: 13px; font-weight: 600; }
+.practice-form input, .practice-form select, .practice-confirm input { box-sizing: border-box; width: 100%; min-width: 0; min-height: 42px; padding: 8px 12px; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); color: var(--ink); font: inherit; }
+.practice-action { min-height: 42px; padding: 10px 16px; border: 1px solid var(--accent); border-radius: 6px; background: var(--accent); color: var(--surface); font: inherit; font-size: 14px; font-weight: 600; cursor: pointer; }
+.practice-action:disabled { opacity: .45; cursor: not-allowed; }
+.practice-action:focus-visible, .practice-form input:focus-visible, .practice-form select:focus-visible, .practice-confirm input:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+/* 영수증 사진을 잘리지 않게 보여주고 아래에 설명을 붙입니다. */
+.receipt-preview { display: grid; justify-items: center; gap: 8px; margin: 0; padding: 14px; border: 1px solid var(--line); border-radius: 8px; background: var(--sidebar); }
+.receipt-preview img { display: block; width: auto; max-width: 100%; max-height: 300px; object-fit: contain; border-radius: 4px; }
+.receipt-preview img[hidden] { display: none; }
+.receipt-preview figcaption { color: var(--muted); font-size: 13px; line-height: 1.5; text-align: center; }
+@media (max-width: 600px) { .practice-fields { grid-template-columns: 1fr; } }

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>확인 답변 · 모찌카페 테스트보드</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+  <link rel="stylesheet" href="/static/css/intent-test.css"><link rel="stylesheet" href="/static/css/notebook_trace.css">
+  <script src="/static/js/notebook_trace.js" defer></script><script src="/static/js/notebook_unknown.js?v=1" defer></script>
+</head>
+<body class="intent-test-page">
+  <a class="skip-link" href="#main">본문으로 이동</a>
+  <header class="app-header"><a class="project-name" href="/">모찌카페</a><span class="header-divider" aria-hidden="true">/</span><span>테스트보드</span><a class="api-link" href="/docs">API 문서 ↗</a></header>
+  <div class="app-layout">
+    <aside class="sidebar">{% include 'notebook_nav.html' %}</aside>
+    <main id="main">
+      <section class="overview"><div class="title-row"><h1>2. 확인 답변</h1><code class="endpoint-path">POST /chatbot/unknown</code></div><p class="page-description">의도를 구분하기 어려운 고객에게 확인 질문을 생성합니다.</p></section>
+      <div class="test-workspace">
+        <!-- 고객 입력과 대화 결과, 테스트 사례를 모아 보여줍니다. -->
+        <section class="chat-section" aria-labelledby="chat-title">
+          <div class="panel-heading"><div><span class="eyebrow">대화</span><h2 id="chat-title">챗봇 대화</h2></div><button id="reset-chat" class="reset-button" type="button">새 대화</button></div>
+          <p class="panel-note">대화 상태를 이어서 다음 입력에 사용합니다.</p>
+          <div id="chat-messages" class="chat-messages" role="log" aria-live="polite" aria-label="대화 내용"><div class="chat-welcome"><strong>무엇을 확인해 드릴까요?</strong><p>의도를 구분하기 어려운 요청을 입력해 주세요.</p></div></div>
+          <p id="chat-status" role="status" class="chat-status"></p><p id="chat-error" role="alert" class="chat-error" hidden></p>
+          <form id="chat-form" class="chat-form"><label class="sr-only" for="chat-input">메시지 입력</label><textarea id="chat-input" required rows="1" placeholder="메시지를 입력해 주세요"></textarea><button id="send-message" type="submit">보내기</button></form>
+          <div class="case-picker"><h3>테스트 케이스</h3><div class="case-list"><button type="button" data-case="메뉴 추천해주고 주차도 알려주세요" aria-pressed="false">메뉴 추천해주고 주차도 알려주세요</button><button type="button" data-case="네, 맞아요" aria-pressed="false">네, 맞아요</button></div><p>사례를 선택한 뒤 보내기를 눌러 실행합니다.</p></div>
+          <p class="chat-footnote">이 화면은 unknown 확인 답변만 생성합니다.</p>
+        </section>
+        <!-- 실행한 처리 단계와 실제 입력·출력을 확인하는 영역입니다. -->
+        <section class="inspector-section" aria-labelledby="inspector-title"><div class="panel-heading"><div><span class="eyebrow">처리</span><h2 id="inspector-title">처리 흐름</h2></div></div><p class="panel-note">처리 함수의 단계별 결과를 보여줍니다.</p><div id="flow-status" class="flow-status" role="status">메시지를 보내면 결과가 표시됩니다.</div><div id="flow-list"></div><details class="prompt-detail"><summary>요청과 응답 전체 보기</summary><pre id="request-json" class="trace-block"></pre><pre id="response-json" class="trace-block"></pre></details><div class="trace-history-heading">이전 턴 기록</div><div id="trace-history"></div></section>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

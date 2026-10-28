@@ -1,0 +1,9 @@
+{
+  "name": "모찌카페",
+  "logo": "",
+  "run": "server",
+  "app": "",
+  "command": "uv run uvicorn main:app --reload",
+  "url": "http://127.0.0.1:8000",
+  "deploymentUrl": ""
+}

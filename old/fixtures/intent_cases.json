@@ -1,0 +1,72 @@
+[
+  {
+    "id": "search-image",
+    "title": "사진으로 비슷한 메뉴 찾기",
+    "input": {
+      "text": "이 사진과 비슷한 메뉴를 찾아주세요.",
+      "has_image": true,
+      "session_state": {}
+    },
+    "expected_intent": "product_search"
+  },
+  {
+    "id": "event-coupon",
+    "title": "쿠폰으로 스탬프 적립하기",
+    "input": {
+      "text": "이 쿠폰의 스탬프를 확인하고 적립 내역을 반영하고 싶어요.",
+      "has_image": true,
+      "session_state": {}
+    },
+    "expected_intent": "event_participation"
+  },
+  {
+    "id": "recommendation-followup",
+    "title": "알레르기·선호를 포함한 상품 추천",
+    "input": {
+      "text": "우유는 못 먹고 덜 단 음료를 좋아해요. 메뉴를 추천해 주세요.",
+      "has_image": false,
+      "session_state": {}
+    },
+    "expected_intent": "product_recommendation"
+  },
+  {
+    "id": "consultation-cafe-info",
+    "title": "카페 운영시간과 시설 문의",
+    "input": {
+      "text": "주말에는 몇 시까지 운영하나요? 주차도 가능한가요?",
+      "has_image": false,
+      "session_state": {}
+    },
+    "expected_intent": "product_consultation"
+  },
+  {
+    "id": "order-items",
+    "title": "상품과 수량을 정한 주문",
+    "input": {
+      "text": "아메리카노 두 잔과 카페라떼 한 잔 주문할게요.",
+      "has_image": false,
+      "session_state": {}
+    },
+    "expected_intent": "product_order"
+  },
+  {
+    "id": "unknown-unrelated",
+    "title": "카페와 관련 없는 질문",
+    "input": {
+      "text": "태양계에서 가장 큰 행성은 무엇인가요?",
+      "has_image": false,
+      "session_state": {}
+    },
+    "expected_intent": "unknown"
+  },
+  {
+    "id": "unknown-multiple-requests",
+    "title": "여러 요청 중 먼저 할 일 확인",
+    "input": {
+      "text": "메뉴를 추천해 주고 주차도 가능한지 알려주세요.",
+      "has_image": false,
+      "session_state": {}
+    },
+    "expected_intent": "unknown"
+  }
+]

@@ -1,0 +1,53 @@
+[
+  {
+    "id": "order", "title": "음료 주문",
+    "input": {"text": "아이스 아메리카노 두 잔 주세요", "has_image": false},
+    "expected_intent": "product_order"
+  },
+  {
+    "id": "search-image", "title": "사진 속 메뉴 찾기",
+    "input": {"text": "이 사진 속 메뉴 이름을 찾아주세요", "has_image": true},
+    "expected_intent": "product_search"
+  },
+  {
+    "id": "points", "title": "영수증 포인트 적립",
+    "input": {"text": "이 영수증으로 포인트를 적립해 주세요", "has_image": true},
+    "expected_intent": "point_accumulation"
+  },
+  {
+    "id": "recommendation", "title": "음료 추천",
+    "input": {"text": "달지 않은 음료를 추천해 주세요", "has_image": false},
+    "expected_intent": "product_recommendation"
+  },
+  {
+    "id": "cafe-info", "title": "운영시간과 주차 문의",
+    "input": {"text": "주말 운영시간과 주차 방법을 알려주세요", "has_image": false},
+    "expected_intent": "product_consultation"
+  },
+  {
+    "id": "no-context", "title": "맥락 없는 확인",
+    "input": {"text": "네, 맞아요", "has_image": false},
+    "expected_intent": "unknown"
+  },
+  {
+    "id": "multiple-requests", "title": "여러 요청을 동시에 전달",
+    "input": {"text": "메뉴 추천해주고 주차도 알려주세요", "has_image": false},
+    "expected_intent": "unknown"
+  },
+  {
+    "id": "order-followup", "title": "주문 후 확인과 주제 전환",
+    "turns": [
+      {"input": {"text": "아이스 아메리카노 두 잔 주세요", "has_image": false}, "expected_intent": "product_order"},
+      {"input": {"text": "네, 맞아요", "has_image": false}, "expected_intent": "product_order"},
+      {"input": {"text": "근의 공식 알려줘", "has_image": false}, "expected_intent": "unknown"},
+      {"input": {"text": "카페 주차 방법을 알려주세요", "has_image": false}, "expected_intent": "product_consultation"}
+    ]
+  },
+  {
+    "id": "recommendation-followup", "title": "추천 후 알레르기 답변",
+    "turns": [
+      {"input": {"text": "달지 않은 음료를 추천해 주세요", "has_image": false}, "expected_intent": "product_recommendation"},
+      {"input": {"text": "우유 알레르기가 있어요", "has_image": false}, "expected_intent": "product_recommendation"}
+    ]
+  }
+]

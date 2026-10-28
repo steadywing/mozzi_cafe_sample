@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="모찌카페 테스트보드의 현재 구현: 의도 분류와 기능별 독립 실습 API의 처리 흐름">
+  <title>서비스 구현 현황 · 모찌카페 테스트보드</title>
+  <link rel="stylesheet" href="/static/css/style.css?v=20261028-portfolio-readability-4">
+</head>
+<body>
+  <a class="skip-link" href="#main">본문으로 이동</a>
+  <header class="app-header">
+    <a class="project-name" href="#main">모찌카페</a>
+    <span class="header-divider" aria-hidden="true">/</span>
+    <span>테스트보드</span>
+    <a class="api-link" href="/docs">API 문서 ↗</a>
+  </header>
+  <div class="app-layout">
+    <aside class="sidebar">{% include 'notebook_nav.html' %}</aside>
+    <main id="main">
+      <section id="overview" class="overview" aria-labelledby="page-title">
+        <div class="title-row"><h1 id="page-title">서비스 구현 현황</h1><span class="status">현재 코드 기준</span></div>
+        <p class="page-description">의도 분류와 기능별 실습 API에서 현재 실행되는 처리 단계를 확인합니다.</p>
+        <dl class="service-definition">
+          <div><dt>서비스명</dt><dd>모찌카페</dd></div>
+          <div><dt>현재 구성</dt><dd>매 턴 의도 분류와 확인 답변, 주문·추천·검색·문의·포인트 적립을 각각의 테스트 화면과 API에서 실행합니다.</dd></div>
+        </dl>
+      </section>
+
+      <!-- 서비스의 연결 흐름과 각 처리 노드의 상세 설명을 보여줍니다. -->
+      <section id="architecture" aria-labelledby="architecture-title">
+        <div class="section-title"><h2 id="architecture-title"><span class="section-number">01</span>전체 처리 구조</h2></div>
+        <p class="section-description">의도 분류 API는 세션 상태를 준비하고 매 턴 Jev로 분류하며, unknown일 때 확인 답변을 생성합니다. 주문·추천·검색·문의·포인트 적립은 별도 실습 API로 실행하며, 분류 결과가 이 API들을 자동 호출하지는 않습니다. 화면은 <code>/test/...</code>, 챗봇 처리는 <code>/chatbot/...</code>, 테스트 자료는 <code>/test/api/...</code>에서 확인합니다.</p>
+        <div class="diagram-reading-guide" aria-label="흐름도 읽는 방법">
+          <p><strong>실선 화살표는 같은 API 안의 실행 순서, 점선 화살표는 고객 확인 뒤 별도 요청으로 이어지는 순서입니다.</strong> 의도 분류와 기능별 실습은 각각 별도 요청으로 시작하며, 후속 입력의 보관 방식은 기능마다 다릅니다.</p>
+          <ul class="reading-legend" aria-label="흐름도 기호 설명">
+            <li><span class="legend-arrow" aria-hidden="true">→</span> 실행 순서</li>
+            <li><span class="legend-sample legend-python" aria-hidden="true"></span> Python 함수·검증</li>
+            <li><span class="legend-sample legend-ai" aria-hidden="true"></span> AI 모델</li>
+            <li><span class="legend-sample legend-customer" aria-hidden="true"></span> 고객 확인·질문</li>
+            <li><span class="legend-sample legend-neutral" aria-hidden="true"></span> 입력·출력·저장</li>
+          </ul>
+          <p class="diagram-hint">노드를 클릭하면 각 단계의 입력과 처리 내용을 확인할 수 있습니다.</p>
+        </div>
+
+        <figure class="diagram-figure">
+          <figcaption><span>의도 분류 실습 · 기능별 독립 실행</span><a href="/static/diagrams/service-flow.svg?v=20261028-chatbot-routes-1" target="_blank" rel="noopener">흐름도 크게 보기 ↗</a></figcaption>
+          <div class="diagram-scroll" role="region" aria-label="전체 처리 구조 다이어그램. 화면 너비에 맞춰 전체 흐름을 표시합니다. 자세한 내용은 흐름도 크게 보기로 확인하세요.">
+            <object class="service-diagram" data="/static/diagrams/service-flow.svg?v=20261028-chatbot-routes-1" type="image/svg+xml" aria-label="의도 분류와 기능별 독립 실습 API의 현재 처리 흐름도">
+              <p>다이어그램을 표시할 수 없습니다. 흐름도 크게 보기 링크를 확인하세요.</p>
+            </object>
+          </div>
+        </figure>
+
+      </section>
+
+      <!-- 흐름을 읽은 뒤 데이터·프롬프트·연결을 검토할 항목을 안내합니다. -->
+      <section id="portfolio-considerations" class="readable-flow" aria-labelledby="portfolio-title">
+        <div class="section-title"><h2 id="portfolio-title"><span class="section-number">02</span>포트폴리오를 위한 고민</h2></div>
+        <p class="section-description">무엇을 만들었는지에 더해, 왜 선택했고 어떻게 검증했는지 보여줍니다.</p>
+        <div class="portfolio-topics">
+          <article class="portfolio-topic">
+            <h3><span class="topic-number">01</span>모델 선정</h3>
+            <ul>
+              <li><strong>영수증 OCR: 후보와 선택 이유</strong><p>영수증에서 주문번호·날짜·결제금액을 읽기 위해 전용 OCR과 이미지 입력을 받는 멀티모달 모델을 후보로 비교할 수 있습니다. 예를 들어 Google Cloud Vision OCR은 문자를 읽고, Gemini는 이미지를 보고 필요한 항목을 구조화하는 방식입니다. 현재 실습에는 <b>Gemini 2.5 Flash</b>를 사용해 영수증에서 필요한 값을 JSON으로 추출했습니다.</p><p>영수증 사진에서 글자를 읽는 것뿐 아니라 검증에 필요한 필드를 나누어야 했기 때문에 이 방식을 선택했습니다. 예제에서 주문번호와 결제금액을 읽어 주문 자료와 비교했습니다.</p></li>
+              <li><strong>이미지 임베딩: 후보와 선택 이유</strong><p>고객이 메뉴 이름을 몰라도 사진으로 검색할 수 있도록 이미지 임베딩을 사용했습니다. 비교 후보의 예로 CLIP·SigLIP 계열과 EmbeddingGemma를 놓고 이미지·텍스트 입력 지원, 검색 결과, 실행 환경을 살펴볼 수 있습니다. 현재 <b>google/embeddinggemma-2</b>로 메뉴 사진을 벡터로 만들어 저장하고, 고객 사진과의 유사도로 후보를 찾습니다.</p><p>이 모델은 이미지와 텍스트를 검색 입력으로 다루는 실습 흐름에 맞춰 사용했습니다. 실제 예제에서는 한입 베어 문 딸기 모찌 사진을 검색해 딸기 찹쌀모찌가 첫 후보로 나왔습니다.</p></li>
+              <li><strong>검토와 실험 결과를 구분하기</strong><p>위의 다른 모델은 비교할 수 있는 후보 예시입니다. 프로젝트에 후보 모델별 동일 조건 성능·속도·비용 비교 기록은 없으므로, 실제로 비교해 더 우수했다고 주장하지 않습니다. 포트폴리오에서는 앞으로 같은 영수증·검색 사진으로 읽기 정확도와 후보 결과를 비교할 수 있습니다.</p></li>
+            </ul>
+          </article>
+          <article class="portfolio-topic">
+            <h3><span class="topic-number">02</span>프롬프트 관리</h3>
+            <ul>
+              <li><strong>AI와 함께 테스트 사례를 만들고 평가하기</strong><p>먼저 AI에게 기능에서 확인해야 할 정상·후속 답변·예외 상황의 테스트 케이스와 기대 결과를 제안해 달라고 요청합니다. 제가 사례와 기대 결과가 적절한지 검토하고, 테스트보드에서 실제 모델 입력·프롬프트·결과를 확인합니다. 그 결과를 보며 AI와 어떤 분류 기준이나 표현을 고칠지 논의합니다.</p></li>
+              <li><strong>같은 사례로 프롬프트 다시 확인하기</strong><p>예를 들어 주문 중 “네, 맞아요”는 주문의 후속 답변, “주차할 수 있나요?”는 새로운 정보문의로 기대합니다. 이전 의도 없이 “네, 맞아요”만 보낸 경우와 서로 다른 요청이 섞인 경우도 함께 살펴봅니다. 개선한 프롬프트를 적용한 뒤 같은 입력을 다시 실행해 결과를 비교하며, 실제 비교 기록과 앞으로 할 평가를 구분합니다.</p></li>
+              <li><strong>지침과 결과를 확인 가능한 형태로 관리하기</strong><p>프롬프트는 기능별 Markdown 파일로 나누고 테스트보드와 노트북에서 실제 전달 내용을 확인합니다. 추천 답변에서 알레르기에 대해 단정적인 표현이 나온 사례를 보고, AI와 개선점을 검토해 안전을 보장하지 않고 매장에 확인하도록 지침을 보완했습니다. 사람의 검토와 반복 평가가 필요합니다.</p></li>
+            </ul>
+          </article>
+          <article class="portfolio-topic">
+            <h3><span class="topic-number">03</span>정보의 연결과 데이터 관리</h3>
+            <ul>
+              <li><strong>챗봇에 필요한 데이터를 어떻게 마련했는가?</strong><p>실제 매장·고객 자료 대신 수업용 가상 데이터를 만들었습니다. 메뉴 17개의 이름·가격·재료·알레르기·판매 여부는 <code>data/menu.json</code>에, 운영시간·위치·매장 이용 안내는 <code>data/cafe_docs/</code>의 문서로 나누었습니다. 가상 고객 10명의 포인트는 <code>data/customers.json</code>, 주문 40건은 <code>data/orders.json</code>에 둡니다.</p></li>
+              <li><strong>이미지와 검색 자료를 어디에 배치했는가?</strong><p>메뉴 기준 사진은 <code>data/menu_images/</code>, 촬영 각도와 조명을 달리한 검색 테스트 이미지는 <code>data/search_images/</code>, 영수증 샘플 3장은 <code>data/sample_receipts/</code>에 두었습니다. 검색할 때 이미지 벡터와 메뉴 ID 순서를 연결할 수 있도록 색인과 목록은 <code>data/embeddings/</code>에 함께 저장합니다. 검색 이미지와 영수증은 AI로 만든 가상 샘플입니다.</p></li>
+              <li><strong>어떤 정보를 연결하고 구분하는가?</strong><p>정보문의 답변에는 관련 안내 문서를, 추천에는 고객이 말한 알레르기·선호와 메뉴 재료를, 포인트 검증에는 영수증과 주문 기록을 연결합니다. 알레르기 미확인(null)과 없음([])은 구분하고 구매 이력으로 알레르기를 추정하지 않습니다. 테스트 사례와 세션 예시는 <code>tests/fixtures/</code>에 둡니다. 실제 운영에는 영수증 처리 기록의 지속 저장과 적립 기준이 추가로 필요합니다.</p></li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <footer>모찌카페 <span>테스트보드 · 서비스 구현 현황</span></footer>
+    </main>
+  </div>
+  <aside id="node-details" class="node-details" aria-label="노드 상세 설명" hidden>
+    <button type="button" class="node-details-close" aria-label="상세 설명 닫기">×</button>
+    <p class="node-details-kind"></p>
+    <h3></h3>
+    <div class="node-details-content"></div>
+    <p class="node-details-hint">클릭하면 설명 유지 · Esc로 닫기</p>
+  </aside>
+  <script src="/static/js/diagram-details.js" defer></script>
+</body>
+</html>

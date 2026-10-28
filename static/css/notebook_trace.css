@@ -1,0 +1,12 @@
+/* 오른쪽 실행 흐름과 이전 턴 기록의 읽기 순서를 일정하게 유지합니다. */
+.flow-list .flow-heading { display: flex; align-items: baseline; flex-wrap: wrap; gap: .55rem; }
+.flow-list .flow-heading h3 { margin: 0; }
+.flow-list .flow-heading code { font-size: .75rem; overflow-wrap: anywhere; }
+.flow-list .flow-summary { margin: .55rem 0 .75rem; line-height: 1.5; color: var(--ink); }
+.flow-list details { margin-top: .45rem; }
+.flow-list details summary { cursor: pointer; font-size: .82rem; }
+.flow-list .trace-block { max-height: 18rem; overflow: auto; white-space: pre-wrap; overflow-wrap: anywhere; }
+.trace-history-heading { margin: 1.5rem 0 .6rem; padding-top: 1rem; border-top: 1px solid var(--line); font-size: .8rem; font-weight: 700; color: var(--muted); }
+.trace-turn { margin: .45rem 0; padding: .5rem .7rem; border: 1px solid var(--line); border-radius: .7rem; }
+.trace-turn > summary { cursor: pointer; font-weight: 700; }
+.trace-turn .flow-list { margin-top: 1rem; }

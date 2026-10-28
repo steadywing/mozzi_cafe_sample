@@ -1,0 +1,81 @@
+.endpoint-path { color: var(--muted); font: 12px ui-monospace, SFMono-Regular, Menlo, monospace; }
+.order-demo-note { margin: 12px 0 0; padding: 10px 12px; border: 1px solid var(--line); border-radius: 5px; background: var(--sidebar); color: var(--muted); font-size: 13px; }
+
+/* 대화 입력과 처리 결과 검사 영역을 나란히 배치합니다. */
+.test-workspace { display: grid; grid-template-columns: minmax(300px, .95fr) minmax(0, 1.05fr); gap: 36px; align-items: start; }
+.test-workspace > section { min-width: 0; padding: 28px 0 36px; border: 0; }
+.panel-heading { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.eyebrow { display: block; margin-bottom: 3px; color: var(--accent); font-size: 11px; font-weight: 600; line-height: 1.4; letter-spacing: .08em; }
+.panel-note, .inspector-note, .chat-footnote { color: var(--muted); font-size: 13px; line-height: 1.65; }
+.panel-note { margin: 8px 0 20px; }
+.customer-picker { display: flex; align-items: center; gap: 12px; margin: 0 0 14px; }
+.customer-picker label { font-size: 13px; font-weight: 600; }
+.customer-picker select { min-width: 170px; max-width: 100%; padding: 7px 10px; border: 1px solid var(--line); border-radius: 5px; background: var(--surface); color: var(--ink); font: inherit; font-size: 13px; }
+.customer-picker select:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.reset-button { padding: 7px 11px; border: 1px solid var(--line); border-radius: 5px; background: var(--surface); color: var(--ink); font: inherit; font-size: 13px; cursor: pointer; }
+
+/* 대화 영역과 역할별 말풍선의 위치와 본문 모양을 정합니다. */
+.chat-messages { display: flex; flex-direction: column; gap: 20px; height: 390px; overflow-y: auto; padding: 22px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); }
+.chat-welcome { margin: auto 0; text-align: center; }
+.chat-welcome strong { font-size: 16px; }
+.chat-welcome p { margin: 6px 0 0; color: var(--muted); font-size: 13px; }
+.chat-message { max-width: 88%; align-self: flex-start; }
+.chat-message.customer { align-self: flex-end; }
+.message-label { display: block; margin-bottom: 5px; color: var(--muted); font-size: 12px; }
+.customer .message-label { text-align: right; }
+.chat-message p { margin: 0; padding: 11px 14px; border-radius: 9px; background: var(--sidebar); font-size: 14px; line-height: 1.65; white-space: pre-wrap; overflow-wrap: anywhere; }
+.customer p { background: var(--accent-soft); color: var(--ink); }
+.notice p { color: var(--muted); font-size: 13px; }
+
+/* 문장 입력과 전송 버튼, 실행 중 안내를 표시합니다. */
+.chat-form { display: flex; align-items: stretch; gap: 8px; margin-top: 12px; }
+.chat-form textarea { flex: 1; min-width: 0; padding: 8px 12px; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); color: var(--ink); font: inherit; font-size: 14px; line-height: 1.5; resize: vertical; }
+.chat-form button { padding: 0 18px; border: 1px solid var(--accent); border-radius: 6px; background: var(--accent); color: var(--surface); font: inherit; font-size: 14px; font-weight: 600; cursor: pointer; }
+.chat-form button:disabled, .reset-button:disabled { opacity: .55; cursor: wait; }
+.chat-form textarea:focus-visible, .chat-form button:focus-visible, .reset-button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.chat-status { margin: 8px 0 0; color: var(--muted); font-size: 13px; }
+.chat-status:empty { display: none; }
+.chat-error { margin-top: 10px; padding: 10px 12px; border: 1px solid oklch(.82 .04 25); border-radius: 5px; color: oklch(.42 .11 25); background: oklch(.97 .015 25); font-size: 13px; }
+.chat-footnote { margin: 10px 0 0; }
+.case-picker { margin-top: 18px; }
+.case-picker h3 { margin: 0 0 8px; font-size: 13px; font-weight: 600; }
+.case-list { display: grid; gap: 7px; color: var(--muted); font-size: 13px; }
+.case-list button { padding: 7px 10px; border: 1px solid var(--line); border-radius: 5px; background: var(--surface); color: var(--ink); font: inherit; text-align: left; cursor: pointer; }
+.case-list button:hover, .case-list button[aria-pressed="true"] { border-color: var(--accent); background: var(--accent-soft); color: var(--accent); }
+.case-list button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.case-list button:disabled { opacity: .55; cursor: wait; }
+.case-picker p { margin: 5px 0 0; color: var(--muted); font-size: 12px; }
+.inspector-section { padding-left: 32px !important; border-left: 1px solid var(--line) !important; }
+.inspector-group { padding: 20px 0; border-top: 1px solid var(--line); }
+.inspector-group h3 { margin: 0; font-size: 15px; }
+.inspector-note { margin: 6px 0 12px; }
+.prompt-detail { border-bottom: 1px solid var(--line); }
+.prompt-detail summary { width: 100%; padding: 11px 0; font-size: 14px; font-weight: 600; }
+.prompt-detail summary span { margin-left: 6px; color: var(--muted); font: 11px ui-monospace, monospace; }
+.prompt-detail .trace-block { margin: 0 0 14px; }
+.trace-block { max-height: 360px; margin: 0; padding: 14px; overflow: auto; border: 1px solid var(--line); border-radius: 5px; background: var(--sidebar); color: var(--ink); font: 12px/1.7 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; white-space: pre-wrap; overflow-wrap: anywhere; }
+.state-turn { border-top: 1px solid var(--line); padding: 8px 0; }
+.state-turn > summary { font-size: 14px; font-weight: 600; }
+.state-step { margin: 8px 0 8px 14px; }
+.state-step > summary { font-size: 13px; }
+.state-step .trace-block { margin-top: 8px; }
+@media (max-width: 1100px) { 
+/* 대화 입력과 처리 결과 검사 영역을 나란히 배치합니다. */
+.test-workspace { grid-template-columns: 1fr; gap: 0; } .inspector-section { padding-left: 0 !important; border-left: 0 !important; border-top: 1px solid var(--line) !important; } }
+@media (max-width: 640px) { .title-row { flex-wrap: wrap; } 
+/* 대화 영역과 역할별 말풍선의 위치와 본문 모양을 정합니다. */
+.chat-messages { height: 340px; padding: 16px; } }
+
+/* 의도 분류 탭은 함수 순서와 각 단계의 실제 결과를 함께 보여줍니다. */
+.flow-status { padding: 11px 13px; border-radius: 5px; background: var(--sidebar); color: var(--muted); font-size: 13px; }
+.flow-list { list-style: none; margin: 0; padding: 0; }
+.flow-list > li { padding: 19px 0; border-bottom: 1px solid var(--line); }
+.flow-heading { display: flex; align-items: baseline; gap: 10px; }
+.flow-heading span { color: var(--accent); font: 12px ui-monospace, monospace; }
+.flow-heading h3 { margin: 0; font-size: 15px; }
+.flow-heading code { color: var(--muted); font: 11px ui-monospace, monospace; }
+.flow-list p { margin: 6px 0 10px; color: var(--muted); font-size: 13px; line-height: 1.6; }
+.flow-summary { margin-bottom: 9px; font-size: 14px; font-weight: 600; overflow-wrap: anywhere; }
+.flow-list summary, .prompt-detail summary { cursor: pointer; }
+.flow-list details summary { color: var(--muted); font-size: 13px; }
+.flow-list .trace-block, .inspector-group .trace-block + .trace-block { margin-top: 10px; }

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="모찌카페 의도 분류의 실제 입력, 결과와 프롬프트를 확인하는 테스트보드">
+  <title>의도 분류 · 모찌카페 테스트보드</title>
+  <link rel="stylesheet" href="/static/css/style.css?v=20261027-nav2">
+  <link rel="stylesheet" href="/static/css/intent-test.css?v=20261028-shared-order">
+  <script src="/static/js/intent-turn.js?v=20261028-unknown" defer></script>
+</head>
+<body class="intent-test-page">
+  <a class="skip-link" href="#main">본문으로 이동</a>
+  <header class="app-header">
+    <a class="project-name" href="/">모찌카페</a><span class="header-divider" aria-hidden="true">/</span><span>테스트보드</span>
+    <a class="api-link" href="/docs">API 문서 ↗</a>
+  </header>
+  <div class="app-layout">
+    <aside class="sidebar">{% include 'notebook_nav.html' %}</aside>
+    <main id="main">
+      <section class="overview">
+        <div class="title-row"><h1>1. 의도 분류</h1><code class="endpoint-path">POST /chatbot/intent/turn</code></div>
+        <p class="page-description">고객의 말을 보내고 상태 준비부터 의도 분류와 저장까지 확인합니다.</p>
+      </section>
+      <div class="test-workspace">
+        <!-- 고객 입력과 대화 결과, 테스트 사례를 모아 보여줍니다. -->
+        <section class="chat-section" aria-labelledby="chat-title">
+          <div class="panel-heading"><div><span class="eyebrow">대화</span><h2 id="chat-title">챗봇 대화</h2></div><button id="reset-chat" class="reset-button" type="button">새 대화</button></div>
+          <p class="panel-note">한 세션에서 여러 문장을 보내며 이전 의도가 어떻게 반영되는지 확인합니다.</p>
+          <div id="chat-messages" class="chat-messages" role="log" aria-live="polite" aria-label="대화 내용">
+            <div id="chat-welcome" class="chat-welcome"><strong>무엇을 도와드릴까요?</strong><p>카페에 궁금한 점이나 요청을 입력해 주세요.</p></div>
+          </div>
+          <p id="chat-status" class="chat-status" role="status" aria-live="polite"></p>
+          <div id="chat-error" class="chat-error" role="alert" hidden></div>
+          <form id="chat-form" class="chat-form">
+            <label class="sr-only" for="chat-input">메시지 입력</label>
+            <textarea id="chat-input" rows="1" required placeholder="메시지를 입력해 주세요"></textarea>
+            <button id="send-message" type="submit">보내기</button>
+          </form>
+          <div class="case-picker">
+            <h3>테스트 케이스</h3>
+            <div id="case-list" class="case-list" aria-label="테스트 케이스 목록">불러오는 중입니다…</div>
+            <p id="case-note">독립된 사례는 새 대화에서 시작하세요. 선택 후 보내기를 누르면 실행됩니다.</p>
+          </div>
+          <p class="chat-footnote">의도를 알기 어려운 경우에는 고객에게 확인 답변을 생성합니다.</p>
+        </section>
+        <!-- 실행한 처리 단계와 실제 입력·출력을 확인하는 영역입니다. -->
+        <section class="inspector-section" aria-labelledby="inspector-title">
+          <div class="panel-heading"><div><span class="eyebrow">처리</span><h2 id="inspector-title">상황 판단 흐름</h2></div></div>
+          <p class="panel-note">최근 턴의 실제 처리 결과를 순서대로 보여줍니다.</p>
+          <div id="flow-status" class="flow-status" role="status">메시지를 보내면 처리 흐름이 표시됩니다.</div>
+          <ol class="flow-list">
+            <li><div class="flow-heading"><span>01</span><h3>상태 준비</h3><code>prepare_state</code></div><p>이전 상태를 복원하고 이번 입력을 기록합니다.</p><div id="prepare-summary" class="flow-summary">대기 중</div><details><summary>준비된 상태 보기</summary><pre id="prepare-state" class="trace-block">아직 실행되지 않았습니다.</pre></details></li>
+            <li><div class="flow-heading"><span>02</span><h3>의도 분류</h3><code>classify_intent</code></div><p>Jev에 문장, 이전 의도, 이미지 첨부 여부만 전달합니다.</p><div id="classify-summary" class="flow-summary">대기 중</div><details><summary>모델 입력과 분류 상태 보기</summary><pre id="model-input" class="trace-block">아직 실행되지 않았습니다.</pre><pre id="classify-state" class="trace-block">아직 실행되지 않았습니다.</pre></details></li>
+            <li><div class="flow-heading"><span>03</span><h3>확인 답변 생성</h3><code>generate_unknown_response</code></div><p>의도가 unknown일 때 고객에게 확인할 답변을 만듭니다.</p><div id="answer-summary" class="flow-summary">대기 중</div><details><summary>답변 생성의 모델 입력과 결과 보기</summary><pre id="answer-input" class="trace-block">아직 실행되지 않았습니다.</pre><pre id="answer-prompt" class="trace-block">아직 실행되지 않았습니다.</pre><pre id="answer-state" class="trace-block">아직 실행되지 않았습니다.</pre></details></li>
+            <li><div class="flow-heading"><span>04</span><h3>상태 저장</h3><code>save_state</code></div><p>처리한 상태를 이 세션의 메모리에 저장합니다.</p><div id="save-summary" class="flow-summary">대기 중</div><details><summary>저장된 상태 보기</summary><pre id="save-state" class="trace-block">아직 실행되지 않았습니다.</pre></details></li>
+          </ol>
+          <div class="inspector-group"><h3>실행 정보</h3><p id="execution-info" class="inspector-note">모델과 처리 시간이 여기에 표시됩니다.</p><details class="prompt-detail"><summary>실제 분류 프롬프트 보기</summary><pre id="jev-prompt" class="trace-block">실행 후 표시됩니다.</pre></details><details class="prompt-detail"><summary>요청과 응답 전체 보기</summary><pre id="request-json" class="trace-block">아직 실행되지 않았습니다.</pre><pre id="response-json" class="trace-block">아직 실행되지 않았습니다.</pre></details></div>
+        </section>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

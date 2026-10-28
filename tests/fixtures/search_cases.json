@@ -1,0 +1,10 @@
+[
+  {"sample": "search_cafe_latte.png", "title": "창가의 카페라떼", "expected": "drink_cafe_latte 후보 포함 여부"},
+  {"sample": "search_flat_white.png", "title": "작은 잔의 플랫화이트", "expected": "drink_flat_white 후보 포함 여부"},
+  {"sample": "search_matcha_latte_dim.png", "title": "어두운 실내의 말차 라떼", "expected": "drink_matcha_latte 후보 포함 여부"},
+  {"sample": "search_strawberry_mochi_bitten.png", "title": "한입 베어 문 딸기 모찌", "expected": "dessert_strawberry_mochi 후보 포함 여부"},
+  {"sample": "search_injeolmi_mochi_box.png", "title": "상자에 담긴 인절미 모찌", "expected": "dessert_injeolmi_mochi 후보 포함 여부"},
+  {"sample": "search_mochi_waffle_side.png", "title": "옆에서 본 모찌 와플", "expected": "dessert_mochi_waffle 후보 포함 여부"},
+  {"sample": "search_not_on_menu_cheesecake.png", "title": "메뉴에 없는 치즈케이크", "expected": "적합한 메뉴가 없다고 안내하는지 확인"},
+  {"sample": "search_not_food_cat.png", "title": "음식이 아닌 고양이", "expected": "음식 후보를 억지로 제시하지 않는지 확인"}
+]

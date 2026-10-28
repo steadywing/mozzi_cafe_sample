@@ -1,0 +1,131 @@
+[
+  {
+    "id": "new-session",
+    "title": "새 대화",
+    "session_state": {
+      "customer_id": "cust_001"
+    }
+  },
+  {
+    "id": "recommendation-asking",
+    "title": "추천 중 알레르기 질문 대기",
+    "session_state": {
+      "customer_id": "cust_001",
+      "intent": {
+        "intent": "product_recommendation",
+        "confidence": null
+      },
+      "recommendation": {
+        "allergies": null,
+        "preferences": null
+      },
+      "history": [
+        {
+          "role": "assistant",
+          "content": "피해야 할 알레르기 재료와 선호하는 맛을 알려주세요."
+        }
+      ]
+    }
+  },
+  {
+    "id": "recommendation-allergy-collected",
+    "title": "추천 중 알레르기만 확인, 선호 질문 대기",
+    "session_state": {
+      "customer_id": "cust_006",
+      "intent": {
+        "intent": "product_recommendation",
+        "confidence": null
+      },
+      "recommendation": {
+        "allergies": [
+          "우유"
+        ],
+        "preferences": null
+      },
+      "history": [
+        {
+          "role": "assistant",
+          "content": "좋아하는 맛이나 원하는 메뉴 종류가 있나요?"
+        }
+      ]
+    }
+  },
+  {
+    "id": "coupon-waiting-confirmation",
+    "title": "스탬프 쿠폰 인식 결과 확인 대기",
+    "session_state": {
+      "customer_id": "cust_004",
+      "intent": {
+        "intent": "event_participation",
+        "confidence": null
+      },
+      "coupon": {
+        "coupon_id": "MOCHI-2026-0001",
+        "stamps": 10,
+        "verification": "passed",
+        "customer_confirmed": false
+      },
+      "history": [
+        {
+          "role": "assistant",
+          "content": "쿠폰 번호 MOCHI-2026-0001, 스탬프 10개가 맞나요?"
+        }
+      ]
+    }
+  },
+  {
+    "id": "order-pending",
+    "title": "주문 확인 대기",
+    "session_state": {
+      "customer_id": "cust_002",
+      "intent": {
+        "intent": "product_order",
+        "confidence": null
+      },
+      "order": {
+        "items": [
+          {
+            "product_name": "아메리카노",
+            "quantity": 2
+          },
+          {
+            "product_name": "카페라떼",
+            "quantity": 1
+          }
+        ],
+        "confirmation_status": "pending"
+      },
+      "history": [
+        {
+          "role": "assistant",
+          "content": "아메리카노 2잔, 카페라떼 1잔으로 주문할까요?"
+        }
+      ]
+    }
+  },
+  {
+    "id": "order-confirmed",
+    "title": "주문 확정 완료",
+    "session_state": {
+      "customer_id": "cust_002",
+      "intent": {
+        "intent": "product_order",
+        "confidence": null
+      },
+      "order": {
+        "items": [
+          {
+            "product_name": "아메리카노",
+            "quantity": 2
+          },
+          {
+            "product_name": "카페라떼",
+            "quantity": 1
+          }
+        ],
+        "confirmation_status": "confirmed"
+      },
+      "history": []
+    }
+  }
+]
