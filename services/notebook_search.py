@@ -21,13 +21,13 @@ def sample_names():
 
 @lru_cache(maxsize=1)
 def load_embedding_model():
-    """처음 검색할 때 로컬에 설치된 임베딩 모델을 불러와 돌려줍니다."""
-    # 1. 모델 준비: 사용 가능한 연산 장치를 고르고 다운로드 없이 로컬 모델을 엽니다.
+    """처음 검색할 때 임베딩 모델을 캐시에서 열거나 내려받아 돌려줍니다."""
+    # 1. 모델 준비: 사용 가능한 연산 장치를 고르고 캐시에 없으면 모델을 내려받습니다.
     import torch
     from sentence_transformers import SentenceTransformer
     device = 'cuda' if torch.cuda.is_available() else 'mps' if torch.backends.mps.is_available() else 'cpu'
 
-    return SentenceTransformer(MODEL_ID, device=device, config_kwargs={'audio_config': None}, model_kwargs={'torch_dtype': torch.float32}, local_files_only=True)
+    return SentenceTransformer(MODEL_ID, device=device, config_kwargs={'audio_config': None}, model_kwargs={'torch_dtype': torch.float32})
 
 
 def create_image_embedding(image_path, text):

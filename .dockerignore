@@ -12,11 +12,8 @@ __pycache__/
 *.py[cod]
 .pytest_cache/
 .DS_Store
-data/
 uploads/
 notebooks/
-notebooks_old/
-old/
 docs/
 node_modules/
 *.log

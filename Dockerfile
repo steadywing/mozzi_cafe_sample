@@ -36,6 +36,7 @@ COPY templates/ templates/
 COPY static/ static/
 COPY prompts/ prompts/
 COPY tests/fixtures/ tests/fixtures/
+COPY data/ data/
 
 EXPOSE 8000
 HEALTHCHECK --interval=30s --timeout=5s --start-period=20s \
